@@ -7,11 +7,11 @@ first_name: "Ningzhe"
 middle_name: ""
 last_name: "Shi"
 contact_note: >
-  Academic email: shiningzhe21b@ict.ac.cn
+  The best way to reach me is by academic email.
 description: "Academic homepage of Ningzhe Shi: 6G networks, edge intelligence, generative AI services, and space AI computing networks."
 footer_text: >
   Powered by Jekyll and al-folio. Hosted by GitHub Pages.
-keywords: "6G, edge intelligence, AIGC, RAG, AI agent memory, reinforcement learning, space AI computing networks, wireless resource allocation"
+keywords: "6G, edge intelligence, AIGC, RAG, reinforcement learning, space AI computing networks, wireless resource allocation"
 lang: en
 icon: "🛰️"
 

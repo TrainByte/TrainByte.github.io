@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /publications/
+title: publications
+description: Published, accepted, and submitted research articles in wireless networking, edge intelligence, and AI-service orchestration.
+nav: true
+nav_order: 2
+---
+
+{% include bib_search.liquid %}
+
+{% bibliography %}

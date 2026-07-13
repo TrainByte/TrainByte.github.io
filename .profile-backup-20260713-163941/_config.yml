@@ -2,21 +2,24 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Ningzhe Shi"
-first_name: "Ningzhe"
-middle_name: ""
-last_name: "Shi"
+title: blank # the website title (if blank, full name will be used instead)
+first_name: You
+middle_name: R.
+last_name: Name
 contact_note: >
-  Academic email: shiningzhe21b@ict.ac.cn
-description: "Academic homepage of Ningzhe Shi: 6G networks, edge intelligence, generative AI services, and space AI computing networks."
+  You can even add a little note about which of these is the best way to reach you.
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by Jekyll and al-folio. Hosted by GitHub Pages.
-keywords: "6G, edge intelligence, AIGC, RAG, AI agent memory, reinforcement learning, space AI computing networks, wireless resource allocation"
-lang: en
-icon: "🛰️"
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: "https://trainbyte.github.io"
-baseurl: ""
+url: https://alshedivat.github.io # the base hostname & protocol for your site
+baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -95,8 +98,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: true
-serve_schema_org: true
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -106,7 +109,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 analytics:
   # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
   # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-  google: 
+  google: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
   cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
   pirsch: # your Pirsch analytics site ID (length 32 characters)
   openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
@@ -119,8 +122,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: "Research Notes"
-blog_description: "Research notes on intelligent networks and AI-service orchestration."
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -338,8 +341,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Shi]
-  first_name: [Ningzhe, N.]
+  last_name: [Einstein]
+  first_name: [Albert, A.]
 
   style: apa
   locale: en
@@ -456,7 +459,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
-enable_cookie_consent: false
+enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts

@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 cv_pdf:
 cv_format: rendercv
-description: Education, research experience, awards, intellectual property, skills, and academic service.
+description: Academic background, research experience, awards, skills, and professional service.
 toc:
   sidebar: left
 ---

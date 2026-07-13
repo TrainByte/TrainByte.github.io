@@ -45,6 +45,52 @@
     line-height: 1.45;
   }
 
+  .social a[href*="feed"],
+  .social a[href*="rss"],
+  .social a[aria-label*="RSS"],
+  .social a[title*="RSS"],
+  footer a[href*="feed"],
+  footer a[href*="rss"],
+  footer a[aria-label*="RSS"],
+  footer a[title*="RSS"],
+  .social .fa-rss,
+  .social .fa-square-rss,
+  footer .fa-rss,
+  footer .fa-square-rss {
+    display: none !important;
+  }
+
+  .section-note {
+    color: var(--global-text-color-light);
+    margin: 0.25rem 0 1rem;
+  }
+
+  .interest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .interest-card {
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+    padding: 0.85rem 0.95rem;
+    background: var(--global-bg-color);
+  }
+
+  .interest-card h3 {
+    font-size: 0.98rem;
+    line-height: 1.35;
+    margin: 0 0 0.35rem;
+  }
+
+  .interest-card p {
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+
   .selected-publication-list {
     display: grid;
     gap: 1rem;
@@ -113,6 +159,53 @@
     color: var(--global-theme-color);
   }
 
+  .publication-badge.ccf {
+    background: #fff1f2;
+    border-color: #f3a6b2;
+    color: #ad1742;
+  }
+
+  .publication-badge.cas {
+    background: #ecfdf3;
+    border-color: #8fd7ad;
+    color: #176b3a;
+  }
+
+  .publication-badge.cic {
+    background: #fff7ed;
+    border-color: #f0bc79;
+    color: #9a4b07;
+  }
+
+  .publication-badge.status {
+    background: #eef6ff;
+    border-color: #9fc6ef;
+    color: #245f9f;
+  }
+
+  .home-news {
+    display: grid;
+    gap: 0.55rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .home-news li {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.55rem;
+  }
+
+  .home-news-date {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
   .featured-projects {
     margin-top: 2rem;
   }
@@ -131,6 +224,16 @@
     padding: 1rem;
     background: var(--global-bg-color);
     min-width: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: var(--global-theme-color);
+    margin: -1rem -1rem 0.85rem;
   }
 
   .project-card h3 {
@@ -151,7 +254,17 @@
     margin: 0.55rem 0;
   }
 
+  .project-category {
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+  }
+
   .project-role,
+  .project-output,
   .project-tag,
   .project-result {
     border: 1px solid var(--global-divider-color);
@@ -168,6 +281,23 @@
     font-weight: 600;
   }
 
+  .project-contribution {
+    border-left: 3px solid var(--global-theme-color);
+    padding-left: 0.65rem;
+  }
+
+  .project-result {
+    background: #eef6ff;
+    border-color: #9fc6ef;
+    color: #245f9f;
+  }
+
+  .project-output {
+    background: #f3fbf6;
+    border-color: #9bd9b1;
+    color: #176b3a;
+  }
+
   .project-link {
     display: inline-block;
     margin-top: auto;
@@ -175,6 +305,15 @@
   }
 
   @media (max-width: 767px) {
+    .interest-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .home-news li {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+
     .selected-publication {
       grid-template-columns: 1fr;
     }
@@ -188,7 +327,7 @@
       grid-template-columns: 1fr;
     }
   }
-</style> <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Research Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.</p> <p>My research focuses on 6G intelligent networks and AI service orchestration. I study communication, sensing, computing, and knowledge resource optimization for networked AI systems, using reinforcement learning and optimization methods.</p> <h2 id="research-interests">Research interests</h2> <ul> <li>AI-Native 6G Networks</li> <li>Edge Intelligence and Cloud-Edge Collaborative AI Services</li> <li>Integrated Sensing, Communication, Computing, and Intelligence</li> <li>Space AI Computing Networks</li> </ul> <h2 id="selected-publications">Selected publications</h2> <div class="selected-publication-list"> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-noma.png" alt="NOMA-based multi-cell MEC resource allocation preview"> <div> <h3>Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Yihao Wu, Hanxiao Yu, and Jinglin Shi</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge">CCF-A</span> <span class="publication-badge">Q1 CAS</span> <span class="publication-badge">Accepted/Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-isac.png" alt="ISAC-driven AIGC resource allocation preview"> <div> <h3>Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge">CCF-A</span> <span class="publication-badge">Q1 CAS</span> <span class="publication-badge">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tccn-fairness.png" alt="Wireless fairness and multi-agent DRL preview"> <div> <h3>Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi</p> <p>IEEE Transactions on Cognitive Communications and Networking, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TCCN</span> <span class="publication-badge">Q1 CAS</span> <span class="publication-badge">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/china-communications-uav.png" alt="UAV-assisted mmWave MIMO secure communication preview"> <div> <h3>Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi</p> <p>China Communications, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">China Commun.</span> <span class="publication-badge">T1 CIC</span> <span class="publication-badge">Published</span> </div> </div> </article> </div> <h2 id="featured-projects">Featured projects</h2> <section class="featured-projects" aria-label="Featured projects"> <div class="project-grid"> <article class="project-card"> <h3><a href="/projects/1-full-duplex-simulator/">Distributed System-Level Simulator for Large-Scale Full-Duplex Ad Hoc Networks</a></h3> <div class="project-meta"> <span class="project-role">Technical Lead</span> <span class="project-result">2022 - 2023</span> </div> <p>Distributed system-level simulation for large-scale, infrastructure-less, and mission-critical ad hoc networks.</p> <p><strong>Core contribution:</strong> Architected the controller-worker simulation workflow, cross-layer node model, channel engine, and priority-aware multi-channel full-duplex access mechanism.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;1,000-node design target</span> <span class="project-result">1 authorized software copyright</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">Distributed Systems</span> <span class="project-tag">Network Simulation</span> <span class="project-tag">WebSocket</span> <span class="project-tag">MAC Protocols</span> <span class="project-tag">Cross-Layer Modeling</span> </div> <a class="project-link" href="/projects/1-full-duplex-simulator/">View project</a> </article> <article class="project-card"> <h3><a href="/projects/2-ai-agent-memory/">Long-Horizon Memory Systems for AI Agents</a></h3> <div class="project-meta"> <span class="project-role">AI Agent Algorithm Intern</span> <span class="project-result">Jan. 2026 - Mar. 2026</span> </div> <p>Memory mechanisms for AI agents in long-horizon, multi-turn interactions.</p> <p><strong>Core contribution:</strong> Analyzed memory pipelines, reproduced Mem-alpha, and formulated memory maintenance as a policy-optimization problem.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">Experimental basis for RL-driven memory maintenance</span> <span class="project-result">Cloud-edge scheduling analysis</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">AI Agents</span> <span class="project-tag">Long-Term Memory</span> <span class="project-tag">RAG</span> <span class="project-tag">Reinforcement Learning</span> <span class="project-tag">Cloud-Edge Systems</span> </div> <a class="project-link" href="/projects/2-ai-agent-memory/">View project</a> </article> <article class="project-card"> <h3><a href="/projects/3-rag-orchestration/">Knowledge-Aware Cloud-Edge Orchestration for RAG Services</a></h3> <div class="project-meta"> <span class="project-role">Core Contributor</span> <span class="project-result">2025 - 2026</span> </div> <p>Knowledge-aware orchestration for retrieval-augmented generation services across heterogeneous cloud and edge nodes.</p> <p><strong>Core contribution:</strong> Modeled knowledge matching, resource states, retrieval cost, service delay, and energy consumption in a cloud-edge RAG simulation framework.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;10% service-delay reduction in simulation</span> <span class="project-result">approximately 50% energy reduction in simulation</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">RAG</span> <span class="project-tag">Cloud-Edge Computing</span> <span class="project-tag">Task Offloading</span> <span class="project-tag">Resource Scheduling</span> <span class="project-tag">Reinforcement Learning</span> </div> <a class="project-link" href="/projects/3-rag-orchestration/">View project</a> </article> <article class="project-card"> <h3><a href="/projects/5-isac-aigc-orchestration/">ISAC-Driven AIGC Service Orchestration</a></h3> <div class="project-meta"> <span class="project-role">Lead Researcher and First Author</span> <span class="project-result">2024 - 2025</span> </div> <p>Full research workflow for sensing, computing, and communication resource orchestration in AIGC services.</p> <p><strong>Core contribution:</strong> Designed the CAQA metric, formulated joint resource allocation, and implemented LP-guided hierarchical DRL with comparative simulations.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;10% CAQA improvement over learning baselines</span> <span class="project-result">&gt;50% CAQA improvement over generation-quality-only schemes</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">ISAC</span> <span class="project-tag">AIGC</span> <span class="project-tag">Resource Allocation</span> <span class="project-tag">Deep Reinforcement Learning</span> <span class="project-tag">Linear Programming</span> </div> <a class="project-link" href="/projects/5-isac-aigc-orchestration/">View project</a> </article> </div> </section> <style>
+</style> <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Research Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.</p> <p>My research focuses on 6G intelligent networks and AI service orchestration. I study communication, sensing, computing, and knowledge resource optimization for networked AI systems, using reinforcement learning and optimization methods.</p> <h2 id="research-interests">Research interests</h2> <div class="interest-grid"> <section class="interest-card"> <h3>AI-Native 6G Networks</h3> <p>Resource orchestration and learning-driven network intelligence for next-generation wireless systems.</p> </section> <section class="interest-card"> <h3>Cloud-Edge Collaborative AI Services</h3> <p>Task scheduling, RAG service placement, and AI Agent memory management across heterogeneous nodes.</p> </section> <section class="interest-card"> <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3> <p>Joint modeling of sensing accuracy, communication quality, computing resources, and AI service outcomes.</p> </section> <section class="interest-card"> <h3>Space AI Computing Networks</h3> <p>Distributed routing and computing-resource scheduling for dynamic space-ground intelligent networks.</p> </section> </div> <h2 id="news">News</h2> <ul class="home-news"> <li> <span class="home-news-date">Jun 15, 2026</span> <span>Selected as an Outstanding Graduate Student by the Xinghang Program of the Journal of Electronics &amp; Information Technology.</span> </li> <li> <span class="home-news-date">Jun 15, 2026</span> <span>Received the Outstanding Poster Award at the Frontiers in Electronics and Information Conference.</span> </li> <li> <span class="home-news-date">May 12, 2026</span> <span>First-author paper “Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI” was published in IEEE Transactions on Cognitive Communications and Networking.</span> </li> <li> <span class="home-news-date">Apr 1, 2026</span> <span>First-author paper “Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems” was published in China Communications.</span> </li> <li> <span class="home-news-date">Jan 12, 2026</span> <span>First-author paper “Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks” was published in IEEE Transactions on Mobile Computing.</span> </li> <li> <span class="home-news-date">Jan 1, 2026</span> <span>First-author paper “Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks” was accepted/published in IEEE Transactions on Mobile Computing.</span> </li> </ul> <h2 id="selected-publications">Selected publications</h2> <div class="selected-publication-list"> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-noma.png" alt="NOMA-based multi-cell MEC resource allocation preview"> <div> <h3>Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Yihao Wu, Hanxiao Yu, and Jinglin Shi</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Accepted/Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-isac.png" alt="ISAC-driven AIGC resource allocation preview"> <div> <h3>Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tccn-fairness.png" alt="Wireless fairness and multi-agent DRL preview"> <div> <h3>Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi</p> <p>IEEE Transactions on Cognitive Communications and Networking, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TCCN</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/china-communications-uav.png" alt="UAV-assisted mmWave MIMO secure communication preview"> <div> <h3>Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi</p> <p>China Communications, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">China Commun.</span> <span class="publication-badge cic">T1 CIC</span> <span class="publication-badge status">Published</span> </div> </div> </article> </div> <h2 id="selected-research--engineering-projects">Selected research &amp; engineering projects</h2> <p class="section-note">A compact view of research systems, algorithm prototypes, and engineering platforms that connect wireless networks, AI services, and distributed simulation.</p> <section class="featured-projects" aria-label="Featured projects"> <div class="project-grid"> <article class="project-card"> <div class="project-category">Engineering Systems</div> <h3><a href="/projects/1-full-duplex-simulator/">Distributed System-Level Simulator for Large-Scale Full-Duplex Ad Hoc Networks</a></h3> <div class="project-meta"> <span class="project-role">Technical Lead</span> <span class="project-result">2022 - 2023</span> </div> <p>Distributed system-level simulation for large-scale, infrastructure-less, and mission-critical ad hoc networks.</p> <p class="project-contribution"><strong>Core contribution:</strong> Architected the controller-worker simulation workflow, cross-layer node model, channel engine, and priority-aware multi-channel full-duplex access mechanism.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;1,000-node design target</span> <span class="project-result">1 authorized software copyright</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Authorized Software Copyright</span> <span class="project-output">Related Patent Applications</span> <span class="project-output">System Prototype</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">Distributed Systems</span> <span class="project-tag">Network Simulation</span> <span class="project-tag">WebSocket</span> <span class="project-tag">MAC Protocols</span> <span class="project-tag">Cross-Layer Modeling</span> </div> <a class="project-link" href="/projects/1-full-duplex-simulator/">View project</a> </article> <article class="project-card"> <div class="project-category">Engineering Systems</div> <h3><a href="/projects/2-ai-agent-memory/">Long-Horizon Memory Systems for AI Agents</a></h3> <div class="project-meta"> <span class="project-role">AI Agent Algorithm Intern</span> <span class="project-result">Jan. 2026 - Mar. 2026</span> </div> <p>Memory mechanisms for AI agents in long-horizon, multi-turn interactions.</p> <p class="project-contribution"><strong>Core contribution:</strong> Analyzed memory pipelines, reproduced Mem-alpha, and formulated memory maintenance as a policy-optimization problem.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">Experimental basis for RL-driven memory maintenance</span> <span class="project-result">Cloud-edge scheduling analysis</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Experimental Study</span> <span class="project-output">Architecture Analysis</span> <span class="project-output">Research Prototype</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">AI Agents</span> <span class="project-tag">Long-Term Memory</span> <span class="project-tag">RAG</span> <span class="project-tag">Reinforcement Learning</span> <span class="project-tag">Cloud-Edge Systems</span> </div> <a class="project-link" href="/projects/2-ai-agent-memory/">View project</a> </article> <article class="project-card"> <div class="project-category">AI Systems</div> <h3><a href="/projects/3-rag-orchestration/">Knowledge-Aware Cloud-Edge Orchestration for RAG Services</a></h3> <div class="project-meta"> <span class="project-role">Core Contributor</span> <span class="project-result">2025 - 2026</span> </div> <p>Knowledge-aware orchestration for retrieval-augmented generation services across heterogeneous cloud and edge nodes.</p> <p class="project-contribution"><strong>Core contribution:</strong> Modeled knowledge matching, resource states, retrieval cost, service delay, and energy consumption in a cloud-edge RAG simulation framework.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;10% service-delay reduction in simulation</span> <span class="project-result">approximately 50% energy reduction in simulation</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Simulation Framework</span> <span class="project-output">Algorithm Prototype</span> <span class="project-output">Performance Evaluation</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">RAG</span> <span class="project-tag">Cloud-Edge Computing</span> <span class="project-tag">Task Offloading</span> <span class="project-tag">Resource Scheduling</span> <span class="project-tag">Reinforcement Learning</span> </div> <a class="project-link" href="/projects/3-rag-orchestration/">View project</a> </article> <article class="project-card"> <div class="project-category">AI Systems</div> <h3><a href="/projects/4-space-ai-routing/">Memory-Aware Distributed Routing for Space AI Computing Networks</a></h3> <div class="project-meta"> <span class="project-role">Core Contributor</span> <span class="project-result">2025 - 2026</span> </div> <p>Distributed task routing under dynamic topology, heterogeneous onboard computing resources, and distributed memory states.</p> <p class="project-contribution"><strong>Core contribution:</strong> Modeled memory-aware routing states and evaluated diffusion-assisted routing decisions in a ground-based simulation environment.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;15% routing-delay reduction in simulation</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Simulation Framework</span> <span class="project-output">Algorithm Prototype</span> <span class="project-output">Performance Evaluation</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">Space AI</span> <span class="project-tag">Distributed Routing</span> <span class="project-tag">Satellite Computing</span> <span class="project-tag">Diffusion Models</span> <span class="project-tag">Resource Scheduling</span> </div> <a class="project-link" href="/projects/4-space-ai-routing/">View project</a> </article> <article class="project-card"> <div class="project-category">Wireless Intelligence</div> <h3><a href="/projects/5-isac-aigc-orchestration/">ISAC-Driven AIGC Service Orchestration</a></h3> <div class="project-meta"> <span class="project-role">Lead Researcher and First Author</span> <span class="project-result">2024 - 2025</span> </div> <p>Full research workflow for sensing, computing, and communication resource orchestration in AIGC services.</p> <p class="project-contribution"><strong>Core contribution:</strong> Designed the CAQA metric, formulated joint resource allocation, and implemented LP-guided hierarchical DRL with comparative simulations.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&gt;10% CAQA improvement over learning baselines</span> <span class="project-result">&gt;50% CAQA improvement over generation-quality-only schemes</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Publication</span> <span class="project-output">DOI</span> <span class="project-output">Algorithm Prototype</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">ISAC</span> <span class="project-tag">AIGC</span> <span class="project-tag">Resource Allocation</span> <span class="project-tag">Deep Reinforcement Learning</span> <span class="project-tag">Linear Programming</span> </div> <a class="project-link" href="/projects/5-isac-aigc-orchestration/">View project</a> </article> <article class="project-card"> <div class="project-category">Wireless Intelligence</div> <h3><a href="/projects/6-uav-secure-communications/">Deception-Based UAV-Assisted Secure Communications</a></h3> <div class="project-meta"> <span class="project-role">Task Leader, Technical Lead, and First Author</span> <span class="project-result">2021 - 2023</span> </div> <p>Secure UAV-assisted mmWave MIMO communication through deception signaling, UAV placement, beamforming, and power allocation.</p> <p class="project-contribution"><strong>Core contribution:</strong> Coordinated the technical route, formulated the secure communication model, and validated the deception-based optimization scheme.</p> <div class="project-meta" aria-label="Key results"> <span class="project-result">&lt;=3% gap from global optimum</span> <span class="project-result">&gt;100% secure-rate gain over no-deception scheme</span> </div> <div class="project-meta" aria-label="Project outputs"> <span class="project-output">Publication</span> <span class="project-output">DOI</span> <span class="project-output">Related IP</span> </div> <div class="project-meta" aria-label="Project tags"> <span class="project-tag">Secure Communications</span> <span class="project-tag">UAV</span> <span class="project-tag">mmWave MIMO</span> <span class="project-tag">Beamforming</span> <span class="project-tag">Optimization</span> </div> <a class="project-link" href="/projects/6-uav-secure-communications/">View project</a> </article> </div> </section> <style>
   .visitor-counter {
     max-width: 960px;
     margin: 2.5rem auto 0;
@@ -223,7 +362,7 @@
 
     window.addEventListener('load', moveVisitorCounter);
   })();
-</script> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive" style="max-height: 60vw"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jun 15, 2026</th> <td> Selected as an Outstanding Graduate Student by the Xinghang Program of the Journal of Electronics &amp; Information Technology. </td> </tr> <tr> <th scope="row" style="width: 20%">Jun 15, 2026</th> <td> Received the Outstanding Poster Award at the Frontiers in Electronics and Information Conference. </td> </tr> <tr> <th scope="row" style="width: 20%">May 12, 2026</th> <td> First-author paper “Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI” was published in IEEE Transactions on Cognitive Communications and Networking. </td> </tr> <tr> <th scope="row" style="width: 20%">Apr 01, 2026</th> <td> First-author paper “Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems” was published in China Communications. </td> </tr> <tr> <th scope="row" style="width: 20%">Jan 12, 2026</th> <td> First-author paper “Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks” was published in IEEE Transactions on Mobile Computing. </td> </tr> <tr> <th scope="row" style="width: 20%">Jan 01, 2026</th> <td> First-author paper “Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks” was accepted/published in IEEE Transactions on Mobile Computing. </td> </tr> </table> </div> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:shiningzhe21b@ict.ac.cn" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://scholar.google.com/citations?user=724V_EQAAAAJ" title="Scholar userid" rel="external nofollow noopener noreferrer" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="https://github.com/TrainByte" title="Github username" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> </div> <div class="contact-note">Academic email: shiningzhe21b@ict.ac.cn </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ningzhe Shi. Powered by Jekyll and al-folio. Hosted by GitHub Pages. </div> </footer> <script>
+</script> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:shiningzhe21b@ict.ac.cn" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://scholar.google.com/citations?user=724V_EQAAAAJ" title="Scholar userid" rel="external nofollow noopener noreferrer" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="https://github.com/TrainByte" title="Github username" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a> </div> <div class="contact-note">Academic email: shiningzhe21b@ict.ac.cn </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ningzhe Shi. Powered by Jekyll and al-folio. Hosted by GitHub Pages. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -264,7 +403,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Education, advisors, internship, research experience, publications, awards, service, outreach, leadership, skills, and intellectual property.",
+          description: "Education, research profile, internship, research experience, publications, intellectual property, awards, service, outreach, leadership, and skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -722,13 +861,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/TrainByte", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
       id: 'light-theme',

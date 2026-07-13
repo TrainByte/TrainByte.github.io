@@ -1,5 +1,8 @@
 {% assign project = include.project %}
 <article class="project-card">
+  {% if project.category %}
+  <div class="project-category">{{ project.category }}</div>
+  {% endif %}
   <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
   <div class="project-meta">
     <span class="project-role">{{ project.role }}</span>
@@ -8,11 +11,17 @@
     {% endif %}
   </div>
   <p>{{ project.summary }}</p>
-  <p><strong>Core contribution:</strong> {{ project.contribution }}</p>
+  <p class="project-contribution"><strong>Core contribution:</strong> {{ project.contribution }}</p>
   {% if project.results %}
   <div class="project-meta" aria-label="Key results">
     {% for result in project.results limit: 2 %}
     <span class="project-result">{{ result }}</span>
+    {% endfor %}
+  </div>
+  {% endif %} {% if project.outputs %}
+  <div class="project-meta" aria-label="Project outputs">
+    {% for output in project.outputs limit: 3 %}
+    <span class="project-output">{{ output }}</span>
     {% endfor %}
   </div>
   {% endif %} {% if project.tags %}

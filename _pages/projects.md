@@ -12,10 +12,11 @@ nav_order: 3
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1.5rem 0 1rem;
+    margin: 1.25rem 0 1rem;
   }
 
   .project-toolbar a,
+  .project-output,
   .project-role,
   .project-tag,
   .project-result {
@@ -30,6 +31,11 @@ nav_order: 3
     padding: 0.45rem 0.7rem;
     color: var(--global-text-color);
     text-decoration: none;
+  }
+
+  .project-intro {
+    color: var(--global-text-color-light);
+    max-width: 56rem;
   }
 
   .project-section {
@@ -51,6 +57,25 @@ nav_order: 3
     min-height: 100%;
     min-width: 0;
     background: var(--global-bg-color);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .project-card::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: var(--global-theme-color);
+    margin: -1rem -1rem 0.85rem;
+  }
+
+  .project-category {
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
   }
 
   .project-card h3 {
@@ -61,6 +86,11 @@ nav_order: 3
 
   .project-card p {
     margin-bottom: 0.55rem;
+  }
+
+  .project-contribution {
+    border-left: 3px solid var(--global-theme-color);
+    padding-left: 0.65rem;
   }
 
   .project-card h3,
@@ -85,12 +115,23 @@ nav_order: 3
   .project-result {
     padding: 0.25rem 0.45rem;
     font-size: 0.78rem;
+    background: #eef6ff;
+    border-color: #9fc6ef;
+    color: #245f9f;
   }
 
   .project-tag {
     padding: 0.25rem 0.42rem;
     font-size: 0.76rem;
     color: var(--global-text-color-light);
+  }
+
+  .project-output {
+    padding: 0.25rem 0.42rem;
+    font-size: 0.76rem;
+    background: #f3fbf6;
+    border-color: #9bd9b1;
+    color: #176b3a;
   }
 
   .project-link {
@@ -108,6 +149,10 @@ nav_order: 3
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
 {% assign categories = "Engineering Systems|AI Systems|Wireless Intelligence" | split: "|" %}
+
+<p class="project-intro">
+  Selected projects across distributed network simulation, AI Agent memory, cloud-edge RAG orchestration, space AI routing, ISAC-driven AIGC services, and secure UAV communications.
+</p>
 
 <div class="project-toolbar" aria-label="Project categories">
   <a href="#all-projects">All</a>

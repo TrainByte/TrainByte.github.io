@@ -13,7 +13,7 @@ profile:
 selected_papers: false
 social: true
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 6
 latest_posts:
@@ -44,6 +44,52 @@ latest_posts:
   .profile .more-info {
     font-size: 0.9rem;
     line-height: 1.45;
+  }
+
+  .social a[href*="feed"],
+  .social a[href*="rss"],
+  .social a[aria-label*="RSS"],
+  .social a[title*="RSS"],
+  footer a[href*="feed"],
+  footer a[href*="rss"],
+  footer a[aria-label*="RSS"],
+  footer a[title*="RSS"],
+  .social .fa-rss,
+  .social .fa-square-rss,
+  footer .fa-rss,
+  footer .fa-square-rss {
+    display: none !important;
+  }
+
+  .section-note {
+    color: var(--global-text-color-light);
+    margin: 0.25rem 0 1rem;
+  }
+
+  .interest-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .interest-card {
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+    padding: 0.85rem 0.95rem;
+    background: var(--global-bg-color);
+  }
+
+  .interest-card h3 {
+    font-size: 0.98rem;
+    line-height: 1.35;
+    margin: 0 0 0.35rem;
+  }
+
+  .interest-card p {
+    color: var(--global-text-color-light);
+    margin: 0;
   }
 
   .selected-publication-list {
@@ -114,6 +160,53 @@ latest_posts:
     color: var(--global-theme-color);
   }
 
+  .publication-badge.ccf {
+    background: #fff1f2;
+    border-color: #f3a6b2;
+    color: #ad1742;
+  }
+
+  .publication-badge.cas {
+    background: #ecfdf3;
+    border-color: #8fd7ad;
+    color: #176b3a;
+  }
+
+  .publication-badge.cic {
+    background: #fff7ed;
+    border-color: #f0bc79;
+    color: #9a4b07;
+  }
+
+  .publication-badge.status {
+    background: #eef6ff;
+    border-color: #9fc6ef;
+    color: #245f9f;
+  }
+
+  .home-news {
+    display: grid;
+    gap: 0.55rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .home-news li {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: start;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.55rem;
+  }
+
+  .home-news-date {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
   .featured-projects {
     margin-top: 2rem;
   }
@@ -132,6 +225,16 @@ latest_posts:
     padding: 1rem;
     background: var(--global-bg-color);
     min-width: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: var(--global-theme-color);
+    margin: -1rem -1rem 0.85rem;
   }
 
   .project-card h3 {
@@ -152,7 +255,17 @@ latest_posts:
     margin: 0.55rem 0;
   }
 
+  .project-category {
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+  }
+
   .project-role,
+  .project-output,
   .project-tag,
   .project-result {
     border: 1px solid var(--global-divider-color);
@@ -169,6 +282,23 @@ latest_posts:
     font-weight: 600;
   }
 
+  .project-contribution {
+    border-left: 3px solid var(--global-theme-color);
+    padding-left: 0.65rem;
+  }
+
+  .project-result {
+    background: #eef6ff;
+    border-color: #9fc6ef;
+    color: #245f9f;
+  }
+
+  .project-output {
+    background: #f3fbf6;
+    border-color: #9bd9b1;
+    color: #176b3a;
+  }
+
   .project-link {
     display: inline-block;
     margin-top: auto;
@@ -176,6 +306,15 @@ latest_posts:
   }
 
   @media (max-width: 767px) {
+    .interest-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .home-news li {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+    }
+
     .selected-publication {
       grid-template-columns: 1fr;
     }
@@ -197,10 +336,36 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
 
 ## Research interests
 
-- AI-Native 6G Networks
-- Edge Intelligence and Cloud-Edge Collaborative AI Services
-- Integrated Sensing, Communication, Computing, and Intelligence
-- Space AI Computing Networks
+<div class="interest-grid">
+  <section class="interest-card">
+    <h3>AI-Native 6G Networks</h3>
+    <p>Resource orchestration and learning-driven network intelligence for next-generation wireless systems.</p>
+  </section>
+  <section class="interest-card">
+    <h3>Cloud-Edge Collaborative AI Services</h3>
+    <p>Task scheduling, RAG service placement, and AI Agent memory management across heterogeneous nodes.</p>
+  </section>
+  <section class="interest-card">
+    <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3>
+    <p>Joint modeling of sensing accuracy, communication quality, computing resources, and AI service outcomes.</p>
+  </section>
+  <section class="interest-card">
+    <h3>Space AI Computing Networks</h3>
+    <p>Distributed routing and computing-resource scheduling for dynamic space-ground intelligent networks.</p>
+  </section>
+</div>
+
+## News
+
+<ul class="home-news">
+  {% assign news_items = site.news | sort: "date" | reverse %}
+  {% for item in news_items limit: 6 %}
+    <li>
+      <span class="home-news-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+      <span>{{ item.content | strip_html | strip_newlines }}</span>
+    </li>
+  {% endfor %}
+</ul>
 
 ## Selected publications
 
@@ -213,9 +378,9 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
       <p>IEEE Transactions on Mobile Computing, 2026</p>
       <div class="publication-badges" aria-label="Publication venue and ranking">
         <span class="publication-badge venue">TMC</span>
-        <span class="publication-badge">CCF-A</span>
-        <span class="publication-badge">Q1 CAS</span>
-        <span class="publication-badge">Accepted/Published</span>
+        <span class="publication-badge ccf">CCF-A</span>
+        <span class="publication-badge cas">Q1 CAS</span>
+        <span class="publication-badge status">Accepted/Published</span>
       </div>
     </div>
   </article>
@@ -228,9 +393,9 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
       <p>IEEE Transactions on Mobile Computing, 2026</p>
       <div class="publication-badges" aria-label="Publication venue and ranking">
         <span class="publication-badge venue">TMC</span>
-        <span class="publication-badge">CCF-A</span>
-        <span class="publication-badge">Q1 CAS</span>
-        <span class="publication-badge">Published</span>
+        <span class="publication-badge ccf">CCF-A</span>
+        <span class="publication-badge cas">Q1 CAS</span>
+        <span class="publication-badge status">Published</span>
       </div>
     </div>
   </article>
@@ -243,8 +408,8 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
       <p>IEEE Transactions on Cognitive Communications and Networking, 2026</p>
       <div class="publication-badges" aria-label="Publication venue and ranking">
         <span class="publication-badge venue">TCCN</span>
-        <span class="publication-badge">Q1 CAS</span>
-        <span class="publication-badge">Published</span>
+        <span class="publication-badge cas">Q1 CAS</span>
+        <span class="publication-badge status">Published</span>
       </div>
     </div>
   </article>
@@ -257,19 +422,21 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
       <p>China Communications, 2026</p>
       <div class="publication-badges" aria-label="Publication venue and ranking">
         <span class="publication-badge venue">China Commun.</span>
-        <span class="publication-badge">T1 CIC</span>
-        <span class="publication-badge">Published</span>
+        <span class="publication-badge cic">T1 CIC</span>
+        <span class="publication-badge status">Published</span>
       </div>
     </div>
   </article>
 </div>
 
-## Featured projects
+## Selected research & engineering projects
+
+<p class="section-note">A compact view of research systems, algorithm prototypes, and engineering platforms that connect wireless networks, AI services, and distributed simulation.</p>
 
 <section class="featured-projects" aria-label="Featured projects">
   <div class="project-grid">
-    {% assign featured_projects = site.projects | where: "featured", true | sort: "importance" %}
-    {% for project in featured_projects limit: 4 %}
+    {% assign featured_projects = site.projects | sort: "importance" %}
+    {% for project in featured_projects limit: 6 %}
       {% include project-card.html project=project %}
     {% endfor %}
   </div>

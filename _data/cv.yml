@@ -135,6 +135,16 @@ cv:
         journal: China Communications
         date: 2026
         doi: 10.23919/JCC.fa.2025-0337.202604
+      - title: "Cross-Enabling of Operation, Information and Communication: Building the Foundation for Intelligent New-Generation Productivity"
+        authors:
+          - "***Ningzhe Shi***"
+          - Yihao Wu
+          - Yaxing Xu
+          - Qing Cai
+          - Yiqing Zhou
+        journal: Computing Magazine of the CCF
+        date: 2025
+        doi: 10.11991/cccf.202508013
 
     Intellectual Property:
       - name: 抗跟踪式干扰的信号发送方法、信号接收方法及系统

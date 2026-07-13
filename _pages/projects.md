@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Selected Research & Engineering Projects
+title: Selected Projects
 permalink: /projects/
 description: Selected systems, algorithms, and research prototypes spanning AI-native networks, distributed simulation, cloud-edge intelligence, and wireless resource optimization.
 nav: true

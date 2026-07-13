@@ -23,14 +23,6 @@ latest_posts:
 ---
 
 <style>
-  ol.bibliography .author em {
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 0.08em;
-    text-underline-offset: 0.16em;
-  }
-
   .profile {
     max-width: 210px;
   }
@@ -61,9 +53,45 @@ latest_posts:
     display: none !important;
   }
 
-  .section-note {
+  h2 {
+    margin-top: 2.6rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .education-strip {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.35rem 0 2.2rem;
+  }
+
+  .education-card {
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 0.75rem 0.9rem;
+    background: var(--global-bg-color);
+  }
+
+  .education-card img {
+    display: block;
+    width: 100%;
+    max-height: 58px;
+    object-fit: contain;
+    background: #fff;
+  }
+
+  .education-card strong {
+    display: block;
+    line-height: 1.35;
+  }
+
+  .education-card span {
     color: var(--global-text-color-light);
-    margin: 0.25rem 0 1rem;
+    display: block;
+    margin-top: 0.18rem;
   }
 
   .interest-grid {
@@ -84,11 +112,6 @@ latest_posts:
   .interest-card h3 {
     font-size: 0.98rem;
     line-height: 1.35;
-    margin: 0 0 0.35rem;
-  }
-
-  .interest-card p {
-    color: var(--global-text-color-light);
     margin: 0;
   }
 
@@ -184,135 +207,32 @@ latest_posts:
     color: #245f9f;
   }
 
-  .home-news {
-    display: grid;
-    gap: 0.55rem;
-    margin: 1rem 0 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .home-news li {
-    display: grid;
-    grid-template-columns: 8.5rem minmax(0, 1fr);
-    gap: 0.75rem;
-    align-items: start;
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-bottom: 0.55rem;
-  }
-
-  .home-news-date {
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-
-  .featured-projects {
-    margin-top: 2rem;
-  }
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    padding: 1rem;
-    background: var(--global-bg-color);
-    min-width: 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .project-card::before {
-    content: "";
-    display: block;
-    height: 4px;
-    background: var(--global-theme-color);
-    margin: -1rem -1rem 0.85rem;
-  }
-
-  .project-card h3 {
-    font-size: 1rem;
-    line-height: 1.35;
-    margin: 0 0 0.5rem;
-  }
-
-  .project-card h3,
-  .project-card p {
-    overflow-wrap: anywhere;
-  }
-
-  .project-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 0.55rem 0;
-  }
-
-  .project-category {
-    color: var(--global-text-color-light);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    margin-bottom: 0.35rem;
-    text-transform: uppercase;
-  }
-
-  .project-role,
-  .project-output,
-  .project-tag,
-  .project-result {
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
-    display: inline-flex;
-    align-items: center;
-    line-height: 1.2;
-    padding: 0.25rem 0.42rem;
-    font-size: 0.76rem;
-  }
-
-  .project-role {
-    color: var(--global-theme-color);
-    font-weight: 600;
-  }
-
-  .project-contribution {
-    border-left: 3px solid var(--global-theme-color);
-    padding-left: 0.65rem;
-  }
-
-  .project-result {
-    background: #eef6ff;
-    border-color: #9fc6ef;
-    color: #245f9f;
-  }
-
-  .project-output {
-    background: #f3fbf6;
-    border-color: #9bd9b1;
-    color: #176b3a;
-  }
-
-  .project-link {
-    display: inline-block;
-    margin-top: auto;
-    font-weight: 600;
-  }
-
   @media (max-width: 767px) {
-    .interest-grid {
+    .profile,
+    .profile.float-right {
+      float: none !important;
+      margin: 0 auto 1.35rem !important;
+      max-width: 170px;
+    }
+
+    .profile img {
+      max-width: 160px;
+    }
+
+    .profile .more-info {
+      text-align: center;
+    }
+
+    .education-card {
       grid-template-columns: 1fr;
     }
 
-    .home-news li {
+    .education-card img {
+      max-width: 220px;
+    }
+
+    .interest-grid {
       grid-template-columns: 1fr;
-      gap: 0.15rem;
     }
 
     .selected-publication {
@@ -323,49 +243,44 @@ latest_posts:
       width: 100%;
       max-width: 220px;
     }
-
-    .project-grid {
-      grid-template-columns: 1fr;
-    }
   }
 </style>
 
 I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Research Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.
 
-My research focuses on 6G intelligent networks and AI service orchestration. I study communication, sensing, computing, and knowledge resource optimization for networked AI systems, using reinforcement learning and optimization methods.
+<div class="education-strip" aria-label="Education">
+  <article class="education-card">
+    <img src="{{ '/assets/img/logos/ucas-logo.png' | relative_url }}" alt="University of Chinese Academy of Sciences logo">
+    <div>
+      <strong>Ph.D. Candidate in Computer Science and Technology</strong>
+      <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span>
+    </div>
+  </article>
+  <article class="education-card">
+    <img src="{{ '/assets/img/logos/xidian-logo.png' | relative_url }}" alt="Xidian University logo">
+    <div>
+      <strong>B.Eng. in Communication Engineering</strong>
+      <span>Xidian University · National Scholarship · Ranked 1st in class for comprehensive recommendation</span>
+    </div>
+  </article>
+</div>
 
 ## Research interests
 
 <div class="interest-grid">
   <section class="interest-card">
     <h3>AI-Native 6G Networks</h3>
-    <p>Resource orchestration and learning-driven network intelligence for next-generation wireless systems.</p>
   </section>
   <section class="interest-card">
     <h3>Cloud-Edge Collaborative AI Services</h3>
-    <p>Task scheduling, RAG service placement, and AI Agent memory management across heterogeneous nodes.</p>
   </section>
   <section class="interest-card">
     <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3>
-    <p>Joint modeling of sensing accuracy, communication quality, computing resources, and AI service outcomes.</p>
   </section>
   <section class="interest-card">
     <h3>Space AI Computing Networks</h3>
-    <p>Distributed routing and computing-resource scheduling for dynamic space-ground intelligent networks.</p>
   </section>
 </div>
-
-## News
-
-<ul class="home-news">
-  {% assign news_items = site.news | sort: "date" | reverse %}
-  {% for item in news_items limit: 6 %}
-    <li>
-      <span class="home-news-date">{{ item.date | date: "%b %-d, %Y" }}</span>
-      <span>{{ item.content | strip_html | strip_newlines }}</span>
-    </li>
-  {% endfor %}
-</ul>
 
 ## Selected publications
 
@@ -428,18 +343,5 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
     </div>
   </article>
 </div>
-
-## Selected research & engineering projects
-
-<p class="section-note">A compact view of research systems, algorithm prototypes, and engineering platforms that connect wireless networks, AI services, and distributed simulation.</p>
-
-<section class="featured-projects" aria-label="Featured projects">
-  <div class="project-grid">
-    {% assign featured_projects = site.projects | sort: "importance" %}
-    {% for project in featured_projects limit: 6 %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
-</section>
 
 {% include visitor_counter.liquid %}

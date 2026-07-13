@@ -89,7 +89,7 @@ Led the technical development of a distributed system-level simulation platform 
 
 ## Related Outputs
 
-- [Intellectual Property]({{ '/intellectual-property/' | relative_url }})
+- [Intellectual Property]({{ '/publications/#intellectual-property' | relative_url }})
 - System Prototype
 - Authorized Software Copyright
 

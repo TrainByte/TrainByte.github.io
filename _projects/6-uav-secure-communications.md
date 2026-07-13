@@ -61,7 +61,7 @@ Developed a deception-based secure communication method for UAV-assisted mmWave 
 
 - Publication: Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems, China Communications, 2026.
 - DOI: [10.23919/JCC.fa.2025-0337.202604](https://doi.org/10.23919/JCC.fa.2025-0337.202604)
-- [Related Intellectual Property]({{ '/intellectual-property/' | relative_url }})
+- [Related Intellectual Property]({{ '/publications/#intellectual-property' | relative_url }})
 
 ## Keywords / Tags
 

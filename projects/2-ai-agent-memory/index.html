@@ -21,7 +21,7 @@
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%9B%B0%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://trainbyte.github.io/projects/2-ai-agent-memory/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Ningzhe Shi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications &amp; Intellectual Property </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Selected Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Long-Horizon Memory Systems for AI Agents</h1> <p class="post-description"></p> </header> <article> <h2 id="overview">Overview</h2> <p>Investigated memory mechanisms for AI agents in long-horizon, multi-turn interactions, focusing on context loss, redundant historical information, memory evolution, and response consistency.</p> <h2 id="challenge">Challenge</h2> <ul> <li>Long conversations can exceed context limits and dilute useful historical information.</li> <li>Agent memory systems must balance retrieval quality, storage cost, compression loss, forgetting, and response consistency.</li> <li>Memory maintenance interacts with model inference, communication latency, and task scheduling in cloud-edge systems.</li> </ul> <h2 id="my-contributions">My Contributions</h2> <ul> <li>Surveyed the evolution of agent memory systems from retrieval-augmented memory and hierarchical storage to self-evolving memory.</li> <li>Analyzed memory extraction, compression, forgetting, consolidation, and dynamic updating mechanisms.</li> <li>Reproduced and analyzed the Mem-alpha memory architecture.</li> <li>Formulated memory selection, compression, and updating as a policy-optimization problem.</li> <li>Investigated the role of reinforcement learning in long-term memory maintenance.</li> <li>Explored memory-aware task scheduling under a cloud-edge collaborative architecture.</li> <li>Analyzed tradeoffs among model inference, memory storage, retrieval overhead, communication latency, and response quality.</li> </ul> <h2 id="technical-highlights">Technical Highlights</h2> <ul> <li>Long-horizon memory pipeline analysis</li> <li>Retrieval-augmented and hierarchical memory mechanisms</li> <li>Policy optimization for memory maintenance</li> <li>Cloud-edge AI service scheduling perspective</li> </ul> <h2 id="outcomes">Outcomes</h2> <ul> <li>Established a structured understanding of long-horizon agent memory pipelines.</li> <li>Built an experimental basis for reinforcement-learning-driven memory maintenance.</li> <li>Connected agent memory management with cloud-edge AI service orchestration.</li> </ul> <h2 id="related-outputs">Related Outputs</h2> <ul> <li>Experimental Study</li> <li>Architecture Analysis</li> <li>Research Prototype</li> </ul> <h2 id="keywords--tags">Keywords / Tags</h2> <p>AI Agents; Long-Term Memory; RAG; Reinforcement Learning; Cloud-Edge Systems.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ningzhe Shi. Powered by Jekyll and al-folio. Hosted by GitHub Pages. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Ningzhe Shi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications &amp; Intellectual Property </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Selected Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Long-Horizon Memory Systems for AI Agents</h1> <p class="post-description"></p> </header> <article> <h2 id="overview">Overview</h2> <p>During the internship at China Mobile’s Digital Intelligence Department, I worked on AI Agent memory mechanisms for long-horizon, multi-turn interaction scenarios. The work focused on how agents can preserve useful historical information while avoiding context forgetting, redundant memory accumulation, and inconsistent responses.</p> <h2 id="challenge">Challenge</h2> <ul> <li>Long conversations exceed context windows and make useful historical information harder to retrieve.</li> <li>Agent memory systems need to balance extraction quality, compression loss, forgetting, storage overhead, retrieval latency, and answer consistency.</li> <li>Memory management is no longer only a model-side issue when agents run across end, edge, and cloud resources.</li> </ul> <h2 id="my-contributions">My Contributions</h2> <ul> <li>Surveyed RAG-enhanced memory, hierarchical memory storage, self-evolving memory updates, memory extraction, compression, forgetting, consolidation, and dynamic updating.</li> <li>Reproduced and analyzed the Mem-alpha memory architecture.</li> <li>Abstracted memory selection, compression, and updating as a policy-optimization problem.</li> <li>Studied how reinforcement learning can support long-term memory maintenance.</li> <li>Connected agent memory management with end-edge-cloud task scheduling.</li> <li>Analyzed tradeoffs among memory storage, retrieval overhead, model inference cost, transmission delay, and response quality.</li> </ul> <h2 id="outcomes">Outcomes</h2> <ul> <li>Built a structured technical map of long-horizon AI Agent memory pipelines.</li> <li>Established an experimental basis for reinforcement-learning-driven memory maintenance.</li> <li>Framed memory-aware LLM task scheduling as a practical systems problem across end, edge, and cloud resources.</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ningzhe Shi. Powered by Jekyll and al-folio. Hosted by GitHub Pages. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -48,7 +48,7 @@ ninja.data = [{
           },
         },{id: "nav-selected-projects",
           title: "Selected Projects",
-          description: "Selected systems, algorithms, and research prototypes spanning AI-native networks, distributed simulation, cloud-edge intelligence, and wireless resource optimization.",
+          description: "Selected research and engineering projects spanning AI-native networks, cloud-edge intelligence, space computing, secure wireless systems, and distributed simulation.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -428,8 +428,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-distributed-system-level-simulator-for-large-scale-full-duplex-ad-hoc-networks",
-          title: 'Distributed System-Level Simulator for Large-Scale Full-Duplex Ad Hoc Networks',
+            },},{id: "news-first-author-paper-service-satisfaction-based-user-selection-and-resource-allocation-for-noma-based-multi-cell-mec-networks-was-accepted-published-in-ieee-transactions-on-mobile-computing",
+          title: 'First-author paper “Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell...',
+          description: "",
+          section: "News",},{id: "news-first-author-paper-content-accuracy-and-quality-aware-resource-allocation-based-on-lp-guided-drl-for-isac-driven-aigc-networks-was-published-in-ieee-transactions-on-mobile-computing",
+          title: 'First-author paper “Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL...',
+          description: "",
+          section: "News",},{id: "news-first-author-paper-deception-based-secure-communication-for-uav-assisted-mmwave-mimo-systems-was-published-in-china-communications",
+          title: 'First-author paper “Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems” was published in...',
+          description: "",
+          section: "News",},{id: "news-first-author-paper-long-term-fairness-from-real-time-decisions-reward-adaptive-multi-agent-drl-for-wireless-communication-with-imperfect-csi-was-published-in-ieee-transactions-on-cognitive-communications-and-networking",
+          title: 'First-author paper “Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless...',
+          description: "",
+          section: "News",},{id: "news-received-the-outstanding-poster-award-at-the-frontiers-in-electronics-and-information-conference",
+          title: 'Received the Outstanding Poster Award at the Frontiers in Electronics and Information Conference....',
+          description: "",
+          section: "News",},{id: "news-selected-as-an-outstanding-graduate-student-by-the-xinghang-program-of-the-journal-of-electronics-amp-amp-information-technology",
+          title: 'Selected as an Outstanding Graduate Student by the Xinghang Program of the Journal...',
+          description: "",
+          section: "News",},{id: "projects-multi-channel-access-for-in-band-full-duplex-ad-hoc-networks",
+          title: 'Multi-Channel Access for In-Band Full-Duplex Ad Hoc Networks',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1-full-duplex-simulator/";
@@ -438,8 +456,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2-ai-agent-memory/";
-            },},{id: "projects-knowledge-aware-cloud-edge-orchestration-for-rag-services",
-          title: 'Knowledge-Aware Cloud-Edge Orchestration for RAG Services',
+            },},{id: "projects-knowledge-matching-aware-scheduling-for-rag-services",
+          title: 'Knowledge-Matching-Aware Scheduling for RAG Services',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3-rag-orchestration/";
@@ -453,11 +471,26 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5-isac-aigc-orchestration/";
-            },},{id: "projects-deception-based-uav-assisted-secure-communications",
-          title: 'Deception-Based UAV-Assisted Secure Communications',
+            },},{id: "projects-uav-assisted-secure-transmission-under-deception-and-jamming",
+          title: 'UAV-Assisted Secure Transmission Under Deception and Jamming',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6-uav-secure-communications/";
+            },},{id: "projects-distributed-quantum-reinforcement-learning-for-aigc-cloud-edge-scheduling",
+          title: 'Distributed Quantum Reinforcement Learning for AIGC Cloud-Edge Scheduling',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7-quantum-rl-aigc-scheduling/";
+            },},{id: "projects-user-selection-and-resource-allocation-for-high-concurrency-ai-services",
+          title: 'User Selection and Resource Allocation for High-Concurrency AI Services',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8-mec-ai-service-resource-allocation/";
+            },},{id: "projects-adaptive-fair-resource-scheduling-under-imperfect-csi",
+          title: 'Adaptive Fair Resource Scheduling Under Imperfect CSI',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9-imperfect-csi-fairness/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",

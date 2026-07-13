@@ -19,7 +19,7 @@ cv:
         start_date: 2021-09
         end_date: present
         highlights:
-          - "Ph.D. advisor: Prof. Yiqing Zhou"
+          - "Ph.D. Advisor: [Prof. Yiqing Zhou](https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html)"
           - Discipline rated A+ in the national subject assessment
       - institution: Xidian University
         location: Xi'an, China
@@ -28,21 +28,22 @@ cv:
         start_date: 2017-09
         end_date: 2021-07
         highlights:
-          - "Undergraduate mentor: Prof. Junyu Liu"
+          - "Undergraduate Research Advisor: [Prof. Junyu Liu](https://web.xidian.edu.cn/junyuliu/)"
           - "Comprehensive recommendation ranking: 1st in class"
           - Discipline rated A+ in the national subject assessment
 
-    Internship:
+    Internship Experience:
       - company: China Mobile, Digital Intelligence Department
         position: AI Agent Algorithm Intern
         location: China
         start_date: 2026-01
         end_date: 2026-03
-        summary: Conducted research on long-horizon memory mechanisms for AI agents.
         highlights:
-          - Studied retrieval-augmented memory, hierarchical storage, memory compression, forgetting, and dynamic updating.
-          - Reproduced and analyzed the Mem-alpha architecture and modeled memory maintenance as a policy optimization problem.
-          - Investigated memory-aware task scheduling in cloud-edge collaborative systems.
+          - Investigated long-horizon memory mechanisms for AI agents in multi-turn interactions, focusing on context loss, redundant historical information, memory evolution, and response consistency.
+          - Surveyed retrieval-augmented memory, hierarchical storage, memory extraction, compression, forgetting, consolidation, and dynamic updating.
+          - Reproduced and analyzed the Mem-alpha memory architecture and formulated memory maintenance as a policy-optimization problem.
+          - Explored reinforcement-learning-based memory selection and updating.
+          - Investigated memory-aware task scheduling under cloud-edge collaborative architectures, considering storage, retrieval, inference, communication latency, and response quality.
 
     Research Experience:
       - company: Institute of Computing Technology, Chinese Academy of Sciences
@@ -212,41 +213,43 @@ cv:
       - name: Third Prize, CETC-10 Communication Cup
         date: 2019
 
-    Skills:
-      - name: Modeling and Optimization
-        summary: Wireless and computing resource scheduling; ISAC; AI-service orchestration; convex optimization; linear programming; heuristic optimization
-      - name: Artificial Intelligence
-        summary: Deep reinforcement learning; multi-agent reinforcement learning; generative models; diffusion models; quantum reinforcement learning
-      - name: Programming and Simulation
-        summary: Python; C++; MATLAB; Shell; PyTorch; custom reinforcement-learning environments; system-level network simulation
-      - name: Academic Writing
-        summary: IEEE journal writing; technical reports; literature review; simulation-result analysis
-
     Academic Service:
-      - name: Program Committee
-        highlights:
-          - Technical Program Committee Member, IEEE International Conference on Communications (IEEE ICC) 2026
-      - name: Academic Correspondence
-        highlights:
-          - Academic Correspondent, Digital Communications and Networks
-      - name: Peer Review
-        highlights:
-          - IEEE Transactions on Mobile Computing
-          - IEEE Transactions on Communications
-          - IEEE Internet of Things Journal
-          - IEEE Transactions on Vehicular Technology
-          - Science China Information Sciences
-          - China Communications
-          - IEEE International Conference on Communications
-          - IEEE Vehicular Technology Conference
-          - 通信学报
-          - 电子与信息学报
+      - label: Program Committee
+        details: Technical Program Committee Member, IEEE International Conference on Communications (ICC), 2026
+      - label: Academic Correspondence
+        details: Academic Correspondent, Digital Communications and Networks
+      - label: Peer Review
+        details: IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology
 
     Outreach and Public Engagement:
-      - Science outreach volunteer, Chinese Academy of Sciences Public Science Day
-      - Participated in public science communication and research outreach activities
-      - Committee Member, UCAS Science Popularization Association
+      - name: Science Outreach
+        highlights:
+          - Science outreach volunteer, Chinese Academy of Sciences Public Science Day
+          - Committee Member, UCAS Science Popularization Association
+          - Participated in public science communication, research demonstrations, and science outreach activities
+          - Outstanding Science Popularization Volunteer, Bureau of Academic Divisions, Chinese Academy of Sciences
 
-    Leadership:
-      - Vice President, Haidian Volunteer Federation Branch
-      - Youth League Branch Secretary and Volunteer Team Leader, Xidian University School of Telecommunications Engineering
+    Leadership and Student Service:
+      - name: Graduate Stage
+        highlights:
+          - Vice President, Haidian Branch of the Volunteer Federation
+          - Committee Member, UCAS Science Popularization Association
+          - Class Mental Health Liaison
+      - name: Undergraduate Stage
+        highlights:
+          - Youth League Branch Secretary
+          - Team Leader, Horizon Volunteer Team, School of Telecommunications Engineering, Xidian University
+
+    Skills:
+      - label: Research and Modeling
+        details: Wireless and computing resource scheduling; integrated sensing, communication, computing, and intelligence; cloud-edge collaborative AI services; RAG service orchestration; AI Agent memory systems; space AI computing networks; cross-layer wireless network modeling
+      - label: Optimization and Learning
+        details: Convex optimization; linear programming; evolutionary and heuristic algorithms; deep reinforcement learning; multi-agent reinforcement learning; generative diffusion models; quantum reinforcement learning; Lyapunov optimization
+      - label: Programming and Simulation
+        details: Python; C++; MATLAB; Shell; PyTorch; custom reinforcement-learning environments; system-level network simulation; large-scale experiment automation; data processing and visualization
+      - label: Systems and Engineering
+        details: Distributed simulation architecture; WebSocket-based module communication; wireless protocol-stack modeling; MAC and resource-allocation algorithm implementation; cloud-edge system modeling; performance evaluation and technical reporting
+      - label: Research Project Execution
+        details: Research proposal preparation; technical scheme design; simulation and prototype validation; third-party testing support; mid-term project review; project completion and acceptance; patent and software-copyright preparation
+      - label: Academic Communication
+        details: IEEE journal paper writing; English literature review; peer review; technical presentations; research reports; cross-team technical coordination

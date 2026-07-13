@@ -1,15 +1,16 @@
-<div
-  id="visitor-counter"
-  class="visitor-counter"
-  style="
-    margin-top: 2.5rem;
+<style>
+  .visitor-counter {
+    max-width: 960px;
+    margin: 2.5rem auto 0;
     padding: 1.5rem 1rem 0;
     border-top: 1px solid var(--global-divider-color);
     text-align: center;
-    background: #fff;
+    background: var(--global-bg-color);
     border-radius: 6px;
-  "
->
+  }
+</style>
+
+<div id="visitor-counter" class="visitor-counter">
   <a
     href="https://info.flagcounter.com/yz2H"
     target="_blank"
@@ -29,11 +30,28 @@
   </a>
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var counter = document.getElementById('visitor-counter');
-    var main = document.querySelector('main');
-    if (counter && main) {
-      main.appendChild(counter);
+  (function () {
+    function moveVisitorCounter() {
+      var counter = document.getElementById('visitor-counter');
+      var footer = document.querySelector('footer');
+
+      if (!counter) {
+        return;
+      }
+
+      if (footer && footer.parentNode) {
+        footer.parentNode.insertBefore(counter, footer);
+      } else {
+        document.body.appendChild(counter);
+      }
     }
-  });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', moveVisitorCounter);
+    } else {
+      moveVisitorCounter();
+    }
+
+    window.addEventListener('load', moveVisitorCounter);
+  })();
 </script>

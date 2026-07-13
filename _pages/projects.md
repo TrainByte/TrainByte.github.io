@@ -38,15 +38,18 @@ nav_order: 3
 
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
 
   .project-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     padding: 1rem;
     min-height: 100%;
+    min-width: 0;
     background: var(--global-bg-color);
   }
 
@@ -58,6 +61,11 @@ nav_order: 3
 
   .project-card p {
     margin-bottom: 0.55rem;
+  }
+
+  .project-card h3,
+  .project-card p {
+    overflow-wrap: anywhere;
   }
 
   .project-meta {
@@ -87,8 +95,14 @@ nav_order: 3
 
   .project-link {
     display: inline-block;
-    margin-top: 0.35rem;
+    margin-top: auto;
     font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 

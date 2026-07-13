@@ -10,7 +10,7 @@ profile:
   more_info: >
     <p>Beijing, China</p>
     <p><a href="mailto:shiningzhe21b@ict.ac.cn">shiningzhe21b@ict.ac.cn</a></p>
-selected_papers: true
+selected_papers: false
 social: true
 announcements:
   enabled: true
@@ -31,27 +31,50 @@ latest_posts:
     text-underline-offset: 0.16em;
   }
 
+  .profile {
+    max-width: 210px;
+  }
+
+  .profile img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  .profile .more-info {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
   .featured-projects {
     margin-top: 2rem;
   }
 
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
 
   .project-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     padding: 1rem;
     background: var(--global-bg-color);
+    min-width: 0;
   }
 
   .project-card h3 {
     font-size: 1rem;
     line-height: 1.35;
     margin: 0 0 0.5rem;
+  }
+
+  .project-card h3,
+  .project-card p {
+    overflow-wrap: anywhere;
   }
 
   .project-meta {
@@ -80,12 +103,18 @@ latest_posts:
 
   .project-link {
     display: inline-block;
-    margin-top: 0.35rem;
+    margin-top: auto;
     font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
-I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. I received my B.Eng. degree in Communication Engineering from Xidian University.
+I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Research Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.
 
 My research focuses on 6G intelligent networks and AI service orchestration. I study communication, sensing, computing, and knowledge resource optimization for networked AI systems, using reinforcement learning and optimization methods.
 
@@ -96,12 +125,9 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
 - Integrated Sensing, Communication, Computing, and Intelligence
 - Space AI Computing Networks
 
-## Education
+## Selected publications
 
-- **Institute of Computing Technology, Chinese Academy of Sciences** and **University of Chinese Academy of Sciences**:
-  Ph.D. Candidate in Computer Science and Technology. Ph.D. advisor: Prof. Yiqing Zhou.
-- **Xidian University**:
-  B.Eng. in Communication Engineering. Undergraduate mentor: Prof. Junyu Liu. Comprehensive recommendation ranking: 1st in class.
+{% include selected_papers.liquid %}
 
 ## Featured projects
 

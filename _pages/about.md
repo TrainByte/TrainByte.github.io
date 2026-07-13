@@ -24,17 +24,11 @@ latest_posts:
 
 <style>
   body {
-    background-image:
-      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
-      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
-    background-attachment: fixed, fixed;
-    background-position:
-      left clamp(-260px, -15vw, -120px) top 7rem,
-      right clamp(-280px, -16vw, -120px) bottom 4rem;
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-      min(43vw, 520px),
-      min(46vw, 560px);
+    background-image: url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}");
+    background-attachment: fixed;
+    background-position: left clamp(-260px, -14vw, -120px) top 7rem;
+    background-repeat: no-repeat;
+    background-size: min(46vw, 560px);
   }
 
   .profile {
@@ -80,7 +74,10 @@ latest_posts:
 
   .education-card {
     display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
     gap: 0.42rem;
+    column-gap: 1rem;
+    align-items: center;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     padding: 0.95rem 1rem;
@@ -94,6 +91,25 @@ latest_posts:
     font-weight: 700;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+  }
+
+  .education-logo {
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    display: flex;
+    height: 74px;
+    justify-content: center;
+    padding: 0.42rem;
+    width: 74px;
+  }
+
+  .education-logo img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
   }
 
   .education-card strong {
@@ -273,10 +289,8 @@ latest_posts:
 
   @media (max-width: 767px) {
     body {
-      background-position:
-        left -210px top 5.5rem,
-        right -230px bottom 3rem;
-      background-size: 380px, 410px;
+      background-position: left -210px top 5.5rem;
+      background-size: 390px;
     }
 
     .profile,
@@ -294,6 +308,16 @@ latest_posts:
       text-align: center;
     }
 
+    .education-card {
+      grid-template-columns: 58px minmax(0, 1fr);
+      column-gap: 0.8rem;
+    }
+
+    .education-logo {
+      height: 58px;
+      width: 58px;
+    }
+
     .interest-grid {
       grid-template-columns: 1fr;
     }
@@ -309,19 +333,25 @@ latest_posts:
   }
 </style>
 
-I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Research Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.
+I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.
 
 <div class="education-strip" aria-label="Education">
   <article class="education-card">
-    <span class="education-year">2021 - present</span>
+    <div class="education-logo">
+      <img src="{{ '/assets/img/logos/ucas-emblem.png' | relative_url }}" alt="University of Chinese Academy of Sciences emblem">
+    </div>
     <div>
+      <span class="education-year">2021 - present</span>
       <strong>Ph.D. Candidate in Computer Science and Technology</strong>
       <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span>
     </div>
   </article>
   <article class="education-card">
-    <span class="education-year">2017 - 2021</span>
+    <div class="education-logo">
+      <img src="{{ '/assets/img/logos/xidian-emblem.png' | relative_url }}" alt="Xidian University emblem">
+    </div>
     <div>
+      <span class="education-year">2017 - 2021</span>
       <strong>B.Eng. in Communication Engineering</strong>
       <span>Xidian University · National Scholarship · Ranked 1st in class for comprehensive recommendation</span>
     </div>

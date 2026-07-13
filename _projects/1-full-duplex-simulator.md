@@ -77,6 +77,6 @@ Led the technical work on multi-channel access for simultaneous same-frequency f
 
 ## Related Outputs
 
-- [Intellectual Property]({{ '/publications/#intellectual-property' | relative_url }})
+- [Patents and Software Copyrights]({{ '/publications/#patents' | relative_url }})
 - Authorized software copyright: Large-Scale Full-Duplex Network Simulation System
 - Related invention patent on ad hoc channel access

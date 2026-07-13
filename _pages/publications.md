@@ -1,25 +1,19 @@
 ---
 layout: page
 permalink: /publications/
-title: Publications & Intellectual Property
-description: Published and accepted research, invention patents, and registered software copyrights.
+title: Publications & Patents
+description: Published and accepted research, invention patents, patent applications, and registered software copyrights.
 nav: true
 nav_order: 2
 ---
 
 <style>
   body {
-    background-image:
-      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
-      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
-    background-attachment: fixed, fixed;
-    background-position:
-      left clamp(-260px, -15vw, -120px) top 7rem,
-      right clamp(-280px, -16vw, -120px) bottom 4rem;
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-      min(43vw, 520px),
-      min(46vw, 560px);
+    background-image: url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
+    background-attachment: fixed;
+    background-position: right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-repeat: no-repeat;
+    background-size: min(48vw, 560px);
   }
 
   .publications-note {
@@ -40,15 +34,78 @@ nav_order: 2
     margin-bottom: 1rem;
   }
 
+  h2.bibliography {
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 1.45rem 0 0.65rem;
+   }
+
   ol.bibliography {
+    counter-reset: publication;
     display: grid;
-    gap: 0.9rem;
-    padding-left: 1.35rem;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   ol.bibliography li {
-    border-left: 3px solid var(--global-theme-color);
-    padding: 0.25rem 0 0.45rem 0.9rem;
+    background:
+      linear-gradient(180deg, rgba(46, 127, 255, 0.035), rgba(255, 255, 255, 0)),
+      var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.035);
+    padding: 0.85rem 0.95rem;
+  }
+
+  ol.bibliography li .row {
+    align-items: flex-start;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: minmax(78px, auto) minmax(0, 1fr);
+    margin: 0;
+  }
+
+  ol.bibliography .abbr,
+  ol.bibliography [class*="col-sm"] {
+    flex: none;
+    max-width: none;
+    padding: 0;
+    width: auto;
+  }
+
+  ol.bibliography .abbr abbr {
+    background: #eef6ff;
+    border: 1px solid #9fc6ef;
+    border-radius: 6px;
+    color: #245f9f;
+    display: inline-flex;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0.27rem 0.42rem;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  ol.bibliography .title {
+    font-size: 0.98rem;
+    font-weight: 650;
+    line-height: 1.38;
+    margin-bottom: 0.24rem;
+  }
+
+  ol.bibliography .author,
+  ol.bibliography .periodical {
+    font-size: 0.9rem;
+    line-height: 1.42;
+  }
+
+  ol.bibliography .periodical {
+    color: var(--global-text-color-light);
   }
 
   ol.bibliography .author em {
@@ -91,12 +148,15 @@ nav_order: 2
   }
 
   .ip-item {
+    background:
+      linear-gradient(180deg, rgba(176, 62, 98, 0.035), rgba(255, 255, 255, 0)),
+      var(--global-bg-color);
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.035);
     display: grid;
     gap: 0.45rem;
     padding: 0.85rem 0.95rem;
-    background: var(--global-bg-color);
   }
 
   .ip-title {
@@ -126,10 +186,13 @@ nav_order: 2
 
   @media (max-width: 767px) {
     body {
-      background-position:
-        left -210px top 5.5rem,
-        right -230px bottom 3rem;
-      background-size: 380px, 410px;
+      background-position: right -230px bottom 3rem;
+      background-size: 410px;
+    }
+
+    ol.bibliography li .row {
+      grid-template-columns: 1fr;
+      gap: 0.48rem;
     }
   }
 </style>
@@ -139,14 +202,14 @@ nav_order: 2
 </p>
 
 <section class="publication-section" aria-label="Research publications">
-  <h2>Research publications</h2>
+  <h2>Publications</h2>
 
 {% bibliography %}
 
 </section>
 
-<section id="intellectual-property" class="ip-section" aria-label="Intellectual property">
-  <h2>Intellectual property</h2>
+<section id="patents" class="ip-section" aria-label="Patents and software copyright">
+  <h2>Patents</h2>
 
   <div class="ip-group">
     <h3>Granted invention patents</h3>

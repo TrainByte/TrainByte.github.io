@@ -7,4 +7,4 @@ nav: false
 nav_order: 4
 ---
 
-Intellectual property is now listed under [Publications & Intellectual Property]({{ '/publications/#intellectual-property' | relative_url }}).
+Patents and software copyrights are now listed under [Publications & Patents]({{ '/publications/#patents' | relative_url }}).

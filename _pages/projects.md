@@ -9,24 +9,18 @@ nav_order: 3
 
 <style>
   body {
-    background-image:
-      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
-      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
-    background-attachment: fixed, fixed;
-    background-position:
-      left clamp(-260px, -15vw, -120px) top 7rem,
-      right clamp(-280px, -16vw, -120px) bottom 4rem;
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-      min(43vw, 520px),
-      min(46vw, 560px);
+    background-image: url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}");
+    background-attachment: fixed;
+    background-position: left clamp(-260px, -14vw, -120px) top 7rem;
+    background-repeat: no-repeat;
+    background-size: min(46vw, 560px);
   }
 
   .project-toolbar {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1.25rem 0 1rem;
+    margin: 1.25rem 0 1.4rem;
   }
 
   .project-toolbar a,
@@ -47,19 +41,31 @@ nav_order: 3
     text-decoration: none;
   }
 
+  .project-toolbar a:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
   .project-intro {
     color: var(--global-text-color-light);
     max-width: 60rem;
   }
 
   .project-section {
-    margin-top: 2rem;
+    margin-top: 2.35rem;
+  }
+
+  .project-section h2 {
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: 1.28rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.4rem;
   }
 
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
   }
 
   .project-card {
@@ -67,7 +73,7 @@ nav_order: 3
     flex-direction: column;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 0.9rem;
     min-height: 100%;
     min-width: 0;
     background:
@@ -75,7 +81,7 @@ nav_order: 3
       var(--global-bg-color);
     overflow: hidden;
     position: relative;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.035);
   }
 
   .project-card::before {
@@ -83,12 +89,12 @@ nav_order: 3
     display: block;
     height: 4px;
     background: linear-gradient(90deg, var(--global-theme-color), #b03e62);
-    margin: -1rem -1rem 0.85rem;
+    margin: -0.9rem -0.9rem 0.8rem;
   }
 
   .project-category {
     color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 0.35rem;
@@ -96,12 +102,14 @@ nav_order: 3
   }
 
   .project-card h3 {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     line-height: 1.35;
     margin: 0 0 0.5rem;
   }
 
   .project-card p {
+    font-size: 0.9rem;
+    line-height: 1.45;
     margin-bottom: 0.55rem;
   }
 
@@ -118,20 +126,20 @@ nav_order: 3
   .project-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 0.65rem 0;
+    gap: 0.35rem;
+    margin: 0.55rem 0;
   }
 
   .project-role {
     padding: 0.25rem 0.45rem;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 600;
     color: var(--global-theme-color);
   }
 
   .project-result {
     padding: 0.25rem 0.45rem;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     background: #eef6ff;
     border-color: #9fc6ef;
     color: #245f9f;
@@ -139,13 +147,13 @@ nav_order: 3
 
   .project-tag {
     padding: 0.25rem 0.42rem;
-    font-size: 0.76rem;
+    font-size: 0.71rem;
     color: var(--global-text-color-light);
   }
 
   .project-output {
     padding: 0.25rem 0.42rem;
-    font-size: 0.76rem;
+    font-size: 0.71rem;
     background: #f3fbf6;
     border-color: #9bd9b1;
     color: #176b3a;
@@ -159,14 +167,18 @@ nav_order: 3
 
   @media (max-width: 767px) {
     body {
-      background-position:
-        left -210px top 5.5rem,
-        right -230px bottom 3rem;
-      background-size: 380px, 410px;
+      background-position: left -210px top 5.5rem;
+      background-size: 390px;
     }
 
     .project-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .project-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 </style>
@@ -179,20 +191,10 @@ nav_order: 3
 </p>
 
 <div class="project-toolbar" aria-label="Project categories">
-  <a href="#all-projects">All</a>
   {% for category in categories %}
     <a href="#{{ category | slugify }}">{{ category }}</a>
   {% endfor %}
 </div>
-
-<section id="all-projects" class="project-section">
-  <h2>All</h2>
-  <div class="project-grid">
-    {% for project in sorted_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
-</section>
 
 {% for category in categories %}
 

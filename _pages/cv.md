@@ -12,17 +12,11 @@ toc:
 
 <style>
   body {
-    background-image:
-      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
-      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
-    background-attachment: fixed, fixed;
-    background-position:
-      left clamp(-260px, -15vw, -120px) top 7rem,
-      right clamp(-280px, -16vw, -120px) bottom 4rem;
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-      min(43vw, 520px),
-      min(46vw, 560px);
+    background-image: url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
+    background-attachment: fixed;
+    background-position: right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-repeat: no-repeat;
+    background-size: min(48vw, 560px);
   }
 
   .cv-actions {
@@ -69,10 +63,8 @@ toc:
 
   @media (max-width: 767px) {
     body {
-      background-position:
-        left -210px top 5.5rem,
-        right -230px bottom 3rem;
-      background-size: 380px, 410px;
+      background-position: right -230px bottom 3rem;
+      background-size: 410px;
     }
   }
 </style>
@@ -100,7 +92,7 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>Xidian University</h3>
   <div class="cv-meta">B.Eng., Communication Engineering, Xi'an, China, Sep. 2017 - Jul. 2021</div>
   <ul class="cv-list">
-    <li>Undergraduate Research Advisor: <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>.</li>
+    <li>Undergraduate Advisor: <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>.</li>
     <li>Received the National Scholarship and ranked 1st in class for comprehensive recommendation.</li>
     <li>Discipline rated A+ in the national subject assessment.</li>
   </ul>

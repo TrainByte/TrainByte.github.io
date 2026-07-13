@@ -15,6 +15,11 @@ nav_order: 2
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.16em;
   }
+
+  ol.bibliography img,
+  ol.bibliography .preview {
+    display: none !important;
+  }
 </style>
 
 {% include bib_search.liquid %}

@@ -1,37 +1,35 @@
 cv:
   name: Ningzhe Shi
-  label: Ph.D. Candidate in Computer Science
+  headline: Ph.D. Candidate in Computer Science and Technology
   email: shiningzhe21b@ict.ac.cn
   location: Beijing, China
-  image: ""
-  summary: >-
-    Ph.D. candidate researching intelligent resource orchestration for 6G networks and AI services,
-    including generative AI, retrieval-augmented generation, AI-agent memory, edge intelligence,
-    space AI computing networks, and secure wireless communications.
   social_networks:
     - network: GitHub
       username: TrainByte
 
   sections:
+    Research Profile:
+      - Ph.D. candidate researching 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, and knowledge resource optimization through reinforcement learning and optimization methods.
+
     Education:
-      - institution: Institute of Computing Technology, Chinese Academy of Sciences
+      - institution: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
         location: Beijing, China
         area: Computer Science and Technology
-        studyType: Direct Ph.D. Program
+        degree: Ph.D. Candidate
         start_date: 2021-09
-        end_date: Present
+        end_date: present
         highlights:
-          - University of Chinese Academy of Sciences
+          - "Ph.D. advisor: Prof. Yiqing Zhou"
           - Discipline rated A+ in the national subject assessment
-          - Student roles include academic correspondent for Digital Communications and Networks and science-outreach service
       - institution: Xidian University
         location: Xi'an, China
         area: Communication Engineering
-        studyType: Bachelor of Engineering
+        degree: B.Eng.
         start_date: 2017-09
         end_date: 2021-07
         highlights:
-          - Ranked 1st among 76 students
+          - "Undergraduate mentor: Prof. Junyu Liu"
+          - "Comprehensive recommendation ranking: 1st in class"
           - Discipline rated A+ in the national subject assessment
 
     Internship:
@@ -40,207 +38,194 @@ cv:
         location: China
         start_date: 2026-01
         end_date: 2026-03
-        summary: Research on memory mechanisms for long-horizon, multi-turn AI-agent interaction.
+        summary: Conducted research on long-horizon memory mechanisms for AI agents.
         highlights:
-          - Surveyed RAG retrieval, hierarchical memory storage, self-evolving memory, compression, forgetting, and dynamic updating.
-          - Reproduced and analyzed the Mem-α architecture and formulated memory selection, compression, and updates as a policy-optimization problem.
-          - Explored memory-aware large-model task scheduling across device, edge, and cloud resources.
+          - Studied retrieval-augmented memory, hierarchical storage, memory compression, forgetting, and dynamic updating.
+          - Reproduced and analyzed the Mem-alpha architecture and modeled memory maintenance as a policy optimization problem.
+          - Investigated memory-aware task scheduling in cloud-edge collaborative systems.
 
     Research Experience:
-      - company: National Key R&D Program of China
-        position: Primary Researcher — Knowledge-Aware RAG Service Scheduling
-        start_date: 2025-10
-        end_date: 2026-06
-        highlights:
-          - Jointly modeled task semantics, knowledge coverage, computing cost, transmission delay, and energy consumption across cloud-edge nodes.
-          - Designed knowledge-matching-aware orchestration for collaborative RAG inference.
-          - Reduced energy consumption by approximately 50% and service delay by more than 10% in simulation.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Primary Researcher — Memory-Aware Routing in Space AI Computing Networks
-        start_date: 2025-10
-        end_date: 2026-03
-        highlights:
-          - Modeled task routing, memory resources, computing loads, and dynamic link states in satellite computing networks.
-          - Developed diffusion-assisted distributed routing for high-dimensional dynamic state spaces.
-          - Reduced end-to-end routing delay by more than 15% in a ground-based space-computing test environment.
-      - company: National Key R&D Program of China
-        position: Primary Researcher — Distributed Quantum RL for AIGC Scheduling
-        start_date: 2025-06
-        end_date: 2025-12
-        highlights:
-          - Designed a distributed hybrid quantum-classical reinforcement-learning framework for cloud-edge AIGC services.
-          - Reduced policy-network parameters by more than 95% and average service delay by more than 30% in simulation.
-      - company: National Key R&D Program of China
-        position: Primary Researcher — ISAC-Driven AIGC Resource Allocation
-        start_date: 2024-01
-        end_date: 2025-06
-        highlights:
-          - Built a joint sensing, communication, and computing resource model for AIGC services.
-          - Developed an LP-guided hierarchical reinforcement-learning framework.
-          - Improved average service experience by more than 50% over schemes that focus only on content-generation quality.
-      - company: National Key R&D Program of China
-        position: Primary Researcher — High-Concurrency AI Service Optimization
+        position: Lead Researcher, Service Satisfaction-Aware MEC Resource Allocation
         start_date: 2022-12
         end_date: 2024-12
         highlights:
-          - Jointly optimized user selection, channels, power, bandwidth, and edge-computing resources in multi-cell MEC networks.
-          - Improved average service satisfaction by more than 50% in resource-constrained scenarios.
-      - company: National Key R&D Program of China
-        position: Primary Researcher — Long-Term Fair Wireless Resource Scheduling
+          - Jointly optimized user selection, subchannel scheduling, power allocation, and edge-computing resources in NOMA-based multi-cell MEC networks.
+          - Achieved a gap of less than 1% from exhaustive-search performance and improved average user service satisfaction by more than 50%.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Lead Researcher, ISAC-Driven AIGC Resource Allocation
+        start_date: 2024-01
+        end_date: 2025-06
+        highlights:
+          - Built a content-accuracy-and-quality-aware model for sensing, computing, and communication resource allocation in ISAC-driven AIGC networks.
+          - Designed an LP-guided deep reinforcement learning framework.
+          - Improved the content-accuracy-and-quality-aware metric by more than 10% over learning baselines and by more than 50% over generation-quality-only schemes.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Lead Researcher, Long-Term Fairness-Aware Wireless Scheduling
         start_date: 2022-05
         end_date: 2024-05
         highlights:
-          - Modeled robust resource allocation under imperfect channel-state information.
+          - Modeled imperfect channel-state information and long-term alpha-fair utility for wireless communication systems.
           - Designed a reward-adaptive multi-agent reinforcement-learning framework.
-          - Improved long-term fairness by 13% while increasing network service rate by more than 10%.
-      - company: Ministerial Fundamental Strengthening Project
-        position: Technical Lead — Full-Duplex Ad Hoc Networks
+          - Improved long-term fairness by more than 13% while increasing the overall service rate by more than 10%.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Task Leader and Technical Lead, UAV-Assisted Secure Communications
+        start_date: 2021-09
+        end_date: 2023-06
+        highlights:
+          - Jointly optimized UAV positioning, mmWave MIMO beamforming, deceptive signal design, and power allocation.
+          - Achieved a performance gap of no more than 3% from the global optimum, improved secure transmission rate by more than 9% over direct-link transmission, and by more than 100% over the no-deception scheme.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Technical Lead, Full-Duplex Ad Hoc Networks
         start_date: 2022-10
         end_date: 2023-06
         highlights:
           - Designed multi-channel interference coordination and MAC-layer access mechanisms for in-band full-duplex ad hoc networks.
-          - Built a system-level simulation platform and produced an authorized invention patent and software copyright.
-      - company: CAS Young Scientists Project and Ministerial Key Project
-        position: Task Lead and Technical Lead — UAV-Assisted Secure Communications
-        start_date: 2021-09
-        end_date: 2023-06
-        highlights:
-          - Jointly optimized beamforming, UAV three-dimensional position, and power allocation for secure mmWave MIMO communications.
-          - Improved secure transmission rate to approximately twice that of the no-deception baseline.
+          - Built a system-level simulation platform and produced an authorized invention patent and a registered software copyright.
+
+    Publications:
+      - title: Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks
+        authors:
+          - "***Ningzhe Shi***"
+          - Yiqing Zhou
+          - Ling Liu
+          - Yihao Wu
+          - Hanxiao Yu
+          - Jinglin Shi
+        journal: IEEE Transactions on Mobile Computing
+        date: 2026
+        doi: 10.1109/TMC.2026.3673357
+      - title: Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks
+        authors:
+          - "***Ningzhe Shi***"
+          - Yiqing Zhou
+          - Ling Liu
+          - Jinglin Shi
+          - Yihao Wu
+          - Haiwei Shi
+          - Hanxiao Yu
+        journal: IEEE Transactions on Mobile Computing
+        date: 2026
+        doi: 10.1109/TMC.2026.3652144
+      - title: "Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI"
+        authors:
+          - "***Ningzhe Shi***"
+          - Ling Liu
+          - Yiqing Zhou
+          - Hanxiao Yu
+          - Yihao Wu
+          - Jingya Yang
+          - Jinglin Shi
+        journal: IEEE Transactions on Cognitive Communications and Networking
+        date: 2026
+        doi: 10.1109/TCCN.2026.3692166
+      - title: Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems
+        authors:
+          - "***Ningzhe Shi***"
+          - Yiqing Zhou
+          - Yu Zhang
+          - Zhijun Han
+          - Ling Liu
+          - Jinglin Shi
+        journal: China Communications
+        date: 2026
+        doi: 10.23919/JCC.fa.2025-0337.202604
 
     Intellectual Property:
-      - title: 抗跟踪式干扰的信号发送方法、信号接收方法及系统
-        number: CN202211134854.X
+      - name: 抗跟踪式干扰的信号发送方法、信号接收方法及系统
         date: 2024-09-24
-        status: Granted
-      - title: 一种基于中继位置选择和功率分配的抗干扰方法及系统
-        number: CN202310078808.0
+        summary: "Granted invention patent: CN202211134854.X"
+      - name: 一种基于中继位置选择和功率分配的抗干扰方法及系统
         date: 2025-05-27
-        status: Granted
-      - title: 无线网络资源分配系统的构建方法和资源管理方法
-        number: CN202310354794.0
+        summary: "Granted invention patent: CN202310078808.0"
+      - name: 无线网络资源分配系统的构建方法和资源管理方法
         date: 2026-04-07
-        status: Granted
-      - title: 无线网络资源分配系统的构建方法和资源管理方法
-        number: PCT/CN2023/090283
+        summary: "Granted invention patent: CN202310354794.0"
+      - name: 无线网络资源分配系统的构建方法和资源管理方法
         date: 2023-04-24
-        status: Pending
-      - title: 一种全双工自组织网络实时仿真系统及方法
-        number: CN202311719290.0
+        summary: "Patent application: PCT/CN2023/090283"
+      - name: 一种全双工自组织网络实时仿真系统及方法
         date: 2023-12-14
-        status: Pending
-      - title: 一种多用户 MIMO 信号检测模型
-        number: CN202410018551.4
+        summary: "Patent application: CN202311719290.0"
+      - name: 一种多用户 MIMO 信号检测模型
         date: 2024-01-05
-        status: Pending
-      - title: 一种面向自组织网络的信道接入方法和通信系统
-        number: CN202410348337.5
+        summary: "Patent application: CN202410018551.4"
+      - name: 一种面向自组织网络的信道接入方法和通信系统
         date: 2024-03-26
-        status: Pending
-      - title: 一种移动自组网数据路由方法、工业自组网系统
-        number: CN202510873622.3
+        summary: "Patent application: CN202410348337.5"
+      - name: 一种移动自组网数据路由方法、工业自组网系统
         date: 2025-06-27
-        status: Pending
-      - title: 一种环境和资源状态感知的资源分配方法和系统
-        number: CN202510955830.8
+        summary: "Patent application: CN202510873622.3"
+      - name: 一种环境和资源状态感知的资源分配方法和系统
         date: 2025-07-11
-        status: Pending
-      - title: 基于集成感知与通信的 AI 生成内容服务的资源分配方法
-        number: CN202511053332.0
+        summary: "Patent application: CN202510955830.8"
+      - name: 基于集成感知与通信的AI生成内容服务的资源分配方法
         date: 2025-07-30
-        status: Pending
-      - title: 联合信道估计与信号检测的方法、信号接收机及存储介质
-        number: CN202511536493.5
+        summary: "Patent application: CN202511053332.0"
+      - name: 联合信道估计与信号检测的方法、信号接收机及存储介质
         date: 2025-10-27
-        status: Pending
-      - title: 一种面向高速移动通信的发射装置及语义传输方法
-        number: CN202610406457.5
+        summary: "Patent application: CN202511536493.5"
+      - name: 一种面向高速移动通信的发射装置及语义传输方法
         date: 2026-03-31
-        status: Pending
-      - title: 大规模全双工网络仿真系统
-        number: 2024SR0082117
+        summary: "Patent application: CN202610406457.5"
+      - name: 大规模全双工网络仿真系统
         date: 2024-01-11
-        status: Registered software copyright
+        summary: "Registered software copyright: 2024SR0082117"
 
     Honors and Awards:
-      - title: Outstanding Graduate Student, Xinghang Program
-        awarder: Journal of Electronics & Information Technology
+      - name: Outstanding Graduate Student, Xinghang Program
         date: 2026-06
-        summary: National selection of 22 graduate students
-      - title: Outstanding Poster Award
-        awarder: Frontiers in Electronics and Information Conference
+        summary: Journal of Electronics & Information Technology; national selection of 22 graduate students
+      - name: Outstanding Poster Award
         date: 2026-06
-      - title: Outstanding Student Model
-        awarder: University of Chinese Academy of Sciences
+        summary: Frontiers in Electronics and Information Conference
+      - name: UCAS Outstanding Student Model
         date: 2026-06
         summary: University-wide top 1%
-      - title: Outstanding Student
-        awarder: State Key Laboratory of Processors
+      - name: ICT Outstanding Student
         date: 2026-01
-      - title: Outstanding Student
-        awarder: Wireless Communication Research Center, Institute of Computing Technology
-        date: 2026-01
-      - title: E Fund Financial Technology Doctoral Scholarship
-        awarder: Institute of Computing Technology
+        summary: Institute of Computing Technology / State Key Laboratory of Processors
+      - name: E Fund Financial Technology Doctoral Scholarship
         date: 2025-01
         summary: 12 recipients institute-wide
-      - title: Outstanding Student Leader
-        awarder: University of Chinese Academy of Sciences
+      - name: UCAS Outstanding Student Cadre
         date: 2025-05
-      - title: Excellent Science Outreach Volunteer
-        awarder: Chinese Academy of Sciences Public Science Day
-        date: 2023--2025
-        summary: Awarded in three consecutive years
-      - title: Outstanding Student
-        awarder: University of Chinese Academy of Sciences
+      - name: UCAS Outstanding Student
         date: 2023-06
-      - title: Academic Scholarship
-        awarder: University of Chinese Academy of Sciences
+      - name: UCAS First-Class Scholarship
         date: 2021--2025
         summary: Awarded for five consecutive years
-      - title: Outstanding Graduate
-        awarder: Xidian University
+      - name: Outstanding Graduate, Xidian University
         date: 2021-06
-      - title: First-Class Graduation Scholarship
-        awarder: Xidian University
+      - name: First-Class Graduation Scholarship, Xidian University
         date: 2021-06
-      - title: International Second Prize, Mathematical Contest in Modeling
-        awarder: MCM/ICM
-        date: 2020-12
-      - title: National Scholarship
-        awarder: Ministry of Education of China
-        date: 2019-12
-      - title: National Second Prize, China Undergraduate Mathematical Contest in Modeling
-        awarder: CUMCM
-        date: 2019-11
-      - title: Third Prize, CETC-10 Communication Cup
-        awarder: CETC-10
-        date: 2019-05
-      - title: National Encouragement Scholarship
-        awarder: Ministry of Education of China
-        date: 2018-12
+      - name: Honorable Mention, Mathematical Contest in Modeling
+        date: 2020
+      - name: National Scholarship
+        date: 2019
+      - name: National Second Prize, China Undergraduate Mathematical Contest in Modeling
+        date: 2019
+      - name: Third Prize, CETC-10 Communication Cup
+        date: 2019
 
     Skills:
       - name: Modeling and Optimization
-        level: Advanced
-        icon: fa-solid fa-chart-line
-        keywords: "Wireless and computing resource scheduling, ISAC, RAG scheduling, AI-agent memory, convex optimization, linear programming, heuristic optimization"
+        summary: Wireless and computing resource scheduling; ISAC; AI-service orchestration; convex optimization; linear programming; heuristic optimization
       - name: Artificial Intelligence
-        level: Advanced
-        icon: fa-solid fa-brain
-        keywords: "Deep reinforcement learning, multi-agent reinforcement learning, generative models, diffusion models, quantum reinforcement learning"
+        summary: Deep reinforcement learning; multi-agent reinforcement learning; generative models; diffusion models; quantum reinforcement learning
       - name: Programming and Simulation
-        level: Advanced
-        icon: fa-solid fa-code
-        keywords: "Python, C++, MATLAB, Shell, PyTorch, custom RL environments, system-level network simulation"
+        summary: Python; C++; MATLAB; Shell; PyTorch; custom reinforcement-learning environments; system-level network simulation
       - name: Academic Writing
-        level: Advanced
-        icon: fa-solid fa-pen-nib
-        keywords: "IEEE journal writing, technical reports, literature review, simulation-result analysis"
+        summary: IEEE journal writing; technical reports; literature review; simulation-result analysis
 
     Academic Service:
-      - company: IEEE and Chinese Journals and Conferences
-        position: Reviewer
+      - name: Program Committee
+        highlights:
+          - Technical Program Committee Member, IEEE International Conference on Communications (IEEE ICC) 2026
+      - name: Academic Correspondence
+        highlights:
+          - Academic Correspondent, Digital Communications and Networks
+      - name: Peer Review
         highlights:
           - IEEE Transactions on Mobile Computing
           - IEEE Transactions on Communications
@@ -248,17 +233,16 @@ cv:
           - IEEE Transactions on Vehicular Technology
           - Science China Information Sciences
           - China Communications
-          - Journal on Communications and Journal of Electronics & Information Technology
-          - IEEE ICC and IEEE VTC
-      - company: IEEE ICC 2026
-        position: Technical Program Committee Member
-      - company: Digital Communications and Networks
-        position: Academic Correspondent
+          - IEEE International Conference on Communications
+          - IEEE Vehicular Technology Conference
+          - 通信学报
+          - 电子与信息学报
 
-    Leadership and Outreach:
-      - company: Haidian Volunteer Federation Branch
-        position: Vice President
-      - company: UCAS Science Popularization Association
-        position: Committee Member
-      - company: Xidian University School of Telecommunications Engineering
-        position: Youth League Branch Secretary and Volunteer Team Leader
+    Outreach and Public Engagement:
+      - Science outreach volunteer, Chinese Academy of Sciences Public Science Day
+      - Participated in public science communication and research outreach activities
+      - Committee Member, UCAS Science Popularization Association
+
+    Leadership:
+      - Vice President, Haidian Volunteer Federation Branch
+      - Youth League Branch Secretary and Volunteer Team Leader, Xidian University School of Telecommunications Engineering

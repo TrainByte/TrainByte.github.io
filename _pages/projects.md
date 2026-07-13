@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected research projects in AI-service orchestration, space computing networks, and intelligent wireless systems.
+description: Selected research projects with published or accepted representative papers.
 nav: true
 nav_order: 3
 display_categories:

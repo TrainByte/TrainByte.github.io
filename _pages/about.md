@@ -2,10 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate in Computer Science · Institute of Computing Technology, Chinese Academy of Sciences
+subtitle: Ph.D. Candidate in Computer Science | Institute of Computing Technology, Chinese Academy of Sciences
 profile:
   align: right
-  image:
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Beijing, China</p>
@@ -22,24 +22,32 @@ latest_posts:
   limit: 3
 ---
 
-I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. I received my B.Eng. degree in Communication Engineering from Xidian University, where I ranked first in my cohort.
+<style>
+  ol.bibliography .author em {
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.16em;
+  }
+</style>
 
-My research focuses on intelligent resource orchestration for next-generation networks and AI services. I study the joint modeling and optimization of communication, sensing, computing, knowledge, and intelligence resources, with applications to generative AI services, retrieval-augmented generation, AI-agent memory, space AI computing networks, and secure wireless systems.
+I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. I received my B.Eng. degree in Communication Engineering from Xidian University.
+
+My research focuses on 6G intelligent networks and AI service orchestration. I study communication, sensing, computing, and knowledge resource optimization for networked AI systems, using reinforcement learning and optimization methods.
 
 ## Research interests
 
-- 6G networks and edge intelligence
-- Integrated sensing, communication, computing, and intelligence
-- Generative AI and retrieval-augmented generation services
-- AI-agent memory and cloud–edge collaborative intelligence
-- Space AI computing networks
-- Deep, multi-agent, generative, and quantum reinforcement learning
-- Wireless resource allocation and secure communications
+- AI-Native 6G Networks
+- Edge Intelligence and Cloud-Edge Collaborative AI Services
+- Integrated Sensing, Communication, Computing, and Intelligence
+- Space AI Computing Networks
 
-## Current research themes
+## Education
 
-- Knowledge-aware orchestration for cloud–edge RAG services
-- Memory-aware routing and task scheduling in space AI computing networks
-- Quantum reinforcement learning for AIGC service scheduling
-- ISAC-driven sensing–computing–communication resource allocation
-- Long-term fairness and robust wireless resource management
+- **Institute of Computing Technology, Chinese Academy of Sciences** and **University of Chinese Academy of Sciences**:
+  Ph.D. Candidate in Computer Science and Technology. Ph.D. advisor: Prof. Yiqing Zhou.
+- **Xidian University**:
+  B.Eng. in Communication Engineering. Undergraduate mentor: Prof. Junyu Liu. Comprehensive recommendation ranking: 1st in class.
+
+{% include visitor_counter.liquid %}

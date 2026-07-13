@@ -9,7 +9,7 @@ cv:
 
   sections:
     Research Profile:
-      - Ph.D. candidate researching 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, and knowledge resource optimization through reinforcement learning and optimization methods.
+      - Ph.D. candidate researching 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, memory, and knowledge-resource optimization through reinforcement learning and mathematical optimization.
 
     Education:
       - institution: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
@@ -30,6 +30,7 @@ cv:
         highlights:
           - "Undergraduate Research Advisor: [Prof. Junyu Liu](https://web.xidian.edu.cn/junyuliu/)"
           - "Comprehensive recommendation ranking: 1st in class"
+          - National Scholarship recipient
           - Discipline rated A+ in the national subject assessment
 
     Internship Experience:
@@ -39,54 +40,76 @@ cv:
         start_date: 2026-01
         end_date: 2026-03
         highlights:
-          - Investigated long-horizon memory mechanisms for AI agents in multi-turn interactions, focusing on context loss, redundant historical information, memory evolution, and response consistency.
-          - Surveyed retrieval-augmented memory, hierarchical storage, memory extraction, compression, forgetting, consolidation, and dynamic updating.
-          - Reproduced and analyzed the Mem-alpha memory architecture and formulated memory maintenance as a policy-optimization problem.
-          - Explored reinforcement-learning-based memory selection and updating.
-          - Investigated memory-aware task scheduling under cloud-edge collaborative architectures, considering storage, retrieval, inference, communication latency, and response quality.
+          - Investigated long-horizon memory mechanisms for AI agents in multi-turn interactions, focusing on context forgetting, historical redundancy, and response consistency.
+          - Surveyed retrieval-augmented memory, hierarchical storage, self-evolving memory updates, memory extraction, compression, forgetting, and dynamic updating.
+          - Reproduced and analyzed the Mem-alpha memory architecture and formulated memory selection, compression, and updating as a policy-optimization problem.
+          - Studied reinforcement-learning-based memory maintenance and memory-aware LLM task scheduling under end-edge-cloud collaboration.
 
     Research Experience:
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Technical Lead, Distributed System-Level Simulator for Large-Scale Full-Duplex Ad Hoc Networks
-        start_date: 2022
-        end_date: 2023
+        position: Main Contributor, Knowledge-Matching-Aware Scheduling for RAG Services
+        start_date: 2025-10
+        end_date: 2026-06
         highlights:
-          - Architected a WebSocket-based distributed simulation platform integrating a central controller, network-node workers, channel computation, mobility modeling, and visualization.
-          - Designed priority-aware multi-channel access and cross-layer simulation logic covering traffic generation, routing, MAC access, physical transmission, interference, SINR, and reception decisions.
-          - Built core algorithms and performance-evaluation workflows for large-scale scenarios involving more than 1,000 nodes.
-          - Delivered a system prototype and one authorized software copyright.
+          - Modeled task semantics, node knowledge coverage, computing cost, transmission delay, generation quality, and energy consumption for cloud-edge RAG services.
+          - Designed a knowledge-matching-aware RAG task scheduling mechanism under heterogeneous knowledge bases and dynamic resource states.
+          - Built a simulation environment; reduced energy consumption by approximately 50% and service delay by more than 10% in evaluated settings.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Core Contributor, Knowledge-Aware Cloud-Edge Orchestration for RAG Services
-        start_date: 2025
-        end_date: 2026
+        position: Main Contributor, Memory-Aware Distributed Routing for Space AI Computing Networks
+        start_date: 2025-10
+        end_date: 2026-03
         highlights:
-          - Modeled heterogeneous knowledge bases, real-time computing loads, communication conditions, retrieval cost, generation quality, service delay, and energy consumption.
-          - Designed a dynamic orchestration mechanism based on task semantics, node knowledge coverage, and resource states.
-          - Built a cloud-edge RAG simulation environment for comparative evaluation.
+          - Modeled the coupling among task routing, node memory state, onboard computing load, storage availability, and link conditions.
+          - Designed a distributed routing method for high-dimensional dynamic network states and introduced diffusion-assisted policy generation.
+          - Validated the method on a ground-based space computing network simulator, reducing end-to-end routing delay by more than 15%.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Core Contributor, Memory-Aware Distributed Routing for Space AI Computing Networks
-        start_date: 2025
-        end_date: 2026
+        position: Main Contributor, Distributed Quantum Reinforcement Learning for AIGC Cloud-Edge Scheduling
+        start_date: 2025-06
+        end_date: 2025-12
         highlights:
-          - Modeled the coupling among task routing, node memory state, computing load, storage availability, and link conditions.
-          - Designed a distributed routing method for high-dimensional and dynamically changing network states.
-          - Evaluated the approach using a ground-based space-computing-network simulation environment.
+          - Modeled collaborative cloud-edge processing for multi-user AIGC services, coupling task offloading, computing allocation, and service delay.
+          - Designed a distributed hybrid quantum-classical reinforcement learning scheduler using parameterized quantum circuits and classical neural networks.
+          - Reduced model parameters by more than 95% and average service delay by more than 30% compared with baseline methods in simulation.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Lead Researcher and First Author, ISAC-Driven AIGC Service Orchestration
-        start_date: 2024
-        end_date: 2025
+        position: Main Contributor and First Author, ISAC-Driven AIGC Service Orchestration
+        start_date: 2024-01
+        end_date: 2025-06
         highlights:
-          - Designed the content-accuracy-and-quality-aware metric and modeled sensing-computing-communication coupling for AIGC services.
-          - Formulated the joint resource-allocation problem and designed an LP-guided hierarchical deep reinforcement learning framework.
-          - Implemented comparative simulations, ablation studies, and performance analysis.
+          - Designed a content-accuracy-and-quality-aware service metric and modeled sensing, computing, communication, and AIGC service experience as a coupled system.
+          - Formulated the joint resource-allocation problem and designed an LP-guided hierarchical reinforcement learning framework.
+          - Improved average user service experience by more than 50% in evaluated settings; related work was published in IEEE Transactions on Mobile Computing.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Task Leader, Technical Lead, and First Author, Deception-Based UAV-Assisted Secure Communications
-        start_date: 2021
-        end_date: 2023
+        position: Main Contributor and First Author, User Selection and Resource Allocation for High-Concurrency AI Services
+        start_date: 2022-12
+        end_date: 2024-12
         highlights:
-          - Coordinated the technical route for secure communication modeling, deception signaling, UAV three-dimensional placement, beamforming, and power allocation.
-          - Built simulation validation workflows and delivered paper and invention-patent outputs related to anti-interference and secure communication.
-          - Achieved a gap of no more than 3% from the global optimum and improved secure transmission rate by more than 100% over the no-deception scheme.
+          - Modeled user access, bandwidth, subchannels, transmit power, edge computing resources, and service satisfaction in multi-cell MEC networks.
+          - Designed a joint optimization algorithm for user selection, channel assignment, power control, and edge computing resource allocation.
+          - Improved average user satisfaction by more than 50%; related work was published in IEEE Transactions on Mobile Computing.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Main Contributor and First Author, Adaptive Fair Resource Scheduling Under Imperfect CSI
+        start_date: 2022-05
+        end_date: 2024-05
+        highlights:
+          - Built a channel-uncertainty-aware resource allocation model for multi-cell multi-user downlink communications under imperfect CSI.
+          - Designed a reward-adaptive multi-agent DRL scheduler balancing long-term fairness and network service rate.
+          - Improved long-term fairness by 13% and service rate by more than 10%; related work was published in IEEE Transactions on Cognitive Communications and Networking.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Technical Lead, Multi-Channel Access for In-Band Full-Duplex Ad Hoc Networks
+        start_date: 2022-10
+        end_date: 2023-06
+        highlights:
+          - Designed multi-channel interference coordination and access-control mechanisms for full-duplex ad hoc networks with residual self-interference and inter-node interference.
+          - Built a distributed WebSocket-based system-level simulator integrating node workers, channel computation, mobility modeling, and visualization.
+          - Delivered a system prototype and related invention patent/software copyright outputs.
+      - company: Institute of Computing Technology, Chinese Academy of Sciences
+        position: Task Leader, Technical Lead, and First Author, UAV-Assisted Secure Transmission Under Deception and Jamming
+        start_date: 2021-09
+        end_date: 2023-06
+        highlights:
+          - Built a UAV-assisted mmWave MIMO secure communication model covering legitimate links, deception links, jamming sources, and UAV-assisted nodes.
+          - Designed joint optimization for beamforming, UAV three-dimensional placement, and power allocation under complex electromagnetic confrontation.
+          - Improved secure transmission rate to approximately two times that of the no-deception baseline; related work was published in China Communications and one invention patent was granted.
 
     Publications:
       - title: Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks
@@ -147,43 +170,43 @@ cv:
         doi: 10.11991/cccf.202508013
 
     Intellectual Property:
-      - name: 抗跟踪式干扰的信号发送方法、信号接收方法及系统
+      - name: Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System
         date: 2024-09-24
         summary: "Granted invention patent: CN202211134854.X"
-      - name: 一种基于中继位置选择和功率分配的抗干扰方法及系统
+      - name: Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation
         date: 2025-05-27
         summary: "Granted invention patent: CN202310078808.0"
-      - name: 无线网络资源分配系统的构建方法和资源管理方法
+      - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
         date: 2026-04-07
         summary: "Granted invention patent: CN202310354794.0"
-      - name: 无线网络资源分配系统的构建方法和资源管理方法
+      - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
         date: 2023-04-24
         summary: "Patent application: PCT/CN2023/090283"
-      - name: 一种全双工自组织网络实时仿真系统及方法
+      - name: Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks
         date: 2023-12-14
         summary: "Patent application: CN202311719290.0"
-      - name: 一种多用户 MIMO 信号检测模型
+      - name: Multi-User MIMO Signal Detection Model
         date: 2024-01-05
         summary: "Patent application: CN202410018551.4"
-      - name: 一种面向自组织网络的信道接入方法和通信系统
+      - name: Channel Access Method and Communication System for Ad Hoc Networks
         date: 2024-03-26
         summary: "Patent application: CN202410348337.5"
-      - name: 一种移动自组网数据路由方法、工业自组网系统
+      - name: Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System
         date: 2025-06-27
         summary: "Patent application: CN202510873622.3"
-      - name: 一种环境和资源状态感知的资源分配方法和系统
+      - name: Environment- and Resource-State-Aware Resource Allocation Method and System
         date: 2025-07-11
         summary: "Patent application: CN202510955830.8"
-      - name: 基于集成感知与通信的AI生成内容服务的资源分配方法
+      - name: Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication
         date: 2025-07-30
         summary: "Patent application: CN202511053332.0"
-      - name: 联合信道估计与信号检测的方法、信号接收机及存储介质
+      - name: Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium
         date: 2025-10-27
         summary: "Patent application: CN202511536493.5"
-      - name: 一种面向高速移动通信的发射装置及语义传输方法
+      - name: Transmission Device and Semantic Transmission Method for High-Mobility Communications
         date: 2026-03-31
         summary: "Patent application: CN202610406457.5"
-      - name: 大规模全双工网络仿真系统
+      - name: Large-Scale Full-Duplex Network Simulation System
         date: 2024-01-11
         summary: "Registered software copyright: 2024SR0082117"
 
@@ -205,10 +228,12 @@ cv:
         summary: 12 recipients institute-wide
       - name: UCAS Outstanding Student Cadre
         date: 2025-05
+      - name: Outstanding Volunteer, Chinese Academy of Sciences Public Science Day
+        date: 2023-2025
       - name: UCAS Outstanding Student
         date: 2023-06
       - name: UCAS First-Class Scholarship
-        date: 2021--2025
+        date: 2021-2025
         summary: Awarded for five consecutive years
       - name: Outstanding Graduate, Xidian University
         date: 2021-06
@@ -220,6 +245,8 @@ cv:
         date: 2019
       - name: National Second Prize, China Undergraduate Mathematical Contest in Modeling
         date: 2019
+      - name: National Encouragement Scholarship
+        date: 2018
       - name: Third Prize, CETC-10 Communication Cup
         date: 2019
 
@@ -251,15 +278,13 @@ cv:
           - Team Leader, Horizon Volunteer Team, School of Telecommunications Engineering, Xidian University
 
     Skills:
-      - label: Research and Modeling
-        details: Wireless and computing resource scheduling; integrated sensing, communication, computing, and intelligence; cloud-edge collaborative AI services; RAG service orchestration; AI Agent memory systems; space AI computing networks; cross-layer wireless network modeling
+      - label: AI-Native Network Research
+        details: 6G intelligent networks; cloud-edge collaborative AI services; RAG service orchestration; AI Agent memory systems; space AI computing networks; ISAC-driven AIGC services
       - label: Optimization and Learning
-        details: Convex optimization; linear programming; evolutionary and heuristic algorithms; deep reinforcement learning; multi-agent reinforcement learning; generative diffusion models; quantum reinforcement learning; Lyapunov optimization
-      - label: Programming and Simulation
-        details: Python; C++; MATLAB; Shell; PyTorch; custom reinforcement-learning environments; system-level network simulation; large-scale experiment automation; data processing and visualization
-      - label: Systems and Engineering
-        details: Distributed simulation architecture; WebSocket-based module communication; wireless protocol-stack modeling; MAC and resource-allocation algorithm implementation; cloud-edge system modeling; performance evaluation and technical reporting
-      - label: Research Project Execution
-        details: Research proposal preparation; technical scheme design; simulation and prototype validation; third-party testing support; mid-term project review; project completion and acceptance; patent and software-copyright preparation
-      - label: Academic Communication
-        details: IEEE journal paper writing; English literature review; peer review; technical presentations; research reports; cross-team technical coordination
+        details: Reinforcement learning; multi-agent DRL; LP-guided hierarchical scheduling; diffusion-assisted policy generation; quantum-classical reinforcement learning; convex optimization; robust and fairness-aware resource allocation
+      - label: Wireless and Computing Systems
+        details: MEC/NOMA networks; full-duplex ad hoc networks; UAV-assisted secure communications; integrated sensing, communication, computing, and knowledge-resource optimization
+      - label: Implementation and Simulation
+        details: Python; PyTorch; MATLAB; C++; Shell; custom RL environments; system-level wireless simulation; distributed WebSocket-based simulation; experiment automation and visualization
+      - label: Research Delivery
+        details: Problem formulation; algorithm design; simulation validation; ablation studies; technical reporting; journal paper writing; patent and software-copyright preparation; cross-team technical coordination

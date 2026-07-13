@@ -2,12 +2,26 @@
 layout: page
 title: Selected Projects
 permalink: /projects/
-description: Selected systems, algorithms, and research prototypes spanning AI-native networks, distributed simulation, cloud-edge intelligence, and wireless resource optimization.
+description: Selected research and engineering projects spanning AI-native networks, cloud-edge intelligence, space computing, secure wireless systems, and distributed simulation.
 nav: true
 nav_order: 3
 ---
 
 <style>
+  body {
+    background-image:
+      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
+      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
+    background-attachment: fixed, fixed;
+    background-position:
+      left clamp(-260px, -15vw, -120px) top 7rem,
+      right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      min(43vw, 520px),
+      min(46vw, 560px);
+  }
+
   .project-toolbar {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +49,7 @@ nav_order: 3
 
   .project-intro {
     color: var(--global-text-color-light);
-    max-width: 56rem;
+    max-width: 60rem;
   }
 
   .project-section {
@@ -56,16 +70,19 @@ nav_order: 3
     padding: 1rem;
     min-height: 100%;
     min-width: 0;
-    background: var(--global-bg-color);
+    background:
+      linear-gradient(180deg, rgba(46, 127, 255, 0.035), rgba(255, 255, 255, 0)),
+      var(--global-bg-color);
     overflow: hidden;
     position: relative;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
   }
 
   .project-card::before {
     content: "";
     display: block;
     height: 4px;
-    background: var(--global-theme-color);
+    background: linear-gradient(90deg, var(--global-theme-color), #b03e62);
     margin: -1rem -1rem 0.85rem;
   }
 
@@ -141,6 +158,13 @@ nav_order: 3
   }
 
   @media (max-width: 767px) {
+    body {
+      background-position:
+        left -210px top 5.5rem,
+        right -230px bottom 3rem;
+      background-size: 380px, 410px;
+    }
+
     .project-grid {
       grid-template-columns: 1fr;
     }
@@ -148,10 +172,10 @@ nav_order: 3
 </style>
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
-{% assign categories = "Engineering Systems|AI Systems|Wireless Intelligence" | split: "|" %}
+{% assign categories = "AI Systems|Wireless Intelligence|Engineering Systems" | split: "|" %}
 
 <p class="project-intro">
-  Selected projects across distributed network simulation, AI Agent memory, cloud-edge RAG orchestration, space AI routing, ISAC-driven AIGC services, and secure UAV communications.
+  Selected projects from AI Agent memory and cloud-edge RAG orchestration to space AI routing, AIGC service scheduling, ISAC resource allocation, secure UAV communications, full-duplex ad hoc networking, and large-scale wireless simulation.
 </p>
 
 <div class="project-toolbar" aria-label="Project categories">

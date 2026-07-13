@@ -1,16 +1,17 @@
 ---
 layout: page
-title: Deception-Based UAV-Assisted Secure Communications
-period: 2021 - 2023
-role: Task Leader, Technical Lead, and First Author
+title: UAV-Assisted Secure Transmission Under Deception and Jamming
+period: Sep. 2021 - Jun. 2023
+role: Task Leader and Technical Lead
 category: Wireless Intelligence
-featured: false
-importance: 6
-summary: Secure UAV-assisted mmWave MIMO communication through deception signaling, UAV placement, beamforming, and power allocation.
-contribution: Coordinated the technical route, formulated the secure communication model, and validated the deception-based optimization scheme.
+featured: true
+importance: 9
+summary: Secure UAV-assisted mmWave MIMO communication under strong jamming, illegal tracking, and complex electromagnetic confrontation.
+contribution: Coordinated the technical route and designed the secure transmission model, beamforming optimization, UAV placement, and power allocation scheme.
 results:
-  - "<=3% gap from global optimum"
-  - ">100% secure-rate gain over no-deception scheme"
+  - "approximately 2x secure-rate gain"
+  - "China Communications output"
+  - "Granted invention patent"
 tags:
   - Secure Communications
   - UAV
@@ -18,51 +19,35 @@ tags:
   - Beamforming
   - Optimization
 outputs:
-  - Publication
-  - DOI
-  - Related IP
+  - China Communications Publication
+  - Granted Patent
+  - Simulation Workflow
 ---
 
 ## Overview
 
-Developed a deception-based secure communication method for UAV-assisted mmWave MIMO systems, coordinating secure communication modeling, deception signaling, UAV three-dimensional placement, beamforming, and power allocation.
+This project focuses on UAV-assisted secure transmission in complex electromagnetic environments. The work studied how deception signaling, UAV relay placement, beamforming, and power allocation can jointly improve secure communication performance under strong jamming and tracking threats.
 
 ## Challenge
 
-- Secure transmission must be maintained under strong interference and anti-tracking constraints.
-- UAV placement, legitimate signal transmission, deceptive signal design, and power allocation are tightly coupled.
-- The optimization problem requires an accurate security model and efficient simulation validation.
+- Secure transmission must remain robust under strong interference and illegal tracking.
+- UAV three-dimensional placement, legitimate transmission, deception links, jamming sources, and power allocation are tightly coupled.
+- The optimization problem requires both accurate physical-layer modeling and reliable simulation validation.
 
 ## My Contributions
 
-- Coordinated the technical route for UAV-assisted secure communication modeling and optimization.
-- Formulated the secure communication model with legitimate and deceptive signal links.
-- Designed the deception-signal mechanism.
-- Optimized UAV three-dimensional position.
-- Designed beamforming and legitimate/deceptive signal power allocation.
-- Built simulation validation and performance analysis workflows.
+- Served as task leader and technical lead.
+- Built a UAV-assisted mmWave MIMO secure communication model covering legitimate links, deception links, jamming sources, and UAV-assisted nodes.
+- Designed a joint optimization method for beamforming matrices, UAV three-dimensional position, and power allocation.
+- Coordinated technical planning, algorithm design, simulation validation, and result analysis.
 - Delivered paper and invention-patent outputs related to anti-interference and secure communication.
-
-## Technical Highlights
-
-- UAV-assisted secure communication modeling
-- mmWave MIMO beamforming
-- Deception signal design
-- Joint position and power optimization
-- Simulation-based validation
 
 ## Outcomes
 
-- Achieved a gap of no more than 3% from the global optimum.
-- Improved secure transmission rate by more than 9% over direct-link transmission without UAV assistance.
-- Improved secure transmission rate by more than 100% over the no-deception scheme.
+The proposed method improved the secure transmission rate to approximately two times that of the no-deception baseline. The related paper was published in China Communications, a T1 journal of the China Institute of Communications, and one invention patent was granted.
 
 ## Related Outputs
 
 - Publication: Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems, China Communications, 2026.
 - DOI: [10.23919/JCC.fa.2025-0337.202604](https://doi.org/10.23919/JCC.fa.2025-0337.202604)
 - [Related Intellectual Property]({{ '/publications/#intellectual-property' | relative_url }})
-
-## Keywords / Tags
-
-Secure Communications; UAV; mmWave MIMO; Beamforming; Optimization.

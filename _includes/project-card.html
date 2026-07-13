@@ -14,7 +14,7 @@
   <p class="project-contribution"><strong>Core contribution:</strong> {{ project.contribution }}</p>
   {% if project.results %}
   <div class="project-meta" aria-label="Key results">
-    {% for result in project.results limit: 2 %}
+    {% for result in project.results limit: 3 %}
     <span class="project-result">{{ result }}</span>
     {% endfor %}
   </div>

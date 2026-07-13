@@ -23,6 +23,20 @@ latest_posts:
 ---
 
 <style>
+  body {
+    background-image:
+      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
+      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
+    background-attachment: fixed, fixed;
+    background-position:
+      left clamp(-260px, -15vw, -120px) top 7rem,
+      right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      min(43vw, 520px),
+      min(46vw, 560px);
+  }
+
   .profile {
     max-width: 210px;
   }
@@ -54,33 +68,32 @@ latest_posts:
   }
 
   h2 {
-    margin-top: 2.6rem;
-    margin-bottom: 0.9rem;
+    margin-top: 2.8rem;
+    margin-bottom: 0.95rem;
   }
 
   .education-strip {
     display: grid;
-    gap: 0.85rem;
-    margin: 1.35rem 0 2.2rem;
+    gap: 0.95rem;
+    margin: 1.5rem 0 2.55rem;
   }
 
   .education-card {
     display: grid;
-    grid-template-columns: 168px minmax(0, 1fr);
-    gap: 1rem;
-    align-items: center;
+    gap: 0.42rem;
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
-    padding: 0.75rem 0.9rem;
+    padding: 0.95rem 1rem;
     background: var(--global-bg-color);
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.04);
   }
 
-  .education-card img {
-    display: block;
-    width: 100%;
-    max-height: 58px;
-    object-fit: contain;
-    background: #fff;
+  .education-year {
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 
   .education-card strong {
@@ -88,7 +101,7 @@ latest_posts:
     line-height: 1.35;
   }
 
-  .education-card span {
+  .education-card span:not(.education-year) {
     color: var(--global-text-color-light);
     display: block;
     margin-top: 0.18rem;
@@ -97,22 +110,73 @@ latest_posts:
   .interest-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.8rem;
-    margin-top: 1rem;
+    gap: 0.9rem;
+    margin: 1.05rem 0 2.35rem;
   }
 
   .interest-card {
+    align-items: center;
+    background:
+      linear-gradient(135deg, rgba(46, 127, 255, 0.08), rgba(176, 62, 98, 0.05)),
+      var(--global-bg-color);
     border: 1px solid var(--global-divider-color);
-    border-left: 4px solid var(--global-theme-color);
     border-radius: 8px;
-    padding: 0.85rem 0.95rem;
-    background: var(--global-bg-color);
+    display: grid;
+    gap: 0.62rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 0.95rem 1rem;
+  }
+
+  .interest-index {
+    align-items: center;
+    border: 1px solid rgba(46, 127, 255, 0.28);
+    border-radius: 999px;
+    color: var(--global-theme-color);
+    display: inline-flex;
+    font-size: 0.76rem;
+    font-weight: 700;
+    height: 2rem;
+    justify-content: center;
+    line-height: 1;
+    width: 2rem;
   }
 
   .interest-card h3 {
     font-size: 0.98rem;
     line-height: 1.35;
     margin: 0;
+  }
+
+  .home-news-panel {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    margin: 1rem 0 2.45rem;
+    padding: 0.95rem 1rem;
+    background: var(--global-bg-color);
+  }
+
+  .home-news-list {
+    display: grid;
+    gap: 0.72rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-news-list li {
+    display: grid;
+    gap: 0.18rem;
+  }
+
+  .home-news-list time {
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .home-news-list span {
+    color: var(--global-text-color);
+    line-height: 1.45;
   }
 
   .selected-publication-list {
@@ -208,6 +272,13 @@ latest_posts:
   }
 
   @media (max-width: 767px) {
+    body {
+      background-position:
+        left -210px top 5.5rem,
+        right -230px bottom 3rem;
+      background-size: 380px, 410px;
+    }
+
     .profile,
     .profile.float-right {
       float: none !important;
@@ -221,14 +292,6 @@ latest_posts:
 
     .profile .more-info {
       text-align: center;
-    }
-
-    .education-card {
-      grid-template-columns: 1fr;
-    }
-
-    .education-card img {
-      max-width: 220px;
     }
 
     .interest-grid {
@@ -250,14 +313,14 @@ I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Tech
 
 <div class="education-strip" aria-label="Education">
   <article class="education-card">
-    <img src="{{ '/assets/img/logos/ucas-logo.png' | relative_url }}" alt="University of Chinese Academy of Sciences logo">
+    <span class="education-year">2021 - present</span>
     <div>
       <strong>Ph.D. Candidate in Computer Science and Technology</strong>
       <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span>
     </div>
   </article>
   <article class="education-card">
-    <img src="{{ '/assets/img/logos/xidian-logo.png' | relative_url }}" alt="Xidian University logo">
+    <span class="education-year">2017 - 2021</span>
     <div>
       <strong>B.Eng. in Communication Engineering</strong>
       <span>Xidian University · National Scholarship · Ranked 1st in class for comprehensive recommendation</span>
@@ -269,17 +332,47 @@ I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Tech
 
 <div class="interest-grid">
   <section class="interest-card">
+    <span class="interest-index">01</span>
     <h3>AI-Native 6G Networks</h3>
   </section>
   <section class="interest-card">
+    <span class="interest-index">02</span>
     <h3>Cloud-Edge Collaborative AI Services</h3>
   </section>
   <section class="interest-card">
+    <span class="interest-index">03</span>
     <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3>
   </section>
   <section class="interest-card">
+    <span class="interest-index">04</span>
     <h3>Space AI Computing Networks</h3>
   </section>
+  <section class="interest-card">
+    <span class="interest-index">05</span>
+    <h3>RAG and AI Agent Memory Systems</h3>
+  </section>
+  <section class="interest-card">
+    <span class="interest-index">06</span>
+    <h3>Wireless Resource Optimization</h3>
+  </section>
+</div>
+
+## News
+
+<div class="home-news-panel">
+  {% assign news_items = site.news | sort: "date" | reverse %}
+  {% if news_items.size > 0 %}
+    <ul class="home-news-list">
+      {% for item in news_items limit: 6 %}
+        <li>
+          <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+          <span>{{ item.content | strip_html | strip_newlines | strip }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>More updates coming soon.</p>
+  {% endif %}
 </div>
 
 ## Selected publications

@@ -1,61 +1,47 @@
 ---
 layout: page
-title: Knowledge-Aware Cloud-Edge Orchestration for RAG Services
-period: 2025 - 2026
-role: Core Contributor
+title: Knowledge-Matching-Aware Scheduling for RAG Services
+period: Oct. 2025 - Jun. 2026
+role: Main Contributor
 category: AI Systems
 featured: true
-importance: 3
-summary: Knowledge-aware orchestration for retrieval-augmented generation services across heterogeneous cloud and edge nodes.
-contribution: Modeled knowledge matching, resource states, retrieval cost, service delay, and energy consumption in a cloud-edge RAG simulation framework.
+importance: 2
+summary: Collaborative cloud-edge scheduling for RAG services under heterogeneous knowledge bases, dynamic loads, and communication variability.
+contribution: Built a joint model of task semantics, knowledge coverage, computation, transmission delay, and energy, then designed a knowledge-aware scheduling mechanism.
 results:
-  - ">10% service-delay reduction in simulation"
-  - "approximately 50% energy reduction in simulation"
+  - "approximately 50% energy reduction"
+  - ">10% delay reduction"
+  - "Submitted to a CCF-A journal"
 tags:
   - RAG
   - Cloud-Edge Computing
-  - Task Offloading
-  - Resource Scheduling
-  - Reinforcement Learning
+  - Knowledge Matching
+  - Task Scheduling
+  - Resource Optimization
 outputs:
   - Simulation Framework
   - Algorithm Prototype
-  - Performance Evaluation
+  - Journal Submission
 ---
 
 ## Overview
 
-Developed a knowledge-aware orchestration framework for retrieval-augmented generation services deployed across heterogeneous cloud and edge nodes.
+This project studies collaborative scheduling for RAG services deployed across heterogeneous edge and cloud nodes. The core idea is that the best node for a generation request is not simply the fastest or least loaded one; it should also have a knowledge base that matches the task's semantic requirements.
 
 ## Challenge
 
-Traditional task-offloading methods mainly consider computing loads and communication conditions, but RAG service performance also depends on whether the selected node's knowledge base matches the semantic requirements of each request.
+- Edge and cloud nodes maintain heterogeneous knowledge bases.
+- Real-time loads, transmission conditions, retrieval costs, and energy consumption change dynamically.
+- RAG quality depends on both resource states and knowledge matching.
 
 ## My Contributions
 
-- Modeled heterogeneous knowledge bases, real-time computing loads, communication conditions, retrieval cost, generation quality, service delay, and energy consumption.
-- Introduced knowledge-matching degree as a scheduling factor.
-- Designed a dynamic orchestration mechanism based on task semantics, node knowledge coverage, and resource states.
-- Built a cloud-edge RAG simulation environment for comparative evaluation.
-- Studied the tradeoff between retrieving higher-quality knowledge and incurring additional communication and queuing overhead.
-
-## Technical Highlights
-
-- Knowledge-coverage modeling for distributed RAG services
-- Task semantics and node-resource state coupling
-- Cloud-edge scheduling under retrieval and generation costs
-- Comparative simulation framework
+- Served as a main contributor and led the knowledge-matching-aware scheduling design.
+- Modeled task semantic requirements, node knowledge coverage, computing cost, transmission delay, and energy consumption in a unified optimization framework.
+- Designed a dynamic RAG task orchestration mechanism based on task requirements, knowledge-matching degree, and resource states.
+- Built a simulation environment to evaluate generation quality, response latency, and service energy consumption.
+- Analyzed the quality-latency-energy tradeoff caused by retrieving better knowledge from farther or busier nodes.
 
 ## Outcomes
 
-In simulation studies, the developed mechanism reduced service delay by more than 10% while reducing energy consumption by approximately 50% under the evaluated settings.
-
-## Related Outputs
-
-- Simulation Framework
-- Algorithm Prototype
-- Performance Evaluation
-
-## Keywords / Tags
-
-RAG; Cloud-Edge Computing; Task Offloading; Resource Scheduling; Reinforcement Learning.
+The proposed mechanism reduced energy consumption by approximately 50% while reducing service delay by more than 10% in the evaluated settings. The related work has been submitted to a CCF-A journal.

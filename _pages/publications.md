@@ -8,6 +8,20 @@ nav_order: 2
 ---
 
 <style>
+  body {
+    background-image:
+      url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}"),
+      url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
+    background-attachment: fixed, fixed;
+    background-position:
+      left clamp(-260px, -15vw, -120px) top 7rem,
+      right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      min(43vw, 520px),
+      min(46vw, 560px);
+  }
+
   .publications-note {
     color: var(--global-text-color-light);
     margin: 0.25rem 0 1.6rem;
@@ -108,6 +122,15 @@ nav_order: 2
   .ip-meta .ip-type {
     color: var(--global-theme-color);
     font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    body {
+      background-position:
+        left -210px top 5.5rem,
+        right -230px bottom 3rem;
+      background-size: 380px, 410px;
+    }
   }
 </style>
 

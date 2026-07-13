@@ -78,7 +78,7 @@ toc:
 </style>
 
 <div class="cv-actions">
-  <a href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+  <a href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Download CV PDF</a>
 </div>
 
 ## Research Profile

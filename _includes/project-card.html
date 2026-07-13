@@ -1,0 +1,26 @@
+{% assign project = include.project %}
+<article class="project-card">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <div class="project-meta">
+    <span class="project-role">{{ project.role }}</span>
+    {% if project.period %}
+    <span class="project-result">{{ project.period }}</span>
+    {% endif %}
+  </div>
+  <p>{{ project.summary }}</p>
+  <p><strong>Core contribution:</strong> {{ project.contribution }}</p>
+  {% if project.results %}
+  <div class="project-meta" aria-label="Key results">
+    {% for result in project.results limit: 2 %}
+    <span class="project-result">{{ result }}</span>
+    {% endfor %}
+  </div>
+  {% endif %} {% if project.tags %}
+  <div class="project-meta" aria-label="Project tags">
+    {% for tag in project.tags limit: 5 %}
+    <span class="project-tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <a class="project-link" href="{{ project.url | relative_url }}">View project</a>
+</article>

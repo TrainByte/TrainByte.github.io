@@ -46,42 +46,46 @@ cv:
 
     Research Experience:
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Lead Researcher, Service Satisfaction-Aware MEC Resource Allocation
-        start_date: 2022-12
-        end_date: 2024-12
+        position: Technical Lead, Distributed System-Level Simulator for Large-Scale Full-Duplex Ad Hoc Networks
+        start_date: 2022
+        end_date: 2023
         highlights:
-          - Jointly optimized user selection, subchannel scheduling, power allocation, and edge-computing resources in NOMA-based multi-cell MEC networks.
-          - Achieved a gap of less than 1% from exhaustive-search performance and improved average user service satisfaction by more than 50%.
+          - Architected a WebSocket-based distributed simulation platform integrating a central controller, network-node workers, channel computation, mobility modeling, and visualization.
+          - Designed priority-aware multi-channel access and cross-layer simulation logic covering traffic generation, routing, MAC access, physical transmission, interference, SINR, and reception decisions.
+          - Built core algorithms and performance-evaluation workflows for large-scale scenarios involving more than 1,000 nodes.
+          - Delivered a system prototype and one authorized software copyright.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Lead Researcher, ISAC-Driven AIGC Resource Allocation
-        start_date: 2024-01
-        end_date: 2025-06
+        position: Core Contributor, Knowledge-Aware Cloud-Edge Orchestration for RAG Services
+        start_date: 2025
+        end_date: 2026
         highlights:
-          - Built a content-accuracy-and-quality-aware model for sensing, computing, and communication resource allocation in ISAC-driven AIGC networks.
-          - Designed an LP-guided deep reinforcement learning framework.
-          - Improved the content-accuracy-and-quality-aware metric by more than 10% over learning baselines and by more than 50% over generation-quality-only schemes.
+          - Modeled heterogeneous knowledge bases, real-time computing loads, communication conditions, retrieval cost, generation quality, service delay, and energy consumption.
+          - Designed a dynamic orchestration mechanism based on task semantics, node knowledge coverage, and resource states.
+          - Built a cloud-edge RAG simulation environment for comparative evaluation.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Lead Researcher, Long-Term Fairness-Aware Wireless Scheduling
-        start_date: 2022-05
-        end_date: 2024-05
+        position: Core Contributor, Memory-Aware Distributed Routing for Space AI Computing Networks
+        start_date: 2025
+        end_date: 2026
         highlights:
-          - Modeled imperfect channel-state information and long-term alpha-fair utility for wireless communication systems.
-          - Designed a reward-adaptive multi-agent reinforcement-learning framework.
-          - Improved long-term fairness by more than 13% while increasing the overall service rate by more than 10%.
+          - Modeled the coupling among task routing, node memory state, computing load, storage availability, and link conditions.
+          - Designed a distributed routing method for high-dimensional and dynamically changing network states.
+          - Evaluated the approach using a ground-based space-computing-network simulation environment.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Task Leader and Technical Lead, UAV-Assisted Secure Communications
-        start_date: 2021-09
-        end_date: 2023-06
+        position: Lead Researcher and First Author, ISAC-Driven AIGC Service Orchestration
+        start_date: 2024
+        end_date: 2025
         highlights:
-          - Jointly optimized UAV positioning, mmWave MIMO beamforming, deceptive signal design, and power allocation.
-          - Achieved a performance gap of no more than 3% from the global optimum, improved secure transmission rate by more than 9% over direct-link transmission, and by more than 100% over the no-deception scheme.
+          - Designed the content-accuracy-and-quality-aware metric and modeled sensing-computing-communication coupling for AIGC services.
+          - Formulated the joint resource-allocation problem and designed an LP-guided hierarchical deep reinforcement learning framework.
+          - Implemented comparative simulations, ablation studies, and performance analysis.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Technical Lead, Full-Duplex Ad Hoc Networks
-        start_date: 2022-10
-        end_date: 2023-06
+        position: Task Leader, Technical Lead, and First Author, Deception-Based UAV-Assisted Secure Communications
+        start_date: 2021
+        end_date: 2023
         highlights:
-          - Designed multi-channel interference coordination and MAC-layer access mechanisms for in-band full-duplex ad hoc networks.
-          - Built a system-level simulation platform and produced an authorized invention patent and a registered software copyright.
+          - Coordinated the technical route for secure communication modeling, deception signaling, UAV three-dimensional placement, beamforming, and power allocation.
+          - Built simulation validation workflows and delivered paper and invention-patent outputs related to anti-interference and secure communication.
+          - Achieved a gap of no more than 3% from the global optimum and improved secure transmission rate by more than 100% over the no-deception scheme.
 
     Publications:
       - title: Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks

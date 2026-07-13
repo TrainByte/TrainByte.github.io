@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed full-duplex simulator architecture</title>
+  <desc id="desc">Architecture diagram showing a central controller coordinating distributed workers, channel processing, mobility modeling, visualization, and cross-layer full-duplex node logic.</desc>
+  <defs>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      .canvas {
+        fill: #f7fafc;
+      }
+      .panel {
+        fill: #ffffff;
+        stroke: #d7e1ea;
+        stroke-width: 1.5;
+      }
+      .module {
+        fill: #ffffff;
+        stroke: #91a7bd;
+        stroke-width: 2;
+      }
+      .module-strong {
+        fill: #eaf4ff;
+        stroke: #4f82bd;
+      }
+      .module-soft {
+        fill: #f3f7fb;
+      }
+      .chip {
+        fill: #eef6ff;
+        stroke: #a7c5e7;
+        stroke-width: 1.5;
+      }
+      .title-text {
+        fill: #1f2f3f;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .body-text {
+        fill: #31465a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 650;
+      }
+      .small-text {
+        fill: #52677b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .label-text {
+        fill: #617589;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+      .wire {
+        fill: none;
+        stroke: #5e8fc3;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        marker-end: url(#arrow);
+      }
+      .wire-muted {
+        stroke: #92a9bd;
+        stroke-width: 2.4;
+      }
+      .wire-accent {
+        stroke: #2b9f9a;
+      }
+      .dash {
+        stroke-dasharray: 7 7;
+      }
+      .shadow {
+        filter: url(#soft-shadow);
+      }
+      @media (prefers-color-scheme: dark) {
+        .canvas {
+          fill: #0f1722;
+        }
+        .panel {
+          fill: #121c2b;
+          stroke: #26384d;
+        }
+        .module {
+          fill: #172337;
+          stroke: #6f8ba8;
+        }
+        .module-strong {
+          fill: #173252;
+          stroke: #8fc4f6;
+        }
+        .module-soft {
+          fill: #152033;
+        }
+        .chip {
+          fill: #14273d;
+          stroke: #547ca8;
+        }
+        .title-text {
+          fill: #edf5ff;
+        }
+        .body-text {
+          fill: #d7e5f4;
+        }
+        .small-text,
+        .label-text {
+          fill: #adc0d3;
+        }
+        .wire {
+          stroke: #8fc4f6;
+        }
+        .wire-muted {
+          stroke: #7f96ad;
+        }
+        .wire-accent {
+          stroke: #55cbc3;
+        }
+      }
+    </style>
+    <filter id="soft-shadow" x="-15%" y="-20%" width="130%" height="145%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#16324f" flood-opacity="0.14" />
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,5 L0,10 z" fill="#5e8fc3" />
+    </marker>
+  </defs>
+
+  <rect class="canvas" width="1120" height="680" rx="24" />
+
+  <rect class="panel" x="34" y="34" width="1052" height="612" rx="22" />
+  <text class="title-text" x="560" y="78" text-anchor="middle">Distributed System-Level Full-Duplex Simulator</text>
+  <text class="small-text" x="560" y="104" text-anchor="middle">synchronized slots, distributed workers, channel computation, and cross-layer protocol evaluation</text>
+
+  <rect class="module module-strong shadow" x="382" y="132" width="356" height="92" rx="16" />
+  <text class="title-text" x="560" y="166" text-anchor="middle">Central Simulation Controller</text>
+  <text class="small-text" x="560" y="194" text-anchor="middle">initialization, slot clock, aggregation, runtime control</text>
+
+  <rect class="module shadow" x="72" y="312" width="220" height="104" rx="15" />
+  <text class="body-text" x="182" y="350" text-anchor="middle">Network Workers</text>
+  <text class="small-text" x="182" y="378" text-anchor="middle">distributed node execution</text>
+  <text class="small-text" x="182" y="399" text-anchor="middle">traffic and protocol logic</text>
+
+  <rect class="module shadow" x="330" y="312" width="194" height="104" rx="15" />
+  <text class="body-text" x="427" y="350" text-anchor="middle">Channel Engine</text>
+  <text class="small-text" x="427" y="378" text-anchor="middle">interference, SINR</text>
+  <text class="small-text" x="427" y="399" text-anchor="middle">capture effect</text>
+
+  <rect class="module shadow" x="596" y="312" width="194" height="104" rx="15" />
+  <text class="body-text" x="693" y="350" text-anchor="middle">Mobility Model</text>
+  <text class="small-text" x="693" y="378" text-anchor="middle">node locations</text>
+  <text class="small-text" x="693" y="399" text-anchor="middle">link dynamics</text>
+
+  <rect class="module shadow" x="846" y="312" width="202" height="104" rx="15" />
+  <text class="body-text" x="947" y="350" text-anchor="middle">Visualization</text>
+  <text class="small-text" x="947" y="378" text-anchor="middle">metrics, logs</text>
+  <text class="small-text" x="947" y="399" text-anchor="middle">state playback</text>
+
+  <path class="wire" d="M560 224 V262 H182 V312" />
+  <path class="wire" d="M560 224 V262 H427 V312" />
+  <path class="wire" d="M560 224 V262 H693 V312" />
+  <path class="wire" d="M560 224 V262 H947 V312" />
+  <text class="label-text" x="560" y="256" text-anchor="middle">time-slot synchronization bus</text>
+
+  <path class="wire wire-muted" d="M292 364 H330" />
+  <path class="wire wire-muted" d="M524 364 H596" />
+  <path class="wire wire-muted" d="M790 364 H846" />
+  <text class="label-text" x="309" y="348" text-anchor="middle">states</text>
+  <text class="label-text" x="560" y="348" text-anchor="middle">links</text>
+  <text class="label-text" x="819" y="348" text-anchor="middle">events</text>
+
+  <rect class="module module-strong shadow" x="72" y="505" width="494" height="86" rx="16" />
+  <text class="body-text" x="319" y="539" text-anchor="middle">Cross-Layer Full-Duplex Node Model</text>
+  <text class="small-text" x="319" y="567" text-anchor="middle">application traffic, routing, clustering, MAC access, PHY transmission and reception</text>
+
+  <path class="wire wire-accent" d="M182 416 C182 466 216 486 288 505" />
+  <path class="wire wire-muted dash" d="M427 416 C420 464 386 485 332 505" />
+  <path class="wire wire-muted dash" d="M947 416 C892 522 672 556 566 556" />
+
+  <rect class="chip" x="632" y="500" width="152" height="40" rx="20" />
+  <text class="small-text" x="708" y="525" text-anchor="middle">self-interference</text>
+  <rect class="chip" x="800" y="500" width="126" height="40" rx="20" />
+  <text class="small-text" x="863" y="525" text-anchor="middle">multi-channel</text>
+  <rect class="chip" x="942" y="500" width="94" height="40" rx="20" />
+  <text class="small-text" x="989" y="525" text-anchor="middle">priority</text>
+
+  <path class="wire wire-accent dash" d="M632 520 C584 516 552 499 524 416" />
+  <path class="wire wire-accent dash" d="M862 500 C815 468 752 444 693 416" />
+  <path class="wire wire-accent dash" d="M990 500 C992 468 974 440 947 416" />
+
+  <rect class="module module-soft" x="92" y="146" width="202" height="54" rx="14" />
+  <text class="small-text" x="193" y="179" text-anchor="middle">WebSocket coordination</text>
+  <rect class="module module-soft" x="826" y="146" width="202" height="54" rx="14" />
+  <text class="small-text" x="927" y="179" text-anchor="middle">management console</text>
+  <path class="wire wire-muted dash" d="M294 173 H382" />
+  <path class="wire wire-muted dash" d="M738 173 H826" />
+</svg>

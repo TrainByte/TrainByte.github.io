@@ -30,6 +30,59 @@ latest_posts:
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.16em;
   }
+
+  .featured-projects {
+    margin-top: 2rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .project-card {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--global-bg-color);
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin: 0 0 0.5rem;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.55rem 0;
+  }
+
+  .project-role,
+  .project-tag,
+  .project-result {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+    padding: 0.25rem 0.42rem;
+    font-size: 0.76rem;
+  }
+
+  .project-role {
+    color: var(--global-theme-color);
+    font-weight: 600;
+  }
+
+  .project-link {
+    display: inline-block;
+    margin-top: 0.35rem;
+    font-weight: 600;
+  }
 </style>
 
 I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. I received my B.Eng. degree in Communication Engineering from Xidian University.
@@ -49,5 +102,16 @@ My research focuses on 6G intelligent networks and AI service orchestration. I s
   Ph.D. Candidate in Computer Science and Technology. Ph.D. advisor: Prof. Yiqing Zhou.
 - **Xidian University**:
   B.Eng. in Communication Engineering. Undergraduate mentor: Prof. Junyu Liu. Comprehensive recommendation ranking: 1st in class.
+
+## Featured projects
+
+<section class="featured-projects" aria-label="Featured projects">
+  <div class="project-grid">
+    {% assign featured_projects = site.projects | where: "featured", true | sort: "importance" %}
+    {% for project in featured_projects limit: 4 %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
 {% include visitor_counter.liquid %}

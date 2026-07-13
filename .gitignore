@@ -1,4 +1,5 @@
 _site
+/_private_materials/
 .bundle
 .DS_store
 .idea

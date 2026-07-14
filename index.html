@@ -25,9 +25,9 @@
   body {
     background-image: url("/assets/img/logos/ucas-watermark.png");
     background-attachment: fixed;
-    background-position: left clamp(-260px, -14vw, -120px) top 7rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: min(46vw, 560px);
+    background-size: min(58vw, 640px);
   }
 
   .profile {
@@ -63,6 +63,22 @@
   h2 {
     margin-top: 2.8rem;
     margin-bottom: 0.95rem;
+  }
+
+  .career-note {
+    background:
+      linear-gradient(90deg, rgba(46, 127, 255, 0.08), rgba(176, 62, 98, 0.055)),
+      var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+    color: var(--global-text-color);
+    margin: 1.05rem 0 1.4rem;
+    padding: 0.82rem 0.95rem;
+  }
+
+  .career-note strong {
+    color: var(--global-theme-color);
   }
 
   .education-strip {
@@ -124,8 +140,8 @@
 
   .interest-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.9rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
     margin: 1.05rem 0 2.35rem;
   }
 
@@ -139,11 +155,26 @@
     display: grid;
     gap: 0.62rem;
     grid-template-columns: auto minmax(0, 1fr);
+    min-height: 5.6rem;
+    overflow: hidden;
     padding: 0.95rem 1rem;
+    position: relative;
+  }
+
+  .interest-card::after {
+    background: linear-gradient(180deg, var(--global-theme-color), #b03e62);
+    content: "";
+    height: 100%;
+    opacity: 0.82;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
   }
 
   .interest-index {
     align-items: center;
+    background: rgba(46, 127, 255, 0.08);
     border: 1px solid rgba(46, 127, 255, 0.28);
     border-radius: 999px;
     color: var(--global-theme-color);
@@ -288,8 +319,8 @@
 
   @media (max-width: 767px) {
     body {
-      background-position: left -210px top 5.5rem;
-      background-size: 390px;
+      background-position: center 5.8rem;
+      background-size: 430px;
     }
 
     .profile,
@@ -330,7 +361,13 @@
       max-width: 220px;
     }
   }
-</style> <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.</p> <div class="education-strip" aria-label="Education"> <article class="education-card"> <div class="education-logo"> <img src="/assets/img/logos/ucas-emblem.png" alt="University of Chinese Academy of Sciences emblem"> </div> <div> <span class="education-year">2021 - present</span> <strong>Ph.D. Candidate in Computer Science and Technology</strong> <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span> </div> </article> <article class="education-card"> <div class="education-logo"> <img src="/assets/img/logos/xidian-emblem.png" alt="Xidian University emblem"> </div> <div> <span class="education-year">2017 - 2021</span> <strong>B.Eng. in Communication Engineering</strong> <span>Xidian University · National Scholarship · Ranked 1st in class for comprehensive recommendation</span> </div> </article> </div> <h2 id="research-interests">Research interests</h2> <div class="interest-grid"> <section class="interest-card"> <span class="interest-index">01</span> <h3>AI-Native 6G Networks</h3> </section> <section class="interest-card"> <span class="interest-index">02</span> <h3>Cloud-Edge Collaborative AI Services</h3> </section> <section class="interest-card"> <span class="interest-index">03</span> <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3> </section> <section class="interest-card"> <span class="interest-index">04</span> <h3>Space AI Computing Networks</h3> </section> <section class="interest-card"> <span class="interest-index">05</span> <h3>RAG and AI Agent Memory Systems</h3> </section> <section class="interest-card"> <span class="interest-index">06</span> <h3>Wireless Resource Optimization</h3> </section> </div> <h2 id="news">News</h2> <div class="home-news-panel"> <ul class="home-news-list"> <li> <time datetime="2026-06-15T04:00:00+00:00">Jun 15, 2026</time> <span>Selected as an Outstanding Graduate Student by the Xinghang Program of the Journal of Electronics &amp; Information Technology.</span> </li> <li> <time datetime="2026-06-15T04:00:00+00:00">Jun 15, 2026</time> <span>Received the Outstanding Poster Award at the Frontiers in Electronics and Information Conference.</span> </li> <li> <time datetime="2026-05-12T04:00:00+00:00">May 12, 2026</time> <span>First-author paper “Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI” was published in IEEE Transactions on Cognitive Communications and Networking.</span> </li> <li> <time datetime="2026-04-01T04:00:00+00:00">Apr 1, 2026</time> <span>First-author paper “Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems” was published in China Communications.</span> </li> <li> <time datetime="2026-01-12T04:00:00+00:00">Jan 12, 2026</time> <span>First-author paper “Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks” was published in IEEE Transactions on Mobile Computing.</span> </li> <li> <time datetime="2026-01-01T04:00:00+00:00">Jan 1, 2026</time> <span>First-author paper “Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks” was accepted/published in IEEE Transactions on Mobile Computing.</span> </li> </ul> </div> <h2 id="selected-publications">Selected publications</h2> <div class="selected-publication-list"> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-noma.png" alt="NOMA-based multi-cell MEC resource allocation preview"> <div> <h3>Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Yihao Wu, Hanxiao Yu, and Jinglin Shi</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Accepted/Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-isac.png" alt="ISAC-driven AIGC resource allocation preview"> <div> <h3>Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tccn-fairness.png" alt="Wireless fairness and multi-agent DRL preview"> <div> <h3>Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi</p> <p>IEEE Transactions on Cognitive Communications and Networking, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TCCN</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/china-communications-uav.png" alt="UAV-assisted mmWave MIMO secure communication preview"> <div> <h3>Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi</p> <p>China Communications, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">China Commun.</span> <span class="publication-badge cic">T1 CIC</span> <span class="publication-badge status">Published</span> </div> </div> </article> </div> <style>
+
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .interest-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style> <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.</p> <p class="career-note"><strong>Open to opportunities:</strong> I am currently seeking research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p> <div class="education-strip" aria-label="Education"> <article class="education-card"> <div class="education-logo"> <img src="/assets/img/logos/ucas-emblem.png" alt="University of Chinese Academy of Sciences emblem"> </div> <div> <span class="education-year">2021 - present</span> <strong>Ph.D. Candidate in Computer Science and Technology</strong> <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span> </div> </article> <article class="education-card"> <div class="education-logo"> <img src="/assets/img/logos/xidian-emblem.png" alt="Xidian University emblem"> </div> <div> <span class="education-year">2017 - 2021</span> <strong>B.Eng. in Communication Engineering</strong> <span>Xidian University · National Scholarship · Ranked 1st in class</span> </div> </article> </div> <h2 id="research-interests">Research interests</h2> <div class="interest-grid"> <section class="interest-card"> <span class="interest-index">01</span> <h3>AI-Native 6G Networks</h3> </section> <section class="interest-card"> <span class="interest-index">02</span> <h3>Cloud-Edge Collaborative AI Services</h3> </section> <section class="interest-card"> <span class="interest-index">03</span> <h3>Integrated Sensing, Communication, Computing, and Intelligence</h3> </section> <section class="interest-card"> <span class="interest-index">04</span> <h3>Space AI Computing Networks</h3> </section> <section class="interest-card"> <span class="interest-index">05</span> <h3>RAG and AI Agent Memory Systems</h3> </section> <section class="interest-card"> <span class="interest-index">06</span> <h3>Wireless Resource Optimization</h3> </section> </div> <h2 id="news">News</h2> <div class="home-news-panel"> <ul class="home-news-list"> <li> <time datetime="2026-06-15T04:00:00+00:00">Jun 15, 2026</time> <span>Selected as an Outstanding Graduate Student by the Xinghang Program of the Journal of Electronics &amp; Information Technology.</span> </li> <li> <time datetime="2026-06-15T04:00:00+00:00">Jun 15, 2026</time> <span>Received the Outstanding Poster Award at the Frontiers in Electronics and Information Conference.</span> </li> <li> <time datetime="2026-05-12T04:00:00+00:00">May 12, 2026</time> <span>First-author paper “Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI” was published in IEEE Transactions on Cognitive Communications and Networking.</span> </li> <li> <time datetime="2026-04-01T04:00:00+00:00">Apr 1, 2026</time> <span>First-author paper “Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems” was published in China Communications.</span> </li> <li> <time datetime="2026-01-12T04:00:00+00:00">Jan 12, 2026</time> <span>First-author paper “Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks” was published in IEEE Transactions on Mobile Computing.</span> </li> <li> <time datetime="2026-01-01T04:00:00+00:00">Jan 1, 2026</time> <span>First-author paper “Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks” was accepted/published in IEEE Transactions on Mobile Computing.</span> </li> </ul> </div> <h2 id="selected-publications">Selected publications</h2> <div class="selected-publication-list"> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-noma.png" alt="NOMA-based multi-cell MEC resource allocation preview"> <div> <h3>Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Yihao Wu, Hanxiao Yu, and Jinglin Shi</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Accepted/Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tmc-isac.png" alt="ISAC-driven AIGC resource allocation preview"> <div> <h3>Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu</p> <p>IEEE Transactions on Mobile Computing, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TMC</span> <span class="publication-badge ccf">CCF-A</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/tccn-fairness.png" alt="Wireless fairness and multi-agent DRL preview"> <div> <h3>Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi</p> <p>IEEE Transactions on Cognitive Communications and Networking, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">TCCN</span> <span class="publication-badge cas">Q1 CAS</span> <span class="publication-badge status">Published</span> </div> </div> </article> <article class="selected-publication"> <img src="/assets/img/publication_preview/china-communications-uav.png" alt="UAV-assisted mmWave MIMO secure communication preview"> <div> <h3>Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems</h3> <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi</p> <p>China Communications, 2026</p> <div class="publication-badges" aria-label="Publication venue and ranking"> <span class="publication-badge venue">China Commun.</span> <span class="publication-badge cic">T1 CIC</span> <span class="publication-badge status">Published</span> </div> </div> </article> </div> <style>
   .visitor-counter {
     max-width: 960px;
     margin: 2.5rem auto 0;

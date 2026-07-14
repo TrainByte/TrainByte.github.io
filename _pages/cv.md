@@ -14,9 +14,9 @@ toc:
   body {
     background-image: url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
     background-attachment: fixed;
-    background-position: right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: min(48vw, 560px);
+    background-size: min(58vw, 640px);
   }
 
   .cv-actions {
@@ -46,6 +46,10 @@ toc:
     margin-bottom: 0.25rem;
   }
 
+  .cv-entry li strong {
+    color: var(--global-theme-color);
+  }
+
   .cv-meta {
     color: var(--global-text-color-light);
     font-size: 0.92rem;
@@ -63,8 +67,8 @@ toc:
 
   @media (max-width: 767px) {
     body {
-      background-position: right -230px bottom 3rem;
-      background-size: 410px;
+      background-position: center 6rem;
+      background-size: 430px;
     }
   }
 </style>
@@ -93,7 +97,7 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <div class="cv-meta">B.Eng., Communication Engineering, Xi'an, China, Sep. 2017 - Jul. 2021</div>
   <ul class="cv-list">
     <li>Undergraduate Advisor: <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>.</li>
-    <li>Received the National Scholarship and ranked 1st in class for comprehensive recommendation.</li>
+    <li>Received the National Scholarship and ranked 1st in class.</li>
     <li>Discipline rated A+ in the national subject assessment.</li>
   </ul>
 </div>
@@ -113,13 +117,15 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
 
 ## Research Experience
 
+Selected projects below are packaged around two threads: **AI-native service orchestration** for large-scale intelligent applications and **learning-driven wireless resource optimization** for complex networked systems.
+
 <div class="cv-entry">
   <h3>Knowledge-Matching-Aware Scheduling for RAG Services</h3>
   <div class="cv-meta">Main Contributor, Institute of Computing Technology, Chinese Academy of Sciences, Oct. 2025 - Jun. 2026</div>
   <ul class="cv-list">
-    <li>Modeled task semantics, node knowledge coverage, computing cost, transmission delay, generation quality, and energy consumption for cloud-edge RAG services.</li>
-    <li>Designed a knowledge-matching-aware RAG task scheduling mechanism under heterogeneous knowledge bases and dynamic resource states.</li>
-    <li>Built a simulation environment; reduced energy consumption by approximately 50% and service delay by more than 10% in evaluated settings.</li>
+    <li>Built a joint model of **task semantics, node knowledge coverage, computing cost, delay, generation quality, and energy** for cloud-edge RAG services.</li>
+    <li>Designed a **knowledge-matching-aware orchestration mechanism** that selects service nodes by both resource state and knowledge relevance.</li>
+    <li>Implemented the simulation pipeline and reduced energy consumption by **approximately 50%** while reducing service delay by **more than 10%** in evaluated settings.</li>
   </ul>
 </div>
 
@@ -127,9 +133,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>Memory-Aware Distributed Routing for Space AI Computing Networks</h3>
   <div class="cv-meta">Main Contributor, Institute of Computing Technology, Chinese Academy of Sciences, Oct. 2025 - Mar. 2026</div>
   <ul class="cv-list">
-    <li>Modeled the coupling among task routing, node memory state, onboard computing load, storage availability, and link conditions.</li>
-    <li>Designed a distributed routing method for high-dimensional dynamic network states and introduced diffusion-assisted policy generation.</li>
-    <li>Validated the method on a ground-based space computing network simulator, reducing end-to-end routing delay by more than 15%.</li>
+    <li>Modeled the coupling among **task routing, node memory state, onboard computing load, storage availability, and link conditions**.</li>
+    <li>Designed a distributed routing method for high-dimensional dynamic network states with **diffusion-assisted policy generation**.</li>
+    <li>Validated the method on a ground-based space computing network simulator, reducing end-to-end routing delay by **more than 15%**.</li>
   </ul>
 </div>
 
@@ -137,9 +143,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>Distributed Quantum Reinforcement Learning for AIGC Cloud-Edge Scheduling</h3>
   <div class="cv-meta">Main Contributor, Institute of Computing Technology, Chinese Academy of Sciences, Jun. 2025 - Dec. 2025</div>
   <ul class="cv-list">
-    <li>Modeled collaborative cloud-edge processing for multi-user AIGC services, coupling task offloading, computing allocation, and service delay.</li>
-    <li>Designed a distributed hybrid quantum-classical reinforcement learning scheduler using parameterized quantum circuits and classical neural networks.</li>
-    <li>Reduced model parameters by more than 95% and average service delay by more than 30% compared with baseline methods in simulation.</li>
+    <li>Modeled multi-user AIGC cloud-edge collaboration by coupling **task offloading, computing allocation, and service delay**.</li>
+    <li>Designed a distributed **hybrid quantum-classical reinforcement learning scheduler** using parameterized quantum circuits and classical neural networks.</li>
+    <li>Reduced model parameters by **more than 95%** and average service delay by **more than 30%** compared with baseline methods in simulation.</li>
   </ul>
 </div>
 
@@ -147,9 +153,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>ISAC-Driven AIGC Service Orchestration</h3>
   <div class="cv-meta">Main Contributor and First Author, Institute of Computing Technology, Chinese Academy of Sciences, Jan. 2024 - Jun. 2025</div>
   <ul class="cv-list">
-    <li>Designed a content-accuracy-and-quality-aware service metric and modeled sensing, computing, communication, and AIGC service experience as a coupled system.</li>
-    <li>Formulated the joint resource-allocation problem and designed an LP-guided hierarchical reinforcement learning framework.</li>
-    <li>Improved average user service experience by more than 50% in evaluated settings; related work was published in IEEE Transactions on Mobile Computing.</li>
+    <li>Designed a **content-accuracy-and-quality-aware service metric** and modeled sensing, computing, communication, and AIGC service experience as a coupled system.</li>
+    <li>Formulated the joint resource-allocation problem and designed an **LP-guided hierarchical reinforcement learning framework**.</li>
+    <li>Improved average user service experience by **more than 50%**; related work was published in **IEEE Transactions on Mobile Computing**.</li>
   </ul>
 </div>
 
@@ -157,9 +163,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>User Selection and Resource Allocation for High-Concurrency AI Services</h3>
   <div class="cv-meta">Main Contributor and First Author, Institute of Computing Technology, Chinese Academy of Sciences, Dec. 2022 - Dec. 2024</div>
   <ul class="cv-list">
-    <li>Modeled user access, bandwidth, subchannels, transmit power, edge computing resources, and service satisfaction in multi-cell MEC networks.</li>
+    <li>Modeled **user access, bandwidth, subchannels, transmit power, edge computing resources, and service satisfaction** in multi-cell MEC networks.</li>
     <li>Designed a joint optimization algorithm for user selection, channel assignment, power control, and edge computing resource allocation.</li>
-    <li>Improved average user satisfaction by more than 50%; related work was published in IEEE Transactions on Mobile Computing.</li>
+    <li>Improved average user satisfaction by **more than 50%**; related work was published in **IEEE Transactions on Mobile Computing**.</li>
   </ul>
 </div>
 
@@ -167,9 +173,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>Adaptive Fair Resource Scheduling Under Imperfect CSI</h3>
   <div class="cv-meta">Main Contributor and First Author, Institute of Computing Technology, Chinese Academy of Sciences, May 2022 - May 2024</div>
   <ul class="cv-list">
-    <li>Built a channel-uncertainty-aware resource allocation model for multi-cell multi-user downlink communications under imperfect CSI.</li>
-    <li>Designed a reward-adaptive multi-agent DRL scheduler balancing long-term fairness and network service rate.</li>
-    <li>Improved long-term fairness by 13% and service rate by more than 10%; related work was published in IEEE Transactions on Cognitive Communications and Networking.</li>
+    <li>Built a **channel-uncertainty-aware resource allocation model** for multi-cell multi-user downlink communications under imperfect CSI.</li>
+    <li>Designed a **reward-adaptive multi-agent DRL scheduler** balancing long-term fairness and network service rate.</li>
+    <li>Improved long-term fairness by **13%** and service rate by **more than 10%**; related work was published in **IEEE Transactions on Cognitive Communications and Networking**.</li>
   </ul>
 </div>
 
@@ -177,8 +183,8 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>Multi-Channel Access for In-Band Full-Duplex Ad Hoc Networks</h3>
   <div class="cv-meta">Technical Lead, Institute of Computing Technology, Chinese Academy of Sciences, Oct. 2022 - Jun. 2023</div>
   <ul class="cv-list">
-    <li>Designed multi-channel interference coordination and access-control mechanisms for full-duplex ad hoc networks with residual self-interference and inter-node interference.</li>
-    <li>Built a distributed WebSocket-based system-level simulator integrating node workers, channel computation, mobility modeling, and visualization.</li>
+    <li>Designed **multi-channel interference coordination and access-control mechanisms** for full-duplex ad hoc networks with residual self-interference and inter-node interference.</li>
+    <li>Built a **distributed WebSocket-based system-level simulator** integrating node workers, channel computation, mobility modeling, and visualization.</li>
     <li>Delivered a system prototype and related invention patent/software copyright outputs.</li>
   </ul>
 </div>
@@ -187,9 +193,9 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
   <h3>UAV-Assisted Secure Transmission Under Deception and Jamming</h3>
   <div class="cv-meta">Task Leader, Technical Lead, and First Author, Institute of Computing Technology, Chinese Academy of Sciences, Sep. 2021 - Jun. 2023</div>
   <ul class="cv-list">
-    <li>Built a UAV-assisted mmWave MIMO secure communication model covering legitimate links, deception links, jamming sources, and UAV-assisted nodes.</li>
+    <li>Built a UAV-assisted mmWave MIMO secure communication model covering **legitimate links, deception links, jamming sources, and UAV-assisted nodes**.</li>
     <li>Designed joint optimization for beamforming, UAV three-dimensional placement, and power allocation under complex electromagnetic confrontation.</li>
-    <li>Improved secure transmission rate to approximately two times that of the no-deception baseline; related work was published in China Communications and one invention patent was granted.</li>
+    <li>Improved secure transmission rate to **approximately two times** that of the no-deception baseline; related work was published in **China Communications** and one invention patent was granted.</li>
   </ul>
 </div>
 
@@ -206,15 +212,15 @@ Ph.D. candidate researching 6G intelligent networks and AI service orchestration
 1. Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System. Granted invention patent: CN202211134854.X, 2024-09-24.
 2. Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation. Granted invention patent: CN202310078808.0, 2025-05-27.
 3. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. Granted invention patent: CN202310354794.0, 2026-04-07.
-4. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. Patent application: PCT/CN2023/090283, 2023-04-24.
-5. Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks. Patent application: CN202311719290.0, 2023-12-14.
-6. Multi-User MIMO Signal Detection Model. Patent application: CN202410018551.4, 2024-01-05.
-7. Channel Access Method and Communication System for Ad Hoc Networks. Patent application: CN202410348337.5, 2024-03-26.
-8. Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System. Patent application: CN202510873622.3, 2025-06-27.
-9. Environment- and Resource-State-Aware Resource Allocation Method and System. Patent application: CN202510955830.8, 2025-07-11.
-10. Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication. Patent application: CN202511053332.0, 2025-07-30.
-11. Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium. Patent application: CN202511536493.5, 2025-10-27.
-12. Transmission Device and Semantic Transmission Method for High-Mobility Communications. Patent application: CN202610406457.5, 2026-03-31.
+4. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. Invention patent application (PCT): PCT/CN2023/090283, 2023-04-24.
+5. Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks. Invention patent application: CN202311719290.0, 2023-12-14.
+6. Multi-User MIMO Signal Detection Model. Invention patent application: CN202410018551.4, 2024-01-05.
+7. Channel Access Method and Communication System for Ad Hoc Networks. Invention patent application: CN202410348337.5, 2024-03-26.
+8. Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System. Invention patent application: CN202510873622.3, 2025-06-27.
+9. Environment- and Resource-State-Aware Resource Allocation Method and System. Invention patent application: CN202510955830.8, 2025-07-11.
+10. Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication. Invention patent application: CN202511053332.0, 2025-07-30.
+11. Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium. Invention patent application: CN202511536493.5, 2025-10-27.
+12. Transmission Device and Semantic Transmission Method for High-Mobility Communications. Invention patent application: CN202610406457.5, 2026-03-31.
 13. Large-Scale Full-Duplex Network Simulation System. Registered software copyright: 2024SR0082117, 2024-01-11.
 
 ## Honors and Awards

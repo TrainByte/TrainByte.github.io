@@ -26,9 +26,9 @@ latest_posts:
   body {
     background-image: url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}");
     background-attachment: fixed;
-    background-position: left clamp(-260px, -14vw, -120px) top 7rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: min(46vw, 560px);
+    background-size: min(58vw, 640px);
   }
 
   .profile {
@@ -64,6 +64,22 @@ latest_posts:
   h2 {
     margin-top: 2.8rem;
     margin-bottom: 0.95rem;
+  }
+
+  .career-note {
+    background:
+      linear-gradient(90deg, rgba(46, 127, 255, 0.08), rgba(176, 62, 98, 0.055)),
+      var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+    color: var(--global-text-color);
+    margin: 1.05rem 0 1.4rem;
+    padding: 0.82rem 0.95rem;
+  }
+
+  .career-note strong {
+    color: var(--global-theme-color);
   }
 
   .education-strip {
@@ -125,8 +141,8 @@ latest_posts:
 
   .interest-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.9rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
     margin: 1.05rem 0 2.35rem;
   }
 
@@ -140,11 +156,26 @@ latest_posts:
     display: grid;
     gap: 0.62rem;
     grid-template-columns: auto minmax(0, 1fr);
+    min-height: 5.6rem;
+    overflow: hidden;
     padding: 0.95rem 1rem;
+    position: relative;
+  }
+
+  .interest-card::after {
+    background: linear-gradient(180deg, var(--global-theme-color), #b03e62);
+    content: "";
+    height: 100%;
+    opacity: 0.82;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
   }
 
   .interest-index {
     align-items: center;
+    background: rgba(46, 127, 255, 0.08);
     border: 1px solid rgba(46, 127, 255, 0.28);
     border-radius: 999px;
     color: var(--global-theme-color);
@@ -289,8 +320,8 @@ latest_posts:
 
   @media (max-width: 767px) {
     body {
-      background-position: left -210px top 5.5rem;
-      background-size: 390px;
+      background-position: center 5.8rem;
+      background-size: 430px;
     }
 
     .profile,
@@ -331,9 +362,17 @@ latest_posts:
       max-width: 220px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .interest-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
 </style>
 
-I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class for comprehensive recommendation.
+I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.
+
+<p class="career-note"><strong>Open to opportunities:</strong> I am currently seeking research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>
 
 <div class="education-strip" aria-label="Education">
   <article class="education-card">
@@ -353,7 +392,7 @@ I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Tech
     <div>
       <span class="education-year">2017 - 2021</span>
       <strong>B.Eng. in Communication Engineering</strong>
-      <span>Xidian University · National Scholarship · Ranked 1st in class for comprehensive recommendation</span>
+      <span>Xidian University · National Scholarship · Ranked 1st in class</span>
     </div>
   </article>
 </div>

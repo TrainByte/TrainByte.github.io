@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications & Patents
-description: Published and accepted research, invention patents, patent applications, and registered software copyrights.
+description: Published and accepted research, granted invention patents, invention patent applications, and registered software copyrights.
 nav: true
 nav_order: 2
 ---
@@ -11,9 +11,9 @@ nav_order: 2
   body {
     background-image: url("{{ '/assets/img/logos/xidian-watermark.png' | relative_url }}");
     background-attachment: fixed;
-    background-position: right clamp(-280px, -16vw, -120px) bottom 4rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: min(48vw, 560px);
+    background-size: min(58vw, 640px);
   }
 
   .publications-note {
@@ -40,7 +40,7 @@ nav_order: 2
     font-weight: 700;
     letter-spacing: 0.02em;
     margin: 1.45rem 0 0.65rem;
-   }
+  }
 
   ol.bibliography {
     counter-reset: publication;
@@ -186,8 +186,8 @@ nav_order: 2
 
   @media (max-width: 767px) {
     body {
-      background-position: right -230px bottom 3rem;
-      background-size: 410px;
+      background-position: center 6rem;
+      background-size: 430px;
     }
 
     ol.bibliography li .row {
@@ -198,7 +198,7 @@ nav_order: 2
 </style>
 
 <p class="publications-note">
-  A concise record of peer-reviewed publications, granted invention patents, patent applications, and registered software copyrights.
+  A concise record of peer-reviewed publications, granted invention patents, invention patent applications, and registered software copyrights.
 </p>
 
 <section class="publication-section" aria-label="Research publications">
@@ -208,8 +208,8 @@ nav_order: 2
 
 </section>
 
-<section id="patents" class="ip-section" aria-label="Patents and software copyright">
-  <h2>Patents</h2>
+<section id="patents" class="ip-section" aria-label="Invention patents and software copyright">
+  <h2>Invention Patents</h2>
 
   <div class="ip-group">
     <h3>Granted invention patents</h3>
@@ -242,12 +242,12 @@ nav_order: 2
   </div>
 
   <div class="ip-group">
-    <h3>Patent applications</h3>
+    <h3>Invention patent applications</h3>
     <div class="ip-list">
       <article class="ip-item">
         <div class="ip-title">Construction Method and Resource Management Method for a Wireless Network Resource Allocation System</div>
         <div class="ip-meta">
-          <span class="ip-type">PCT application</span>
+          <span class="ip-type">Invention patent application (PCT)</span>
           <span>PCT/CN2023/090283</span>
           <span>2023-04-24</span>
         </div>
@@ -255,7 +255,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202311719290.0</span>
           <span>2023-12-14</span>
         </div>
@@ -263,7 +263,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Multi-User MIMO Signal Detection Model</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202410018551.4</span>
           <span>2024-01-05</span>
         </div>
@@ -271,7 +271,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Channel Access Method and Communication System for Ad Hoc Networks</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202410348337.5</span>
           <span>2024-03-26</span>
         </div>
@@ -279,7 +279,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202510873622.3</span>
           <span>2025-06-27</span>
         </div>
@@ -287,7 +287,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Environment- and Resource-State-Aware Resource Allocation Method and System</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202510955830.8</span>
           <span>2025-07-11</span>
         </div>
@@ -295,7 +295,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202511053332.0</span>
           <span>2025-07-30</span>
         </div>
@@ -303,7 +303,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202511536493.5</span>
           <span>2025-10-27</span>
         </div>
@@ -311,7 +311,7 @@ nav_order: 2
       <article class="ip-item">
         <div class="ip-title">Transmission Device and Semantic Transmission Method for High-Mobility Communications</div>
         <div class="ip-meta">
-          <span class="ip-type">Patent application</span>
+          <span class="ip-type">Invention patent application</span>
           <span>CN202610406457.5</span>
           <span>2026-03-31</span>
         </div>

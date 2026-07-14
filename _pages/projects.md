@@ -11,9 +11,9 @@ nav_order: 3
   body {
     background-image: url("{{ '/assets/img/logos/ucas-watermark.png' | relative_url }}");
     background-attachment: fixed;
-    background-position: left clamp(-260px, -14vw, -120px) top 7rem;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: min(46vw, 560px);
+    background-size: min(58vw, 640px);
   }
 
   .project-toolbar {
@@ -69,19 +69,29 @@ nav_order: 3
   }
 
   .project-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 8px;
-    padding: 0.9rem;
-    min-height: 100%;
-    min-width: 0;
     background:
       linear-gradient(180deg, rgba(46, 127, 255, 0.035), rgba(255, 255, 255, 0)),
       var(--global-bg-color);
-    overflow: hidden;
-    position: relative;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
     box-shadow: 0 8px 26px rgba(15, 23, 42, 0.035);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0.95rem;
+    position: relative;
+    transition:
+      border-color 160ms ease,
+      box-shadow 160ms ease,
+      transform 160ms ease;
+  }
+
+  .project-card:hover {
+    border-color: rgba(46, 127, 255, 0.42);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
   }
 
   .project-card::before {
@@ -89,7 +99,7 @@ nav_order: 3
     display: block;
     height: 4px;
     background: linear-gradient(90deg, var(--global-theme-color), #b03e62);
-    margin: -0.9rem -0.9rem 0.8rem;
+    margin: -0.95rem -0.95rem 0.8rem;
   }
 
   .project-category {
@@ -107,6 +117,15 @@ nav_order: 3
     margin: 0 0 0.5rem;
   }
 
+  .project-card h3 a {
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  .project-card h3 a:hover {
+    color: var(--global-theme-color);
+  }
+
   .project-card p {
     font-size: 0.9rem;
     line-height: 1.45;
@@ -114,8 +133,14 @@ nav_order: 3
   }
 
   .project-contribution {
+    background: rgba(46, 127, 255, 0.045);
     border-left: 3px solid var(--global-theme-color);
-    padding-left: 0.65rem;
+    border-radius: 6px;
+    padding: 0.55rem 0.65rem;
+  }
+
+  .project-contribution strong {
+    color: var(--global-theme-color);
   }
 
   .project-card h3,
@@ -160,15 +185,25 @@ nav_order: 3
   }
 
   .project-link {
-    display: inline-block;
+    align-self: flex-start;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    display: inline-flex;
     margin-top: auto;
+    padding: 0.36rem 0.58rem;
     font-weight: 600;
+    text-decoration: none;
+  }
+
+  .project-link:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
   }
 
   @media (max-width: 767px) {
     body {
-      background-position: left -210px top 5.5rem;
-      background-size: 390px;
+      background-position: center 5.8rem;
+      background-size: 430px;
     }
 
     .project-grid {
@@ -187,7 +222,7 @@ nav_order: 3
 {% assign categories = "AI Systems|Wireless Intelligence|Engineering Systems" | split: "|" %}
 
 <p class="project-intro">
-  Selected projects from AI Agent memory and cloud-edge RAG orchestration to space AI routing, AIGC service scheduling, ISAC resource allocation, secure UAV communications, full-duplex ad hoc networking, and large-scale wireless simulation.
+  Selected projects that connect algorithm design with deployable networked systems, spanning AI service orchestration, learning-driven wireless intelligence, space computing, secure communications, and distributed simulation.
 </p>
 
 <div class="project-toolbar" aria-label="Project categories">

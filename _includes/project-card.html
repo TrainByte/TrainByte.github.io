@@ -11,7 +11,7 @@
     {% endif %}
   </div>
   <p>{{ project.summary }}</p>
-  <p class="project-contribution"><strong>Core contribution:</strong> {{ project.contribution }}</p>
+  <p class="project-contribution"><strong>Focus:</strong> {{ project.contribution }}</p>
   {% if project.results %}
   <div class="project-meta" aria-label="Key results">
     {% for result in project.results limit: 3 %}

@@ -69,12 +69,18 @@ nav_order: 2
     margin: 0;
   }
 
-  ol.bibliography .abbr,
-  ol.bibliography [class*="col-sm"] {
+  ol.bibliography .abbr {
     flex: none;
     max-width: none;
     padding: 0;
     width: 5.6rem;
+  }
+
+  ol.bibliography [class*="col-sm"]:not(.abbr) {
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+    width: auto;
   }
 
   ol.bibliography .abbr abbr {

@@ -50,12 +50,6 @@ toc:
     color: var(--global-theme-color);
   }
 
-  .cv-list strong,
-  main li strong,
-  main p strong {
-    color: var(--global-theme-color);
-  }
-
   .cv-meta {
     color: var(--global-text-color-light);
     font-size: 0.92rem;
@@ -205,11 +199,20 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 ## Publications
 
+**First-author publications**
+
 1. **Ningzhe Shi**, Yiqing Zhou, Ling Liu, Yihao Wu, Hanxiao Yu, and Jinglin Shi. Service Satisfaction Based User Selection and Resource Allocation for NOMA-Based Multi-Cell MEC Networks. _IEEE Transactions on Mobile Computing_, 2026.
 2. **Ningzhe Shi**, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu. Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks. _IEEE Transactions on Mobile Computing_, 2026.
 3. **Ningzhe Shi**, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi. Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI. _IEEE Transactions on Cognitive Communications and Networking_, 2026.
 4. **Ningzhe Shi**, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi. Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems. _China Communications_, 2026.
 5. **Ningzhe Shi**, Yihao Wu, Yaxing Xu, Qing Cai, and Yiqing Zhou. Cross-Enabling of Operation, Information and Communication: Building the Foundation for Intelligent New-Generation Productivity. _Computing Magazine of the CCF_, 2025, 1(4): 82-91.
+6. **Ningzhe Shi**, Yu Zhang, and Yiqing Zhou. Deep Reinforcement Learning Based Subchannel Selection and Power Allocation in Wireless Networks with Imperfect CSI. _2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)_, 2023.
+
+**Second-author publications**
+
+1. Hanxiao Yu, **Ningzhe Shi**, Yiqing Zhou, Zhong Zheng, Jinglin Shi, and Zesong Fei. Performance Analysis and Energy-Efficient Optimization for Multiple Active RIS-Assisted MIMO Communication Systems. _IEEE Transactions on Vehicular Technology_, 2026.
+2. Hanxiao Yu, **Ningzhe Shi**, Jinglin Shi, Jing Guo, Siqiang Wang, and Zesong Fei. OFDM-Based NOMA-Enhanced Coexistence of SemCom and BitCom System. _IEEE Wireless Communications Letters_, 2025, 14(7): 2069-2073.
+3. Z. Lin, **Ningzhe Shi**, Yiqing Zhou, and Jinglin Shi. Cost-Aware Deep Reinforcement Learning for eMBB-URLLC Multiplexing Resource Allocation. _2025 IEEE Wireless Communications and Networking Conference (WCNC)_, 2025.
 
 ## Patents & Software Copyright
 
@@ -238,15 +241,15 @@ Selected projects below are packaged around two threads: **AI-native service orc
 ## Honors and Awards
 
 - **Outstanding Graduate Student**, Xinghang Program, Journal of Electronics & Information Technology, national selection of **22 graduate students**, 2026.
-- **Outstanding Poster Award**, Frontiers in Electronics and Information Conference, 2026.
+- Outstanding Poster Award, Frontiers in Electronics and Information Conference, 2026.
 - **UCAS Outstanding Student Model**, university-wide **top 1%**, 2026.
-- **ICT Outstanding Student**, Institute of Computing Technology / State Key Laboratory of Processors, 2026.
+- ICT Outstanding Student, Institute of Computing Technology / State Key Laboratory of Processors, 2026.
 - **E Fund Financial Technology Doctoral Scholarship**, **12 recipients institute-wide**, 2025.
 - **UCAS Outstanding Student Cadre**, 2025.
-- **Outstanding Volunteer**, Chinese Academy of Sciences Public Science Day, 2023, 2024, and 2025.
-- **UCAS Outstanding Student**, 2023.
-- **UCAS First-Class Scholarship**, 2021-2025, awarded for **five consecutive years**.
-- Outstanding Graduate, Xidian University, 2021.
+- Outstanding Volunteer, Chinese Academy of Sciences Public Science Day, 2023, 2024, and 2025.
+- UCAS Outstanding Student, 2023.
+- UCAS First-Class Scholarship, 2021-2025, awarded for five consecutive years.
+- **Outstanding Graduate, Xidian University**, 2021.
 - First-Class Graduation Scholarship, Xidian University, 2021.
 - Honorable Mention, Mathematical Contest in Modeling, 2020.
 - **National Scholarship**, 2019.
@@ -258,7 +261,7 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 - **Program Committee:** Technical Program Committee Member, IEEE International Conference on Communications (ICC), 2026.
 - **Academic Correspondence:** Academic Correspondent, _Digital Communications and Networks_.
-- **Peer Review:** IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology.
+- **Peer Review:** IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; Journal of Information and Intelligence; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology.
 
 ## Outreach and Public Engagement
 

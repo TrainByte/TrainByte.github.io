@@ -166,6 +166,41 @@ cv:
         journal: Computing Magazine of the CCF
         date: 2025
         doi: 10.11991/cccf.202508013
+      - title: Deep Reinforcement Learning Based Subchannel Selection and Power Allocation in Wireless Networks with Imperfect CSI
+        authors:
+          - "***Ningzhe Shi***"
+          - Yu Zhang
+          - Yiqing Zhou
+        journal: 2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)
+        date: 2023
+      - title: Performance Analysis and Energy-Efficient Optimization for Multiple Active RIS-Assisted MIMO Communication Systems
+        authors:
+          - Hanxiao Yu
+          - "***Ningzhe Shi***"
+          - Yiqing Zhou
+          - Zhong Zheng
+          - Jinglin Shi
+          - Zesong Fei
+        journal: IEEE Transactions on Vehicular Technology
+        date: 2026
+      - title: OFDM-Based NOMA-Enhanced Coexistence of SemCom and BitCom System
+        authors:
+          - Hanxiao Yu
+          - "***Ningzhe Shi***"
+          - Jinglin Shi
+          - Jing Guo
+          - Siqiang Wang
+          - Zesong Fei
+        journal: IEEE Wireless Communications Letters
+        date: 2025
+      - title: Cost-Aware Deep Reinforcement Learning for eMBB-URLLC Multiplexing Resource Allocation
+        authors:
+          - Z. Lin
+          - "***Ningzhe Shi***"
+          - Yiqing Zhou
+          - Jinglin Shi
+        journal: 2025 IEEE Wireless Communications and Networking Conference (WCNC)
+        date: 2025
 
     "Granted Invention Patents":
       - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
@@ -258,7 +293,7 @@ cv:
       - label: Academic Correspondence
         details: Academic Correspondent, Digital Communications and Networks
       - label: Peer Review
-        details: IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology
+        details: IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; Journal of Information and Intelligence; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology
 
     Outreach and Public Engagement:
       - name: Science Outreach

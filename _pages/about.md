@@ -30,13 +30,13 @@ latest_posts:
   }
 
   .profile {
-    max-width: 150px;
-    margin-left: 1.35rem;
+    max-width: 128px;
+    margin-left: 1.25rem;
   }
 
   .profile img {
     width: 100%;
-    max-width: 135px;
+    max-width: 116px;
     height: auto;
   }
 
@@ -62,6 +62,15 @@ latest_posts:
   h2 {
     margin-top: 2.8rem;
     margin-bottom: 0.95rem;
+  }
+
+  .about-intro {
+    font-size: 1.01rem;
+    line-height: 1.7;
+  }
+
+  .about-intro p {
+    margin-bottom: 0.72rem;
   }
 
   .profile-strip-stack {
@@ -339,11 +348,11 @@ latest_posts:
     .profile.float-right {
       float: none !important;
       margin: 0 auto 1.35rem !important;
-      max-width: 140px;
+      max-width: 124px;
     }
 
     .profile img {
-      max-width: 130px;
+      max-width: 116px;
     }
 
     .education-card {
@@ -377,7 +386,11 @@ latest_posts:
   }
 </style>
 
-I am **Ningzhe Shi (时宁哲)**, pursuing a **Ph.D. in Computer Science and Technology** at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.
+<div class="about-intro">
+  <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, pursuing a <strong>Ph.D. in Computer Science and Technology</strong> at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</p>
+  <p>My work is driven by a practical question: how can intelligent services stay reliable when knowledge, computing, wireless links, and user demands all change at the same time? I enjoy turning that kind of messy system constraint into clean models, learning-based algorithms, and simulation evidence that can support real deployment decisions.</p>
+  <p>I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.</p>
+</div>
 
 <div class="profile-strip-stack" aria-label="Career and education">
   <p class="career-note"><strong>Open to opportunities:</strong> research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>

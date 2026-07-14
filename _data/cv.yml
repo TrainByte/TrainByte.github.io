@@ -14,24 +14,22 @@ cv:
     Education:
       - institution: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
         location: Beijing, China
-        area: Computer Science and Technology
+        area: Computer Science and Technology (A+ national discipline)
         degree: Ph.D. Candidate
         start_date: 2021-09
         end_date: present
         highlights:
           - "Ph.D. Advisor: [Prof. Yiqing Zhou](https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html)"
-          - Discipline rated A+ in the national subject assessment
       - institution: Xidian University
         location: Xi'an, China
-        area: Communication Engineering
+        area: Communication Engineering (A+ national discipline)
         degree: B.Eng.
         start_date: 2017-09
         end_date: 2021-07
         highlights:
-          - "Undergraduate Research Advisor: [Prof. Junyu Liu](https://web.xidian.edu.cn/junyuliu/)"
-          - "Comprehensive recommendation ranking: 1st in class"
+          - "Undergraduate Advisor: [Prof. Junyu Liu](https://web.xidian.edu.cn/junyuliu/)"
+          - Ranked 1st in class
           - National Scholarship recipient
-          - Discipline rated A+ in the national subject assessment
 
     Internship Experience:
       - company: China Mobile, Digital Intelligence Department
@@ -169,46 +167,46 @@ cv:
         date: 2025
         doi: 10.11991/cccf.202508013
 
-    Intellectual Property:
-      - name: Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System
-        date: 2024-09-24
-        summary: "Granted invention patent: CN202211134854.X"
-      - name: Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation
-        date: 2025-05-27
-        summary: "Granted invention patent: CN202310078808.0"
+    "Patents & Software Copyright":
       - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
         date: 2026-04-07
         summary: "Granted invention patent: CN202310354794.0"
-      - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
-        date: 2023-04-24
-        summary: "Patent application: PCT/CN2023/090283"
-      - name: Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks
-        date: 2023-12-14
-        summary: "Patent application: CN202311719290.0"
-      - name: Multi-User MIMO Signal Detection Model
-        date: 2024-01-05
-        summary: "Patent application: CN202410018551.4"
-      - name: Channel Access Method and Communication System for Ad Hoc Networks
-        date: 2024-03-26
-        summary: "Patent application: CN202410348337.5"
-      - name: Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System
-        date: 2025-06-27
-        summary: "Patent application: CN202510873622.3"
-      - name: Environment- and Resource-State-Aware Resource Allocation Method and System
-        date: 2025-07-11
-        summary: "Patent application: CN202510955830.8"
-      - name: Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication
-        date: 2025-07-30
-        summary: "Patent application: CN202511053332.0"
-      - name: Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium
-        date: 2025-10-27
-        summary: "Patent application: CN202511536493.5"
       - name: Transmission Device and Semantic Transmission Method for High-Mobility Communications
         date: 2026-03-31
-        summary: "Patent application: CN202610406457.5"
+        summary: "Invention patent application: CN202610406457.5"
+      - name: Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium
+        date: 2025-10-27
+        summary: "Invention patent application: CN202511536493.5"
+      - name: Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication
+        date: 2025-07-30
+        summary: "Invention patent application: CN202511053332.0"
+      - name: Environment- and Resource-State-Aware Resource Allocation Method and System
+        date: 2025-07-11
+        summary: "Invention patent application: CN202510955830.8"
+      - name: Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System
+        date: 2025-06-27
+        summary: "Invention patent application: CN202510873622.3"
+      - name: Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation
+        date: 2025-05-27
+        summary: "Granted invention patent: CN202310078808.0"
+      - name: Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System
+        date: 2024-09-24
+        summary: "Granted invention patent: CN202211134854.X"
+      - name: Channel Access Method and Communication System for Ad Hoc Networks
+        date: 2024-03-26
+        summary: "Invention patent application: CN202410348337.5"
+      - name: Multi-User MIMO Signal Detection Model
+        date: 2024-01-05
+        summary: "Invention patent application: CN202410018551.4"
       - name: Large-Scale Full-Duplex Network Simulation System
         date: 2024-01-11
         summary: "Registered software copyright: 2024SR0082117"
+      - name: Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks
+        date: 2023-12-14
+        summary: "Invention patent application: CN202311719290.0"
+      - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
+        date: 2023-04-24
+        summary: "Invention patent application (PCT): PCT/CN2023/090283"
 
     Honors and Awards:
       - name: Outstanding Graduate Student, Xinghang Program

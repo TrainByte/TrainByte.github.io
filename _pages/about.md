@@ -387,9 +387,9 @@ latest_posts:
 </style>
 
 <div class="about-intro">
-  <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, pursuing a <strong>Ph.D. in Computer Science and Technology</strong> at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</p>
-  <p>My work is driven by a practical question: how can intelligent services stay reliable when knowledge, computing, wireless links, and user demands all change at the same time? I enjoy turning that kind of messy system constraint into clean models, learning-based algorithms, and simulation evidence that can support real deployment decisions.</p>
-  <p>I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.</p>
+  <p>I am <strong>Ningzhe Shi</strong>, pursuing a <strong>Ph.D. in Computer Science and Technology</strong> at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences, advised by <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</p>
+  <p>My work starts from a practical question: how can intelligent services remain reliable when knowledge, computing resources, wireless links, and user demands all evolve at once? I focus on translating coupled system constraints into tractable models, learning-based algorithms, and simulation evidence that can inform deployment-oriented network design.</p>
+  <p>I received my B.Eng. in Communication Engineering from Xidian University, where I was advised by <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.</p>
 </div>
 
 <div class="profile-strip-stack" aria-label="Career and education">

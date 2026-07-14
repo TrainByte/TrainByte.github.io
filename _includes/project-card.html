@@ -20,14 +20,8 @@
   </div>
   {% endif %} {% if project.outputs %}
   <div class="project-meta" aria-label="Project outputs">
-    {% for output in project.outputs limit: 3 %}
+    {% for output in project.outputs limit: 2 %}
     <span class="project-output">{{ output }}</span>
-    {% endfor %}
-  </div>
-  {% endif %} {% if project.tags %}
-  <div class="project-meta" aria-label="Project tags">
-    {% for tag in project.tags limit: 5 %}
-    <span class="project-tag">{{ tag }}</span>
     {% endfor %}
   </div>
   {% endif %}

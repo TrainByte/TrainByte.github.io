@@ -50,6 +50,12 @@ toc:
     color: var(--global-theme-color);
   }
 
+  .cv-list strong,
+  main li strong,
+  main p strong {
+    color: var(--global-theme-color);
+  }
+
   .cv-meta {
     color: var(--global-text-color-light);
     font-size: 0.92rem;
@@ -79,13 +85,13 @@ toc:
 
 ## Research Profile
 
-Ph.D. candidate researching 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, memory, and knowledge-resource optimization through reinforcement learning and mathematical optimization. My work spans cloud-edge collaborative AI services, RAG and AI Agent service orchestration, integrated sensing/communication/computing/intelligence, full-duplex networking, UAV communications, and space AI computing networks.
+Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, memory, and knowledge-resource optimization through reinforcement learning and mathematical optimization. My work spans cloud-edge collaborative AI services, RAG and AI Agent service orchestration, integrated sensing/communication/computing/intelligence, full-duplex networking, UAV communications, and space AI computing networks.
 
 ## Education
 
 <div class="cv-entry">
   <h3>Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences</h3>
-  <div class="cv-meta">Ph.D. Candidate, Computer Science and Technology (A+ national discipline), Beijing, China, Sep. 2021 - present</div>
+  <div class="cv-meta">Ph.D., Computer Science and Technology (A+ national discipline), Beijing, China, Sep. 2021 - present</div>
   <ul class="cv-list">
     <li>Ph.D. Advisor: <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</li>
   </ul>
@@ -207,36 +213,44 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 ## Patents & Software Copyright
 
-1. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. Granted invention patent: CN202310354794.0, 2026-04-07.
-2. Transmission Device and Semantic Transmission Method for High-Mobility Communications. Invention patent application: CN202610406457.5, 2026-03-31.
-3. Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium. Invention patent application: CN202511536493.5, 2025-10-27.
-4. Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication. Invention patent application: CN202511053332.0, 2025-07-30.
-5. Environment- and Resource-State-Aware Resource Allocation Method and System. Invention patent application: CN202510955830.8, 2025-07-11.
-6. Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System. Invention patent application: CN202510873622.3, 2025-06-27.
-7. Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation. Granted invention patent: CN202310078808.0, 2025-05-27.
-8. Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System. Granted invention patent: CN202211134854.X, 2024-09-24.
-9. Channel Access Method and Communication System for Ad Hoc Networks. Invention patent application: CN202410348337.5, 2024-03-26.
-10. Multi-User MIMO Signal Detection Model. Invention patent application: CN202410018551.4, 2024-01-05.
-11. Large-Scale Full-Duplex Network Simulation System. Registered software copyright: 2024SR0082117, 2024-01-11.
-12. Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks. Invention patent application: CN202311719290.0, 2023-12-14.
-13. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. Invention patent application (PCT): PCT/CN2023/090283, 2023-04-24.
+**Granted invention patents**
+
+1. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. **Granted invention patent**: CN202310354794.0, authorized 2026-04-07.
+2. Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation. **Granted invention patent**: CN202310078808.0, authorized 2025-05-27.
+3. Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System. **Granted invention patent**: CN202211134854.X, authorized 2024-09-24.
+
+**Invention patent applications**
+
+1. Transmission Device and Semantic Transmission Method for High-Mobility Communications. **Invention patent application**: CN202610406457.5, filed 2026-03-31.
+2. Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium. **Invention patent application**: CN202511536493.5, filed 2025-10-27.
+3. Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication. **Invention patent application**: CN202511053332.0, filed 2025-07-30.
+4. Environment- and Resource-State-Aware Resource Allocation Method and System. **Invention patent application**: CN202510955830.8, filed 2025-07-11.
+5. Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System. **Invention patent application**: CN202510873622.3, filed 2025-06-27.
+6. Channel Access Method and Communication System for Ad Hoc Networks. **Invention patent application**: CN202410348337.5, filed 2024-03-26.
+7. Multi-User MIMO Signal Detection Model. **Invention patent application**: CN202410018551.4, filed 2024-01-05.
+8. Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks. **Invention patent application**: CN202311719290.0, filed 2023-12-14.
+9. Construction Method and Resource Management Method for a Wireless Network Resource Allocation System. **Invention patent application (PCT)**: PCT/CN2023/090283, filed 2023-04-24.
+
+**Software copyright**
+
+1. Large-Scale Full-Duplex Network Simulation System. **Registered software copyright**: 2024SR0082117, registered 2024-01-11.
 
 ## Honors and Awards
 
-- Outstanding Graduate Student, Xinghang Program, Journal of Electronics & Information Technology, 2026.
-- Outstanding Poster Award, Frontiers in Electronics and Information Conference, 2026.
-- UCAS Outstanding Student Model, university-wide top 1%, 2026.
-- ICT Outstanding Student, Institute of Computing Technology / State Key Laboratory of Processors, 2026.
-- E Fund Financial Technology Doctoral Scholarship, 12 recipients institute-wide, 2025.
-- UCAS Outstanding Student Cadre, 2025.
-- Outstanding Volunteer, Chinese Academy of Sciences Public Science Day, 2023, 2024, and 2025.
-- UCAS Outstanding Student, 2023.
-- UCAS First-Class Scholarship, 2021-2025, awarded for five consecutive years.
+- **Outstanding Graduate Student**, Xinghang Program, Journal of Electronics & Information Technology, national selection of **22 graduate students**, 2026.
+- **Outstanding Poster Award**, Frontiers in Electronics and Information Conference, 2026.
+- **UCAS Outstanding Student Model**, university-wide **top 1%**, 2026.
+- **ICT Outstanding Student**, Institute of Computing Technology / State Key Laboratory of Processors, 2026.
+- **E Fund Financial Technology Doctoral Scholarship**, **12 recipients institute-wide**, 2025.
+- **UCAS Outstanding Student Cadre**, 2025.
+- **Outstanding Volunteer**, Chinese Academy of Sciences Public Science Day, 2023, 2024, and 2025.
+- **UCAS Outstanding Student**, 2023.
+- **UCAS First-Class Scholarship**, 2021-2025, awarded for **five consecutive years**.
 - Outstanding Graduate, Xidian University, 2021.
 - First-Class Graduation Scholarship, Xidian University, 2021.
 - Honorable Mention, Mathematical Contest in Modeling, 2020.
-- National Scholarship, 2019.
-- National Second Prize, China Undergraduate Mathematical Contest in Modeling, 2019.
+- **National Scholarship**, 2019.
+- **National Second Prize**, China Undergraduate Mathematical Contest in Modeling, 2019.
 - National Encouragement Scholarship, 2018.
 - Third Prize, CETC-10 Communication Cup, 2019.
 
@@ -248,10 +262,10 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 ## Outreach and Public Engagement
 
-- Science outreach volunteer, Chinese Academy of Sciences Public Science Day.
-- Committee Member, UCAS Science Popularization Association.
+- **Science outreach volunteer**, Chinese Academy of Sciences Public Science Day.
+- **Committee Member**, UCAS Science Popularization Association.
 - Participated in public science communication, research demonstrations, and science outreach activities.
-- Outstanding Science Popularization Volunteer, Bureau of Academic Divisions, Chinese Academy of Sciences.
+- **Outstanding Science Popularization Volunteer**, Bureau of Academic Divisions, Chinese Academy of Sciences.
 
 ## Leadership and Student Service
 

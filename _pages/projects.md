@@ -26,7 +26,6 @@ nav_order: 3
   .project-toolbar a,
   .project-output,
   .project-role,
-  .project-tag,
   .project-result {
     border: 1px solid var(--global-divider-color);
     border-radius: 6px;
@@ -80,7 +79,7 @@ nav_order: 3
     min-height: 100%;
     min-width: 0;
     overflow: hidden;
-    padding: 0.95rem;
+    padding: 1rem;
     position: relative;
     transition:
       border-color 160ms ease,
@@ -112,9 +111,9 @@ nav_order: 3
   }
 
   .project-card h3 {
-    font-size: 0.98rem;
+    font-size: 1rem;
     line-height: 1.35;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.58rem;
   }
 
   .project-card h3 a {
@@ -152,7 +151,7 @@ nav_order: 3
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
-    margin: 0.55rem 0;
+    margin: 0.55rem 0 0.25rem;
   }
 
   .project-role {
@@ -168,12 +167,6 @@ nav_order: 3
     background: #eef6ff;
     border-color: #9fc6ef;
     color: #245f9f;
-  }
-
-  .project-tag {
-    padding: 0.25rem 0.42rem;
-    font-size: 0.71rem;
-    color: var(--global-text-color-light);
   }
 
   .project-output {

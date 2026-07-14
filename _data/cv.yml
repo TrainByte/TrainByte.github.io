@@ -1,6 +1,6 @@
 cv:
   name: Ningzhe Shi
-  headline: Ph.D. Candidate in Computer Science and Technology
+  headline: Ph.D. in Computer Science and Technology
   email: shiningzhe21b@ict.ac.cn
   location: Beijing, China
   social_networks:
@@ -9,13 +9,13 @@ cv:
 
   sections:
     Research Profile:
-      - Ph.D. candidate researching 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, memory, and knowledge-resource optimization through reinforcement learning and mathematical optimization.
+      - Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a focus on communication, sensing, computing, memory, and knowledge-resource optimization through reinforcement learning and mathematical optimization.
 
     Education:
       - institution: Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
         location: Beijing, China
         area: Computer Science and Technology (A+ national discipline)
-        degree: Ph.D. Candidate
+        degree: Ph.D.
         start_date: 2021-09
         end_date: present
         highlights:
@@ -167,46 +167,50 @@ cv:
         date: 2025
         doi: 10.11991/cccf.202508013
 
-    "Patents & Software Copyright":
+    "Granted Invention Patents":
       - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
         date: 2026-04-07
-        summary: "Granted invention patent: CN202310354794.0"
-      - name: Transmission Device and Semantic Transmission Method for High-Mobility Communications
-        date: 2026-03-31
-        summary: "Invention patent application: CN202610406457.5"
-      - name: Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium
-        date: 2025-10-27
-        summary: "Invention patent application: CN202511536493.5"
-      - name: Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication
-        date: 2025-07-30
-        summary: "Invention patent application: CN202511053332.0"
-      - name: Environment- and Resource-State-Aware Resource Allocation Method and System
-        date: 2025-07-11
-        summary: "Invention patent application: CN202510955830.8"
-      - name: Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System
-        date: 2025-06-27
-        summary: "Invention patent application: CN202510873622.3"
+        summary: "Granted invention patent: CN202310354794.0; authorized 2026-04-07"
       - name: Anti-Jamming Method and System Based on Relay Position Selection and Power Allocation
         date: 2025-05-27
-        summary: "Granted invention patent: CN202310078808.0"
+        summary: "Granted invention patent: CN202310078808.0; authorized 2025-05-27"
       - name: Anti-Tracking Jamming-Resistant Signal Transmission Method, Signal Reception Method, and System
         date: 2024-09-24
-        summary: "Granted invention patent: CN202211134854.X"
+        summary: "Granted invention patent: CN202211134854.X; authorized 2024-09-24"
+
+    "Invention Patent Applications":
+      - name: Transmission Device and Semantic Transmission Method for High-Mobility Communications
+        date: 2026-03-31
+        summary: "Invention patent application: CN202610406457.5; filed 2026-03-31"
+      - name: Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium
+        date: 2025-10-27
+        summary: "Invention patent application: CN202511536493.5; filed 2025-10-27"
+      - name: Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication
+        date: 2025-07-30
+        summary: "Invention patent application: CN202511053332.0; filed 2025-07-30"
+      - name: Environment- and Resource-State-Aware Resource Allocation Method and System
+        date: 2025-07-11
+        summary: "Invention patent application: CN202510955830.8; filed 2025-07-11"
+      - name: Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System
+        date: 2025-06-27
+        summary: "Invention patent application: CN202510873622.3; filed 2025-06-27"
       - name: Channel Access Method and Communication System for Ad Hoc Networks
         date: 2024-03-26
-        summary: "Invention patent application: CN202410348337.5"
+        summary: "Invention patent application: CN202410348337.5; filed 2024-03-26"
       - name: Multi-User MIMO Signal Detection Model
         date: 2024-01-05
-        summary: "Invention patent application: CN202410018551.4"
-      - name: Large-Scale Full-Duplex Network Simulation System
-        date: 2024-01-11
-        summary: "Registered software copyright: 2024SR0082117"
+        summary: "Invention patent application: CN202410018551.4; filed 2024-01-05"
       - name: Real-Time Simulation System and Method for Full-Duplex Ad Hoc Networks
         date: 2023-12-14
-        summary: "Invention patent application: CN202311719290.0"
+        summary: "Invention patent application: CN202311719290.0; filed 2023-12-14"
       - name: Construction Method and Resource Management Method for a Wireless Network Resource Allocation System
         date: 2023-04-24
-        summary: "Invention patent application (PCT): PCT/CN2023/090283"
+        summary: "Invention patent application (PCT): PCT/CN2023/090283; filed 2023-04-24"
+
+    "Software Copyright":
+      - name: Large-Scale Full-Duplex Network Simulation System
+        date: 2024-01-11
+        summary: "Registered software copyright: 2024SR0082117; registered 2024-01-11"
 
     Honors and Awards:
       - name: Outstanding Graduate Student, Xinghang Program

@@ -2,14 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Candidate in Computer Science | Institute of Computing Technology, Chinese Academy of Sciences
+subtitle: Ph.D. in Computer Science | Institute of Computing Technology, Chinese Academy of Sciences
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>Beijing, China</p>
-    <p><a href="mailto:shiningzhe21b@ict.ac.cn">shiningzhe21b@ict.ac.cn</a></p>
+  more_info: ""
 selected_papers: false
 social: true
 announcements:
@@ -32,18 +30,18 @@ latest_posts:
   }
 
   .profile {
-    max-width: 210px;
+    max-width: 150px;
+    margin-left: 1.35rem;
   }
 
   .profile img {
     width: 100%;
-    max-width: 180px;
+    max-width: 135px;
     height: auto;
   }
 
   .profile .more-info {
-    font-size: 0.9rem;
-    line-height: 1.45;
+    display: none;
   }
 
   .social a[href*="feed"],
@@ -66,6 +64,14 @@ latest_posts:
     margin-bottom: 0.95rem;
   }
 
+  .profile-strip-stack {
+    clear: both;
+    display: grid;
+    gap: 0.82rem;
+    margin: 1.35rem 0 2.55rem;
+  }
+
+  .profile-strip,
   .career-note {
     background:
       linear-gradient(90deg, rgba(46, 127, 255, 0.08), rgba(176, 62, 98, 0.055)),
@@ -74,29 +80,29 @@ latest_posts:
     border-left: 4px solid var(--global-theme-color);
     border-radius: 8px;
     color: var(--global-text-color);
-    margin: 1.05rem 0 1.4rem;
+    margin: 0;
     padding: 0.82rem 0.95rem;
   }
 
+  .profile-strip strong,
   .career-note strong {
     color: var(--global-theme-color);
   }
 
   .education-strip {
-    display: grid;
-    gap: 0.95rem;
-    margin: 1.5rem 0 2.55rem;
+    display: contents;
   }
 
   .education-card {
     display: grid;
-    grid-template-columns: 74px minmax(0, 1fr);
+    grid-template-columns: 62px minmax(0, 1fr);
     gap: 0.42rem;
-    column-gap: 1rem;
+    column-gap: 0.9rem;
     align-items: center;
     border: 1px solid var(--global-divider-color);
+    border-left: 4px solid rgba(46, 127, 255, 0.48);
     border-radius: 8px;
-    padding: 0.95rem 1rem;
+    padding: 0.82rem 0.95rem;
     background: var(--global-bg-color);
     box-shadow: 0 8px 26px rgba(15, 23, 42, 0.04);
   }
@@ -115,10 +121,10 @@ latest_posts:
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     display: flex;
-    height: 74px;
+    height: 62px;
     justify-content: center;
-    padding: 0.42rem;
-    width: 74px;
+    padding: 0.35rem;
+    width: 62px;
   }
 
   .education-logo img {
@@ -137,6 +143,11 @@ latest_posts:
     color: var(--global-text-color-light);
     display: block;
     margin-top: 0.18rem;
+  }
+
+  .education-place {
+    color: var(--global-text-color-light);
+    font-size: 0.88rem;
   }
 
   .interest-grid {
@@ -328,15 +339,11 @@ latest_posts:
     .profile.float-right {
       float: none !important;
       margin: 0 auto 1.35rem !important;
-      max-width: 170px;
+      max-width: 140px;
     }
 
     .profile img {
-      max-width: 160px;
-    }
-
-    .profile .more-info {
-      text-align: center;
+      max-width: 130px;
     }
 
     .education-card {
@@ -370,31 +377,35 @@ latest_posts:
   }
 </style>
 
-I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.
+I am **Ningzhe Shi (时宁哲)**, pursuing a **Ph.D. in Computer Science and Technology** at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences. My Ph.D. Advisor is <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where my Undergraduate Advisor was <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>. During my undergraduate study, I received the National Scholarship and ranked 1st in class.
 
-<p class="career-note"><strong>Open to opportunities:</strong> I am currently seeking research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>
+<div class="profile-strip-stack" aria-label="Career and education">
+  <p class="career-note"><strong>Open to opportunities:</strong> research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>
 
-<div class="education-strip" aria-label="Education">
-  <article class="education-card">
-    <div class="education-logo">
-      <img src="{{ '/assets/img/logos/ucas-emblem.png' | relative_url }}" alt="University of Chinese Academy of Sciences emblem">
-    </div>
-    <div>
-      <span class="education-year">2021 - present</span>
-      <strong>Ph.D. Candidate in Computer Science and Technology</strong>
-      <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span>
-    </div>
-  </article>
-  <article class="education-card">
-    <div class="education-logo">
-      <img src="{{ '/assets/img/logos/xidian-emblem.png' | relative_url }}" alt="Xidian University emblem">
-    </div>
-    <div>
-      <span class="education-year">2017 - 2021</span>
-      <strong>B.Eng. in Communication Engineering</strong>
-      <span>Xidian University · National Scholarship · Ranked 1st in class</span>
-    </div>
-  </article>
+  <div class="education-strip" aria-label="Education">
+    <article class="education-card">
+      <div class="education-logo">
+        <img src="{{ '/assets/img/logos/ucas-emblem.png' | relative_url }}" alt="University of Chinese Academy of Sciences emblem">
+      </div>
+      <div>
+        <span class="education-year">2021 - present</span>
+        <strong>Ph.D. in Computer Science and Technology</strong>
+        <span>Institute of Computing Technology, Chinese Academy of Sciences / University of Chinese Academy of Sciences</span>
+        <span class="education-place">Beijing, China</span>
+      </div>
+    </article>
+    <article class="education-card">
+      <div class="education-logo">
+        <img src="{{ '/assets/img/logos/xidian-emblem.png' | relative_url }}" alt="Xidian University emblem">
+      </div>
+      <div>
+        <span class="education-year">2017 - 2021</span>
+        <strong>B.Eng. in Communication Engineering</strong>
+        <span>Xidian University · National Scholarship · Ranked 1st in class</span>
+        <span class="education-place">Xi'an, Shaanxi, China</span>
+      </div>
+    </article>
+  </div>
 </div>
 
 ## Research interests
@@ -498,7 +509,7 @@ I am **Ningzhe Shi (时宁哲)**, a Ph.D. candidate in Computer Science and Tech
       <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi</p>
       <p>China Communications, 2026</p>
       <div class="publication-badges" aria-label="Publication venue and ranking">
-        <span class="publication-badge venue">China Commun.</span>
+        <span class="publication-badge venue">China Com.</span>
         <span class="publication-badge cic">T1 CIC</span>
         <span class="publication-badge status">Published</span>
       </div>

@@ -65,7 +65,7 @@ nav_order: 2
     align-items: flex-start;
     display: grid;
     gap: 0.75rem;
-    grid-template-columns: minmax(78px, auto) minmax(0, 1fr);
+    grid-template-columns: 5.6rem minmax(0, 1fr);
     margin: 0;
   }
 
@@ -74,10 +74,11 @@ nav_order: 2
     flex: none;
     max-width: none;
     padding: 0;
-    width: auto;
+    width: 5.6rem;
   }
 
   ol.bibliography .abbr abbr {
+    align-items: center;
     background: #eef6ff;
     border: 1px solid #9fc6ef;
     border-radius: 6px;
@@ -85,10 +86,12 @@ nav_order: 2
     display: inline-flex;
     font-size: 0.72rem;
     font-weight: 700;
+    justify-content: center;
     line-height: 1.2;
     padding: 0.27rem 0.42rem;
+    text-align: center;
     white-space: normal;
-    width: auto !important;
+    width: 100% !important;
   }
 
   ol.bibliography .title {
@@ -212,54 +215,14 @@ nav_order: 2
   <h2>Patents & Software Copyright</h2>
 
   <div class="ip-group">
-    <h3>Invention patents</h3>
+    <h3>Granted invention patents</h3>
     <div class="ip-list">
       <article class="ip-item">
         <div class="ip-title">Construction Method and Resource Management Method for a Wireless Network Resource Allocation System</div>
         <div class="ip-meta">
           <span class="ip-type">Granted invention patent</span>
           <span>CN202310354794.0</span>
-          <span>2026-04-07</span>
-        </div>
-      </article>
-      <article class="ip-item">
-        <div class="ip-title">Transmission Device and Semantic Transmission Method for High-Mobility Communications</div>
-        <div class="ip-meta">
-          <span class="ip-type">Invention patent application</span>
-          <span>CN202610406457.5</span>
-          <span>2026-03-31</span>
-        </div>
-      </article>
-      <article class="ip-item">
-        <div class="ip-title">Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium</div>
-        <div class="ip-meta">
-          <span class="ip-type">Invention patent application</span>
-          <span>CN202511536493.5</span>
-          <span>2025-10-27</span>
-        </div>
-      </article>
-      <article class="ip-item">
-        <div class="ip-title">Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication</div>
-        <div class="ip-meta">
-          <span class="ip-type">Invention patent application</span>
-          <span>CN202511053332.0</span>
-          <span>2025-07-30</span>
-        </div>
-      </article>
-      <article class="ip-item">
-        <div class="ip-title">Environment- and Resource-State-Aware Resource Allocation Method and System</div>
-        <div class="ip-meta">
-          <span class="ip-type">Invention patent application</span>
-          <span>CN202510955830.8</span>
-          <span>2025-07-11</span>
-        </div>
-      </article>
-      <article class="ip-item">
-        <div class="ip-title">Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System</div>
-        <div class="ip-meta">
-          <span class="ip-type">Invention patent application</span>
-          <span>CN202510873622.3</span>
-          <span>2025-06-27</span>
+          <span>Authorized 2026-04-07</span>
         </div>
       </article>
       <article class="ip-item">
@@ -267,7 +230,7 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Granted invention patent</span>
           <span>CN202310078808.0</span>
-          <span>2025-05-27</span>
+          <span>Authorized 2025-05-27</span>
         </div>
       </article>
       <article class="ip-item">
@@ -275,7 +238,53 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Granted invention patent</span>
           <span>CN202211134854.X</span>
-          <span>2024-09-24</span>
+          <span>Authorized 2024-09-24</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="ip-group">
+    <h3>Invention patent applications</h3>
+    <div class="ip-list">
+      <article class="ip-item">
+        <div class="ip-title">Transmission Device and Semantic Transmission Method for High-Mobility Communications</div>
+        <div class="ip-meta">
+          <span class="ip-type">Invention patent application</span>
+          <span>CN202610406457.5</span>
+          <span>Filed 2026-03-31</span>
+        </div>
+      </article>
+      <article class="ip-item">
+        <div class="ip-title">Joint Channel Estimation and Signal Detection Method, Signal Receiver, and Storage Medium</div>
+        <div class="ip-meta">
+          <span class="ip-type">Invention patent application</span>
+          <span>CN202511536493.5</span>
+          <span>Filed 2025-10-27</span>
+        </div>
+      </article>
+      <article class="ip-item">
+        <div class="ip-title">Resource Allocation Method for AI-Generated Content Services Based on Integrated Sensing and Communication</div>
+        <div class="ip-meta">
+          <span class="ip-type">Invention patent application</span>
+          <span>CN202511053332.0</span>
+          <span>Filed 2025-07-30</span>
+        </div>
+      </article>
+      <article class="ip-item">
+        <div class="ip-title">Environment- and Resource-State-Aware Resource Allocation Method and System</div>
+        <div class="ip-meta">
+          <span class="ip-type">Invention patent application</span>
+          <span>CN202510955830.8</span>
+          <span>Filed 2025-07-11</span>
+        </div>
+      </article>
+      <article class="ip-item">
+        <div class="ip-title">Mobile Ad Hoc Network Data Routing Method and Industrial Ad Hoc Network System</div>
+        <div class="ip-meta">
+          <span class="ip-type">Invention patent application</span>
+          <span>CN202510873622.3</span>
+          <span>Filed 2025-06-27</span>
         </div>
       </article>
       <article class="ip-item">
@@ -283,7 +292,7 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Invention patent application</span>
           <span>CN202410348337.5</span>
-          <span>2024-03-26</span>
+          <span>Filed 2024-03-26</span>
         </div>
       </article>
       <article class="ip-item">
@@ -291,7 +300,7 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Invention patent application</span>
           <span>CN202410018551.4</span>
-          <span>2024-01-05</span>
+          <span>Filed 2024-01-05</span>
         </div>
       </article>
       <article class="ip-item">
@@ -299,7 +308,7 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Invention patent application</span>
           <span>CN202311719290.0</span>
-          <span>2023-12-14</span>
+          <span>Filed 2023-12-14</span>
         </div>
       </article>
       <article class="ip-item">
@@ -307,7 +316,7 @@ nav_order: 2
         <div class="ip-meta">
           <span class="ip-type">Invention patent application (PCT)</span>
           <span>PCT/CN2023/090283</span>
-          <span>2023-04-24</span>
+          <span>Filed 2023-04-24</span>
         </div>
       </article>
     </div>

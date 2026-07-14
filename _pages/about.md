@@ -392,7 +392,7 @@ latest_posts:
 </div>
 
 <div class="profile-strip-stack" aria-label="Career and education">
-  <p class="career-note"><strong>Open to opportunities:</strong> research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>
+  <p class="career-note"><strong>Open to career opportunities:</strong> research scientist, algorithm engineer, and AI networking roles focused on intelligent networks, AI service orchestration, and cloud-edge systems.</p>
 
   <div class="education-strip" aria-label="Education">
     <article class="education-card">

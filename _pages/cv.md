@@ -85,7 +85,7 @@ Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a
 
 <div class="cv-entry">
   <h3>Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences</h3>
-  <div class="cv-meta">Ph.D., Computer Science and Technology (A+ national discipline), Beijing, China, Sep. 2021 - present</div>
+  <div class="cv-meta">Ph.D., Computer Science and Technology (A+ discipline), Beijing, China, Sep. 2021 - present</div>
   <ul class="cv-list">
     <li>Ph.D. Advisor: <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</li>
   </ul>
@@ -93,7 +93,7 @@ Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a
 
 <div class="cv-entry">
   <h3>Xidian University</h3>
-  <div class="cv-meta">B.Eng., Communication Engineering (A+ national discipline), Xi'an, China, Sep. 2017 - Jul. 2021</div>
+  <div class="cv-meta">B.Eng., Communication Engineering (A+ discipline), Xi'an, China, Sep. 2017 - Jul. 2021</div>
   <ul class="cv-list">
     <li>Undergraduate Advisor: <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>.</li>
     <li>Received the National Scholarship and ranked 1st in class.</li>

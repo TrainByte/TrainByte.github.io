@@ -388,7 +388,7 @@ latest_posts:
 
 <div class="about-intro">
   <p>I am <strong>Ningzhe Shi (时宁哲)</strong>, pursuing a <strong>Ph.D. in Computer Science and Technology</strong> at the Institute of Computing Technology, Chinese Academy of Sciences, and the University of Chinese Academy of Sciences, advised by <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>. I received my B.Eng. in Communication Engineering from Xidian University, where I was advised by <a href="https://web.xidian.edu.cn/junyuliu/" target="_blank" rel="noopener noreferrer">Prof. Junyu Liu</a>, received the National Scholarship, and ranked 1st in class.</p>
-  <p>My work explores how communication, sensing, computing, and intelligence can be jointly orchestrated in intelligent 6G networks to better serve AI services. I focus on translating coupled system constraints into tractable models, learning-based algorithms, and simulation evidence for deployment-oriented network design. I have published <strong>20+ papers</strong> in international and Chinese journals and conferences, including IEEE TMC, TCCN, TWC, TVT, TNSE, WCL, WCNC, VTC, and China Communications. If you are interested in academic collaboration, please feel free to email me at <a href="mailto:shiningzhe21b@ict.ac.cn">shiningzhe21b@ict.ac.cn</a>.</p>
+  <p>My work explores how communication, sensing, computing, and intelligence can be jointly orchestrated in intelligent 6G networks to better serve AI services. I focus on translating coupled system constraints into tractable models, learning-based algorithms, and simulation evidence for deployment-oriented network design. I have published <strong>20+ papers</strong> in international and Chinese journals and conferences, including IEEE TMC, TCCN, TWC, TVT, TNSE, China Commun., WCL, WCNC, and VTC. If you are interested in academic collaboration, please feel free to email me at <a href="mailto:shiningzhe21b@ict.ac.cn">shiningzhe21b@ict.ac.cn</a>.</p>
 </div>
 
 <div class="profile-strip-stack" aria-label="Career and education">
@@ -480,7 +480,7 @@ latest_posts:
         <span class="publication-badge venue">TMC</span>
         <span class="publication-badge ccf">CCF-A</span>
         <span class="publication-badge cas">Q1 CAS</span>
-        <span class="publication-badge status">Accepted/Published</span>
+        <span class="publication-badge status">Published</span>
       </div>
     </div>
   </article>

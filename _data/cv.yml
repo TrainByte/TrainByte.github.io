@@ -45,13 +45,13 @@ cv:
 
     Research Experience:
       - company: Institute of Computing Technology, Chinese Academy of Sciences
-        position: Main Contributor, Knowledge-Matching-Aware Scheduling for RAG Services
+        position: Main Contributor, Knowledge-Aware Joint Scheduling and Retrieval Activation for RAG Services
         start_date: 2025-10
         end_date: 2026-06
         highlights:
-          - Modeled task semantics, node knowledge coverage, computing cost, transmission delay, generation quality, and energy consumption for cloud-edge RAG services.
-          - Designed a knowledge-matching-aware RAG task scheduling mechanism under heterogeneous knowledge bases and dynamic resource states.
-          - Built a simulation environment; reduced energy consumption by approximately 50% and service delay by more than 10% in evaluated settings.
+          - Modeled task semantics, server-side knowledge coverage, retrieval activation, computing cost, transmission delay, and energy consumption for cloud-edge RAG/GAI services.
+          - Designed a knowledge-aware joint scheduling and retrieval activation mechanism under heterogeneous knowledge bases and dynamic resource states.
+          - Showed that adaptive retrieval activation can reduce average service delay by 67% and 62% compared with retrieval-always-on and retrieval-always-off baselines, respectively.
       - company: Institute of Computing Technology, Chinese Academy of Sciences
         position: Main Contributor, Memory-Aware Distributed Routing for Space AI Computing Networks
         start_date: 2025-10

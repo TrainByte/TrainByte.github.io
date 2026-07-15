@@ -118,12 +118,12 @@ Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a
 Selected projects below are packaged around two threads: **AI-native service orchestration** for large-scale intelligent applications and **learning-driven wireless resource optimization** for complex networked systems.
 
 <div class="cv-entry">
-  <h3>Knowledge-Matching-Aware Scheduling for RAG Services</h3>
+  <h3>Knowledge-Aware Joint Scheduling and Retrieval Activation for RAG Services</h3>
   <div class="cv-meta">Main Contributor, Institute of Computing Technology, Chinese Academy of Sciences, Oct. 2025 - Jun. 2026</div>
   <ul class="cv-list">
-    <li>Built a joint model of <strong>task semantics, node knowledge coverage, computing cost, delay, generation quality, and energy</strong> for cloud-edge RAG services.</li>
-    <li>Designed a <strong>knowledge-matching-aware orchestration mechanism</strong> that selects service nodes by both resource state and knowledge relevance.</li>
-    <li>Implemented the simulation pipeline and reduced energy consumption by <strong>approximately 50%</strong> while reducing service delay by <strong>more than 10%</strong> in evaluated settings.</li>
+    <li>Built a joint model of <strong>task semantics, server-side knowledge coverage, retrieval activation, computing cost, delay, and energy</strong> for cloud-edge RAG/GAI services.</li>
+    <li>Designed a <strong>knowledge-aware joint scheduling and retrieval activation mechanism</strong> that decides both where to serve each task and whether retrieval should be triggered.</li>
+    <li>Showed that adaptive retrieval activation can reduce average service delay by <strong>67%</strong> and <strong>62%</strong> compared with retrieval-always-on and retrieval-always-off baselines, respectively.</li>
   </ul>
 </div>
 

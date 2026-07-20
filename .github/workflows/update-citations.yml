@@ -7,19 +7,22 @@ on:
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-citations:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       # See docs/CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
       #        with:
       #          token: ${{ secrets.PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -93,6 +96,14 @@ jobs:
 
       - name: Commit and push if changed
         run: |
+          if [ "${{ steps.before.outputs.sha_before }}" = "${{ steps.after.outputs.sha_after }}" ]; then
+            echo "No citation changes to commit."
+            exit 0
+          fi
+          if [ ! -f _data/citations.yml ]; then
+            echo "_data/citations.yml was not generated; skipping commit."
+            exit 0
+          fi
           git add _data/citations.yml
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."

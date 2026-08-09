@@ -377,6 +377,7 @@ latest_posts:
       width: 100%;
       max-width: 220px;
     }
+
   }
 
   @media (min-width: 768px) and (max-width: 1100px) {
@@ -496,6 +497,19 @@ latest_posts:
         <span class="publication-badge ccf">CCF-A</span>
         <span class="publication-badge cas">Q1 CAS</span>
         <span class="publication-badge status">Published</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="selected-publication">
+    <img src="{{ '/assets/img/publication_preview/globecom-rag.png' | relative_url }}" alt="Knowledge-aware RAG offloading preview">
+    <div>
+      <h3>Knowledge-Aware Offloading for Retrieval-Augmented Generative AI Services via Latent Diffusion-Enabled Reinforcement Learning</h3>
+      <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, and Yiqing Zhou</p>
+      <p>IEEE Global Communications Conference (GLOBECOM), 2026</p>
+      <div class="publication-badges" aria-label="Publication venue and status">
+        <span class="publication-badge venue">GLOBECOM</span>
+        <span class="publication-badge status">Accepted</span>
       </div>
     </div>
   </article>

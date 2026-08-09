@@ -456,7 +456,7 @@ latest_posts:
   {% assign news_items = site.news | sort: "date" | reverse %}
   {% if news_items.size > 0 %}
     <ul class="home-news-list">
-      {% for item in news_items limit: 6 %}
+      {% for item in news_items limit: 10 %}
         <li>
           <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
           <span>{{ item.content | strip_html | strip_newlines | strip }}</span>
@@ -502,19 +502,6 @@ latest_posts:
   </article>
 
   <article class="selected-publication">
-    <img src="{{ '/assets/img/publication_preview/globecom-rag.png' | relative_url }}" alt="Knowledge-aware RAG offloading preview">
-    <div>
-      <h3>Knowledge-Aware Offloading for Retrieval-Augmented Generative AI Services via Latent Diffusion-Enabled Reinforcement Learning</h3>
-      <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, and Yiqing Zhou</p>
-      <p>IEEE Global Communications Conference (GLOBECOM), 2026</p>
-      <div class="publication-badges" aria-label="Publication venue and status">
-        <span class="publication-badge venue">GLOBECOM</span>
-        <span class="publication-badge status">Accepted</span>
-      </div>
-    </div>
-  </article>
-
-  <article class="selected-publication">
     <img src="{{ '/assets/img/publication_preview/tccn-fairness.png' | relative_url }}" alt="Wireless fairness and multi-agent DRL preview">
     <div>
       <h3>Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI</h3>
@@ -538,6 +525,19 @@ latest_posts:
         <span class="publication-badge venue">China Com.</span>
         <span class="publication-badge cic">T1 CIC</span>
         <span class="publication-badge status">Published</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="selected-publication">
+    <img src="{{ '/assets/img/publication_preview/globecom-rag.png' | relative_url }}" alt="Knowledge-aware RAG offloading preview">
+    <div>
+      <h3>Knowledge-Aware Offloading for Retrieval-Augmented Generative AI Services via Latent Diffusion-Enabled Reinforcement Learning</h3>
+      <p class="selected-publication-authors"><em>Ningzhe Shi</em>, Ling Liu, and Yiqing Zhou</p>
+      <p>IEEE Global Communications Conference (GLOBECOM), 2026</p>
+      <div class="publication-badges" aria-label="Publication venue and status">
+        <span class="publication-badge venue">GLOBECOM</span>
+        <span class="publication-badge status">Accepted</span>
       </div>
     </div>
   </article>

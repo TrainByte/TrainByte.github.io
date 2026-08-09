@@ -156,6 +156,15 @@ cv:
         journal: China Communications
         date: 2026
         doi: 10.23919/JCC.fa.2025-0337.202604
+      - title: Knowledge-Aware Offloading for Retrieval-Augmented Generative AI Services via Latent Diffusion-Enabled Reinforcement Learning
+        authors:
+          - "***Ningzhe Shi***"
+          - Ling Liu
+          - Yiqing Zhou
+        journal: 2026 IEEE Global Communications Conference (GLOBECOM)
+        date: 2026
+        highlights:
+          - Accepted
       - title: "Cross-Enabling of Operation, Information and Communication: Building the Foundation for Intelligent New-Generation Productivity"
         authors:
           - "***Ningzhe Shi***"

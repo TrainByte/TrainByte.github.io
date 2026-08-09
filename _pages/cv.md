@@ -205,8 +205,9 @@ Selected projects below are packaged around two threads: **AI-native service orc
 2. **Ningzhe Shi**, Yiqing Zhou, Ling Liu, Jinglin Shi, Yihao Wu, Haiwei Shi, and Hanxiao Yu. Content Accuracy and Quality Aware Resource Allocation Based on LP-Guided DRL for ISAC-Driven AIGC Networks. _IEEE Transactions on Mobile Computing_, 2026.
 3. **Ningzhe Shi**, Ling Liu, Yiqing Zhou, Hanxiao Yu, Yihao Wu, Jingya Yang, and Jinglin Shi. Long-Term Fairness From Real-Time Decisions: Reward Adaptive Multi-Agent DRL for Wireless Communication With Imperfect CSI. _IEEE Transactions on Cognitive Communications and Networking_, 2026.
 4. **Ningzhe Shi**, Yiqing Zhou, Yu Zhang, Zhijun Han, Ling Liu, and Jinglin Shi. Deception-Based Secure Communication for UAV-Assisted mmWave MIMO Systems. _China Communications_, 2026.
-5. **Ningzhe Shi**, Yihao Wu, Yaxing Xu, Qing Cai, and Yiqing Zhou. Cross-Enabling of Operation, Information and Communication: Building the Foundation for Intelligent New-Generation Productivity. _Computing Magazine of the CCF_, 2025, 1(4): 82-91.
-6. **Ningzhe Shi**, Yu Zhang, and Yiqing Zhou. Deep Reinforcement Learning Based Subchannel Selection and Power Allocation in Wireless Networks with Imperfect CSI. _2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)_, 2023.
+5. **Ningzhe Shi**, Ling Liu, and Yiqing Zhou. Knowledge-Aware Offloading for Retrieval-Augmented Generative AI Services via Latent Diffusion-Enabled Reinforcement Learning. _2026 IEEE Global Communications Conference (GLOBECOM)_, 2026. Accepted.
+6. **Ningzhe Shi**, Yihao Wu, Yaxing Xu, Qing Cai, and Yiqing Zhou. Cross-Enabling of Operation, Information and Communication: Building the Foundation for Intelligent New-Generation Productivity. _Computing Magazine of the CCF_, 2025, 1(4): 82-91.
+7. **Ningzhe Shi**, Yu Zhang, and Yiqing Zhou. Deep Reinforcement Learning Based Subchannel Selection and Power Allocation in Wireless Networks with Imperfect CSI. _2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)_, 2023.
 
 **Second-author publications**
 

@@ -103,6 +103,17 @@ Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a
 ## Internship Experience
 
 <div class="cv-entry">
+  <h3>Zhongke Jingshang - Algorithm Engineer Intern</h3>
+  <div class="cv-meta">China, Mar. 2026 - Jun. 2026</div>
+  <ul class="cv-list">
+    <li>Worked on <strong>performance analysis for satellite communication-navigation integration</strong> in 6G NTN and LEO satellite-assisted scenarios.</li>
+    <li>Modeled the coupling among <strong>satellite links, ground terminals, reference signals, spectrum/power reuse, link reliability, and positioning accuracy</strong>.</li>
+    <li>Analyzed the tradeoff between communication QoS and navigation/positioning accuracy under shared resource reuse, including pilot/reference overhead, SNR, satellite visibility, terminal mobility, and service load.</li>
+    <li>Designed simulation studies for positioning error, throughput, reliability, spectral efficiency, latency, and Pareto-boundary behavior under representative system configurations.</li>
+  </ul>
+</div>
+
+<div class="cv-entry">
   <h3>China Mobile, Digital Intelligence Department - AI Agent Algorithm Intern</h3>
   <div class="cv-meta">China, Jan. 2026 - Mar. 2026</div>
   <ul class="cv-list">

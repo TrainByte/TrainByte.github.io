@@ -271,7 +271,7 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 ## Academic Service
 
-- **Program Committee:** Technical Program Committee Member, IEEE International Conference on Communications (ICC), 2026.
+- **Program Committee:** Technical Program Committee Member, IEEE International Conference on Communications (ICC), 2026 and 2027.
 - **Academic Correspondence:** Academic Correspondent, _Digital Communications and Networks_.
 - **Peer Review:** IEEE Transactions on Mobile Computing (TMC); IEEE Transactions on Communications (TCOM); IEEE Internet of Things Journal; IEEE Transactions on Vehicular Technology (TVT); Science China Information Sciences; China Communications; Journal of Information and Intelligence; IEEE International Conference on Communications (ICC); IEEE Vehicular Technology Conference (VTC); Journal on Communications; Journal of Electronics & Information Technology.
 

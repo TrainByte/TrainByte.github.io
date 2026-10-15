@@ -252,6 +252,7 @@ Selected projects below are packaged around two threads: **AI-native service orc
 
 ## Honors and Awards
 
+- **National Scholarship (Ph.D.)**, 2026.
 - **Outstanding Graduate Student**, Xinghang Program, Journal of Electronics & Information Technology, national selection of **22 graduate students**, 2026.
 - Outstanding Poster Award, Frontiers in Electronics and Information Conference, 2026.
 - **UCAS Outstanding Student Model**, university-wide **top 1%**, 2026.
@@ -264,7 +265,7 @@ Selected projects below are packaged around two threads: **AI-native service orc
 - **Outstanding Graduate, Xidian University**, 2021.
 - First-Class Graduation Scholarship, Xidian University, 2021.
 - Honorable Mention, Mathematical Contest in Modeling, 2020.
-- **National Scholarship**, 2019.
+- **National Scholarship (Undergraduate)**, 2019.
 - **National Second Prize**, China Undergraduate Mathematical Contest in Modeling, 2019.
 - National Encouragement Scholarship, 2018.
 - Third Prize, CETC-10 Communication Cup, 2019.

@@ -88,6 +88,7 @@ Ph.D. researcher in 6G intelligent networks and AI service orchestration, with a
   <div class="cv-meta">Ph.D., Computer Science and Technology (A+ discipline), Beijing, China, Sep. 2021 - present</div>
   <ul class="cv-list">
     <li>Ph.D. Advisor: <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496807.html" target="_blank" rel="noopener noreferrer">Prof. Yiqing Zhou</a>.</li>
+    <li>Received the National Scholarship.</li>
   </ul>
 </div>
 
